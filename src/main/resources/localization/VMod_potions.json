@@ -1,0 +1,14 @@
+{
+  "ArrowPotion": {
+    "NAME": "箭矢药水",
+    "DESCRIPTIONS": ["从3张随机 弓箭 牌选择", "张加入手牌, 本回合耗能为0"]
+  },
+  "QicePotion": {
+    "NAME": "奇策药水",
+    "DESCRIPTIONS": ["直接触发", " 次 奇策 "]
+  },
+  "SheathPotion": {
+    "NAME": "剑术药水",
+    "DESCRIPTIONS": ["获得 ", " 层 收刀 "]
+  }
+}

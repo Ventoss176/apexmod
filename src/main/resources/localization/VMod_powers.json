@@ -1,0 +1,124 @@
+{
+  "Scheme": {
+    "NAME": "计谋",
+    "DESCRIPTIONS": [
+      "等你拥有8层 计谋 时, 触发一次 奇策 "
+    ]
+  },
+  "Brainstorm": {
+    "NAME": "头脑风暴",
+    "DESCRIPTIONS": [
+      "回合开始时给予一张 诡计 "
+    ]
+  },
+  "LoneWolf": {
+    "NAME": "独狼之错",
+    "DESCRIPTIONS": [
+      "无法再打出任何攻击牌 "
+    ]
+  },
+  "LoneWolfA": {
+    "NAME": "独狼之力",
+    "DESCRIPTIONS": [
+      "每打出一张技能牌造成该状态层数的伤害 "
+    ]
+  },
+  "DeviseStrategies": {
+    "NAME": "运筹帷幄",
+    "DESCRIPTIONS": [
+      "每回合开始观看派对顶","张牌"
+    ]
+  },
+  "JueShengQianLi": {
+    "NAME": "决胜千里",
+    "DESCRIPTIONS": [
+      "每次观看牌堆顶都获得",
+      "点 格挡 "
+    ]
+  },
+  "Sheath": {
+    "NAME": "收刀",
+    "DESCRIPTIONS": [
+      "下一次攻击额外造成基础伤害的1.2的" , "次方倍伤害 "
+    ]
+  },
+  "Chameleon": {
+    "NAME": "变色龙",
+    "DESCRIPTIONS": [
+      "下一次受到伤害抽 ",
+      "张牌"
+
+    ]
+  },
+  "Torture": {
+    "NAME": "严刑拷打",
+    "DESCRIPTIONS": [
+      "本回合所有单体0费攻击牌都将给予",
+      "层易伤"
+    ]
+  },
+  "Purposeful": {
+    "NAME": "成竹在胸",
+    "DESCRIPTIONS": [
+      "每回合结束获得",
+      "倍计谋层数 格挡 "
+    ]
+  },
+  "InterlockingStratagems": {
+    "NAME": "连环计",
+    "DESCRIPTIONS": [
+      "每回合开始若没有计谋，获得",
+      "点 计谋 "
+    ]
+  },
+  "SwordMaster": {
+    "NAME": "剑术大师",
+    "DESCRIPTIONS": [
+      "每回合开始若没有 收刀 ，进入 收刀 ",
+      " 次 "
+    ]
+  },
+  "Trump": {
+    "NAME": "减少能量",
+    "DESCRIPTIONS": [
+      "下回合失去",
+      "点 [E] "
+    ]
+  },
+  "MindControl": {
+    "NAME": "攻心",
+    "DESCRIPTIONS": [
+      "奇策 上限减少一半",
+      "次"
+    ]
+  },
+  "SchemeAIntrigue": {
+    "NAME": "阴谋诡计",
+    "DESCRIPTIONS": [
+      "每回合开始加入",
+      " 阴谋 和 诡计 到手牌"
+    ]
+  },
+  "KravMaga": {
+    "NAME": "异世界格斗术",
+    "DESCRIPTIONS": [
+      "手牌中所有0耗能牌打出均可以抽",
+      " 张牌"
+    ]
+  },
+  "ShootingPractice": {
+    "NAME": "打靶",
+    "DESCRIPTIONS": [
+      "所有 弓箭 牌伤害提高",
+      " 点"
+    ]
+  },
+  "NewMarkPower": {
+    "NAME": "标记",
+    "DESCRIPTIONS": [
+      "每次使用 #y点穴 或者 #y略懂 造成点",
+      "伤害"
+    ]
+  }
+
+}

@@ -1,0 +1,79 @@
+{
+  "Checkerboard": {
+    "NAME": "国际象棋棋盘",
+    "FLAVOR": "虽然你不会下，但是你可以学",
+    "DESCRIPTIONS": [
+      "每抽 #b16 张牌，获得2点临时 敏捷 和临时 力量"
+    ]
+  },
+  "SilkBag": {
+    "NAME": "锦囊",
+    "FLAVOR": "据说是远古时代, 某位卓越的军事家, 政治家, 发明家的遗物",
+    "DESCRIPTIONS": [
+      "战斗开始时获得 #b3 层 计谋 "
+    ]
+  },
+  "FeatherFan": {
+    "NAME": "羽扇",
+    "FLAVOR": "看起来十分的优雅",
+    "DESCRIPTIONS": [
+      "每抽 #b16 张牌, 获得 [E] "
+    ]
+  },
+  "Yamato": {
+    "NAME": "阎魔刀",
+    "FLAVOR": "不像是这个世界的物品，似乎有着斩破空间的能力",
+    "DESCRIPTIONS": [
+      "所有 收刀 类牌将提高 #b4 点伤害"
+    ]
+  },
+  "ChineseChessHorse": {
+    "NAME": "中国象棋-马",
+    "FLAVOR": "大师都会熟练运用马",
+    "DESCRIPTIONS": [
+      "每场战斗开始将2张 阴谋 加入手牌"
+    ]
+  },
+  "ChessHorse": {
+    "NAME": "国际象棋-马",
+    "FLAVOR": "这个东西你不会用啊",
+    "DESCRIPTIONS": [
+      "每场战斗开始将2张 诡计 加入手牌"
+    ]
+  },
+  "ChineseCheckerboard": {
+    "NAME": "中国象棋棋盘",
+    "FLAVOR": "你可以经常熟练运用, 但或许学不到新东西了",
+    "DESCRIPTIONS": [
+      "替换 #r国际象棋棋盘 , 每抽 #b16 张牌,获得1点 力量，1点 敏捷"
+    ]
+  },
+  "PeakedCap": {
+    "NAME": "鸭舌帽",
+    "FLAVOR": "带上之后感觉变得更帅气了呢！",
+    "DESCRIPTIONS": [
+      "每次洗牌时抽 #b3 张牌 "
+    ]
+  },
+  "SilverDancer": {
+    "NAME": "银色舞者",
+    "FLAVOR": "制作精良的手枪",
+    "DESCRIPTIONS": [
+      "每抽 #b1 张牌随机对一名敌人造成 #b1 点伤害 "
+    ]
+  },
+  "Vest": {
+    "NAME": "防弹衣",
+    "FLAVOR": "虽然但是自己还是不要受伤的好！",
+    "DESCRIPTIONS": [
+      "每抽 #b3 张牌获得 #b3 点 格挡 "
+    ]
+  },
+  "LongBow": {
+    "NAME": "长弓",
+    "FLAVOR": "这把弓被许多古代英雄使用过, 有着神奇的力量",
+    "DESCRIPTIONS": [
+      "所有 弓箭 牌的伤害提高 #b1.5 倍"
+    ]
+  }
+}
