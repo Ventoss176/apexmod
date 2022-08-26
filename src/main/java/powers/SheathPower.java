@@ -39,7 +39,7 @@ public class SheathPower extends AbstractPower {
     }
 
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.2,(double)this.amount)  : damage;
+        return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.35,(double)this.amount)  : damage;
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {

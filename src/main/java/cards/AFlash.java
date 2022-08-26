@@ -34,7 +34,7 @@ public class AFlash extends CustomCard {
     public AFlash() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.Apex_COLOR, CardRarity.COMMON, CardTarget.SELF);
         // this.tags.add(BaseModCardTags.BASIC_STRIKE);
-        this.baseMagicNumber = 2;
+        this.baseMagicNumber = 5;
         this.magicNumber = this.baseMagicNumber;
     }
 

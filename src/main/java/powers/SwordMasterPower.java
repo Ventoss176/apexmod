@@ -38,13 +38,13 @@ public class SwordMasterPower extends AbstractPower {
 
     public void atStartOfTurnPostDraw() {
         this.flash();
-        if (!AbstractDungeon.player.hasPower("Sheath")) {
+        // if (!AbstractDungeon.player.hasPower("Sheath")) {
             // this.addToBot(new ChangeStanceAction("Divinity"));
             this.addToBot(new ApplyPowerAction(this.owner, this.owner, new SheathPower(this.owner, this.amount), this.amount));
             // this.updateDescription();
-        }else if(AbstractDungeon.player.hasPower("Sheath")) {
+        // }else if(AbstractDungeon.player.hasPower("Sheath")) {
             this.updateDescription();
-        }
+        // }
 
 
     }

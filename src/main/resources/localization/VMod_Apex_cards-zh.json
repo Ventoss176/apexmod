@@ -263,7 +263,7 @@
   },
   "SwordMaster": {
     "NAME": "剑圣",
-    "DESCRIPTION": "若回合开始没有 收刀 , 则进入 收刀 状态 "
+    "DESCRIPTION": "回合开始 获得一层 收刀 "
   },
   "Cardiotonic": {
     "NAME": "强心剂",

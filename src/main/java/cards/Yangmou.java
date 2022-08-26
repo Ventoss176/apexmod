@@ -28,7 +28,7 @@ public class Yangmou extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/Yangmou.png";
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int MAGNIFICATION = 3;
     // private static final int UPGRADE_PLUS_DMG = 3;
     public static final String ID = "Yangmou";
@@ -46,9 +46,9 @@ public class Yangmou extends CustomCard {
     public void upgrade() {
         if(!upgraded){
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            // this.upgradeBaseCost(0);
             this.initializeDescription();
-            // upgradeMagicNumber();
+            this.upgradeMagicNumber(2);
         }
     }
 

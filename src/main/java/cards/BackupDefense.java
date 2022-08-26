@@ -21,7 +21,7 @@ public class BackupDefense extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     // public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private static final int BLOCK_AMT = 7;
+    private static final int BLOCK_AMT = 8;
     private static final int UPGRADE_PLUS_BLOCK = 3;
     public static final String ID = "BackupDefense";
     public static final String IMG_PATH = "img/cards_Apex/BackupDefense.png";

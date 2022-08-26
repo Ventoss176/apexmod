@@ -27,7 +27,7 @@ public class Layout extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 1;
-    private static final int BLOCK_AMT = 7;
+    private static final int BLOCK_AMT = 8;
     private static final int UPGRADE_PLUS_BLOCK = 3;
     public static final String ID = "Layout";
     public static final String IMG_PATH = "img/cards_Apex/Layout.png";
@@ -38,8 +38,8 @@ public class Layout extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 1;
-        this.magicNumber = 1;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class Layout extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             upgradeName();
-            this.upgradeMagicNumber(1);
+            // this.upgradeMagicNumber(1);
             upgradeBlock(UPGRADE_PLUS_BLOCK);
             this.initializeDescription();
         }
