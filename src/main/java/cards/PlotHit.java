@@ -29,15 +29,15 @@ public class PlotHit extends CustomCard {
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/PlotHit.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 9;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int ATTACK_DMG = 10;
+    private static final int UPGRADE_PLUS_DMG = 4;
     public static final String ID = "PlotHit";
     public PlotHit() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
         // this.tags.add(BaseModCardTags.BASIC_STRIKE);
         this.tags.add(ApexTags.ARROW);
         this.baseDamage = ATTACK_DMG;
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 2;
         //不能少，不然游戏默认初始值为-1！！！！！！
         this.magicNumber = baseMagicNumber;
 

@@ -53,7 +53,7 @@ public class PurposefulPower extends AbstractPower {
             int scheme = AbstractDungeon.player.getPower("Scheme").amount;
             if(scheme > 0){
 
-                scheme *= this.amount;
+                scheme *= this.amount ;
                 this.addToBot(new GainBlockAction(this.owner, this.owner, scheme));
             }else{
                 this.addToBot(new GainBlockAction(this.owner, this.owner, 0));

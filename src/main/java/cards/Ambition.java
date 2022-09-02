@@ -22,7 +22,7 @@ public class Ambition extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("Ambition");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    // public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
@@ -42,7 +42,20 @@ public class Ambition extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if(!p.hasPower("Scheme")){
+        if(p.hasPower("Scheme")){
+            if(this.upgraded){
+                if(p.getPower("Scheme").amount <= 3){
+                    this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
+
+                }
+            }else {
+                if(p.getPower("Scheme").amount <= 2){
+                    this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
+
+                }
+            }
+        }else {
+
             this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
         }
 
@@ -61,6 +74,7 @@ public class Ambition extends CustomCard {
             //更改名字和提高3点格挡
             this.upgradeName();
             this.upgradeMagicNumber(1);
+            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBaseCost(2);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);

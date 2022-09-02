@@ -20,8 +20,8 @@ public class StrikeDefend extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("StrikeDefend");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    // public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 1;
+    public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final int COST = 0;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
     public static final String ID = "StrikeDefend";
@@ -56,7 +56,9 @@ public class StrikeDefend extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            // this.upgradeBaseCost(0);
+            this.isInnate = true;
+            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeMagicNumber(1);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);

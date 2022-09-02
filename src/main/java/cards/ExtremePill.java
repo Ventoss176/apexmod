@@ -4,6 +4,7 @@ import basemod.abstracts.CustomCard;
 import cards.templates.SKCardRare;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -44,11 +45,20 @@ public class ExtremePill extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new DexterityPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new LoseDexterityPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+        if(this.upgraded){
 
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new StrengthPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
-        addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new LoseStrengthPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new DexterityPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new LoseDexterityPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new StrengthPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new LoseStrengthPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            this.addToBot(new DrawCardAction(3));
+        }else {
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new DexterityPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new LoseDexterityPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new StrengthPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) p, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new LoseStrengthPower((AbstractCreature) p, this.magicNumber), this.magicNumber));
+            this.addToBot(new DrawCardAction(2));
+        }
     }
     @Override
     public AbstractCard makeCopy() {
@@ -64,6 +74,7 @@ public class ExtremePill extends CustomCard {
             //更改名字和提高3点格挡
             this.upgradeName();
             this.upgradeMagicNumber(3);
+            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import pathes.AbstractCardEnum;
+import pathes.ApexTags;
 
 /**
  * Date:2022/6/21
@@ -32,6 +33,7 @@ public class Bombard extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY);
         // this.tags.add(BaseModCardTags.BASIC_STRIKE);
         this.baseDamage = ATTACK_DMG;
+        this.tags.add(ApexTags.STAR);
         // this.baseMagicNumber = 1;
         this.isMultiDamage = true;
         //不能少，不然游戏默认初始值为-1！！！！！！

@@ -28,8 +28,8 @@ public class GodSlay extends CustomCard {
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/GodSlay.png";
     private static final int COST = 3;
-    private static final int ATTACK_DMG = 28;
-    private static final int UPGRADE_PLUS_DMG = 10;
+    private static final int ATTACK_DMG = 30;
+    private static final int UPGRADE_PLUS_DMG = 9;
     public static final String ID = "GodSlay";
     public GodSlay() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.RARE, CardTarget.ENEMY);

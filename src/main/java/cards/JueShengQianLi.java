@@ -38,8 +38,8 @@ public class JueShengQianLi extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 4;
-        this.magicNumber = 4;
+        this.baseMagicNumber = 7;
+        this.magicNumber = 7;
     }
 
     @Override
@@ -60,7 +60,7 @@ public class JueShengQianLi extends CustomCard {
             //更改名字和提高3点格挡
             this.upgradeName();
             this.selfRetain = true;
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(3);
             // this.rawDescription = UPGRADED_DESCRIPTION;
 
             this.initializeDescription();

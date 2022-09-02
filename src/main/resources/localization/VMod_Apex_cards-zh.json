@@ -125,8 +125,8 @@
   },
   "Brainstorm": {
     "NAME": "头脑风暴",
-    "DESCRIPTION": "在你的X回合开始时，一张 诡计 加入到你的手牌, 消耗 ",
-    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时，一张 诡计 加入到你的手牌, 消耗 "
+    "DESCRIPTION": "在你的X回合开始时，两张 诡计 加入到你的手牌, 消耗 ",
+    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时，两张 诡计 加入到你的手牌, 消耗 "
   },
   "Gamble": {
     "NAME": "赌局",
@@ -189,7 +189,7 @@
   "LongPlanned": {
     "NAME": "蓄谋已久",
     "DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] ",
-    "UPGRADE_DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] "
+    "UPGRADE_DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] [E] "
   },
   "WeaknessEffect": {
     "NAME": "弱点特效",
@@ -205,7 +205,8 @@
   },
   "Ambition": {
     "NAME": "野心",
-    "DESCRIPTION": "当你没有计谋时, NL 获得 !M! 点 计谋 "
+    "DESCRIPTION": "当你有计谋层数小于等于2时, NL 获得 !M! 点 计谋 ",
+    "UPGRADE_DESCRIPTION": "当你计谋层数小于等于3时, NL 获得 !M! 点 计谋 "
   },
   "Torture": {
     "NAME": "严刑拷打",
@@ -234,8 +235,8 @@
   },
   "Purposeful": {
     "NAME": "成竹在胸",
-    "DESCRIPTION": "每回合开始，获得 计谋 层数的 格挡 ",
-    "UPGRADE_DESCRIPTION": "每回合开始，获得 计谋 层数的 格挡 , 固有 "
+    "DESCRIPTION": "每回合开始，获得 计谋 层数两倍的 格挡 ",
+    "UPGRADE_DESCRIPTION": "每回合开始，获得 计谋 层数三倍的 格挡 "
   },
   "AmnesiaAgain": {
     "NAME": "再次失忆",
@@ -302,7 +303,8 @@
   },
   "ExtremePill": {
     "NAME": "极限药",
-    "DESCRIPTION": "获得 !M! 点 NL 临时 力量 和 NL 临时 敏捷 , NL  消耗 , 保留 "
+    "DESCRIPTION": "获得 !M! 点 NL 临时 力量 和 NL 临时 敏捷 ,抽2张牌, NL  消耗 , 保留 ",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 NL 临时 力量 和 NL 临时 敏捷 ,抽3张牌, NL  消耗 , 保留 "
   },
   "IngeniousPlan": {
     "NAME": "奇谋",
@@ -323,7 +325,8 @@
   },
   "StrikeDefend": {
     "NAME": "打击防御",
-    "DESCRIPTION": "升级所有基础 NL  打击 和 防御 , 消耗 "
+    "DESCRIPTION": "升级所有基础 NL  打击 和 防御 , 消耗 ",
+    "UPGRADE_DESCRIPTION": "升级所有基础 NL  打击 和 防御 , 消耗 , 固有 "
   },
   "Accident": {
     "NAME": "意外",

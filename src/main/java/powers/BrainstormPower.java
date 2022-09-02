@@ -59,6 +59,7 @@ public class BrainstormPower extends AbstractPower {
         // card.upgrade();
         // this.addToBot(new MakeTempCardInHandAction(card1));
         this.addToBot(new MakeTempCardInHandAction(card2));
+        this.addToBot(new MakeTempCardInHandAction(card2));
         if (this.amount <= 1) {
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "Brainstorm"));
         } else {
