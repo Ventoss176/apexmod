@@ -43,7 +43,11 @@ public class Cardiotonic extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainEnergyAction(this.magicNumber));
-        this.addToBot(new HealAction(p, p, this.magicNumber + 6));
+        if(this.upgraded){
+            this.addToBot(new HealAction(p, p, 11));
+        }else{
+            this.addToBot(new HealAction(p, p, 8));
+        }
     }
     @Override
     public AbstractCard makeCopy() {

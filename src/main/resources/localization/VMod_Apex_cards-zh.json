@@ -268,8 +268,8 @@
   },
   "Cardiotonic": {
     "NAME": "强心剂",
-    "DESCRIPTION": "获得 [E] [E] , NL 恢复4点生命值, NL  消耗 ",
-    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] , NL 恢复5点生命值, NL  消耗 "
+    "DESCRIPTION": "获得 [E] [E] , NL 恢复8点生命值, NL  消耗 ",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] , NL 恢复11点生命值, NL  消耗 "
   },
   "InsectKiller": {
     "NAME": "虫子杀手",
