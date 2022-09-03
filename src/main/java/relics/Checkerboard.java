@@ -1,9 +1,12 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import cards.tempCards.Conspiracy;
+import cards.tempCards.Trickery;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -48,6 +51,8 @@ public class Checkerboard extends CustomRelic {
 
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new StrengthPower((AbstractCreature) abstractPlayer, 2), 2));
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new LoseStrengthPower((AbstractCreature) abstractPlayer, 2), 2));
+            AbstractCard card2 = new Conspiracy();
+            this.addToBot(new MakeTempCardInHandAction(card2));
         }
     }
 

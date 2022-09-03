@@ -33,7 +33,7 @@ public class Yamato extends CustomRelic {
     }
 
     public float atDamageModify(float damage, AbstractCard c) {
-        return c.hasTag(ApexTags.Batto) && (c.type == AbstractCard.CardType.ATTACK) ? damage + 4 : damage;
+        return c.hasTag(ApexTags.Batto) && (c.type == AbstractCard.CardType.ATTACK) ? damage + 10 : damage;
     }
 
 }

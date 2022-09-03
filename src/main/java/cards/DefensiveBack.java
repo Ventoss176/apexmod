@@ -31,7 +31,7 @@ public class DefensiveBack extends CustomCard {
     private static final int COST = 0;
     private static final int ATTACK_DMG = 4;
     private static final int BLOCK = 4;
-    private static final int UPGRADE_PLUS = 1;
+    private static final int UPGRADE_PLUS = 2;
     public static final String ID = "DefensiveBack";
     public DefensiveBack() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.COMMON, CardTarget.ENEMY);

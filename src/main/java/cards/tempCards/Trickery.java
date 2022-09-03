@@ -29,7 +29,7 @@ public class Trickery extends CustomCard {
     public Trickery() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, CardColor.COLORLESS, CardRarity.SPECIAL, CardTarget.SELF);
 
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 2;
         this.selfRetain = true;
         this.exhaust = true;
         this.magicNumber = this.baseMagicNumber;

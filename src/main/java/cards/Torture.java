@@ -22,8 +22,8 @@ public class Torture extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("Torture");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    // public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 1;
+    public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final int COST = 0;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
     public static final String ID = "Torture";
@@ -59,8 +59,10 @@ public class Torture extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
+            this.selfRetain = true;
+            this.rawDescription = UPGRADED_DESCRIPTION;
             // this.upgradeMagicNumber(1);
-            this.upgradeBaseCost(0);
+            // this.upgradeBaseCost(0);
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

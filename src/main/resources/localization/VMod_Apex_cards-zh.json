@@ -210,7 +210,8 @@
   },
   "Torture": {
     "NAME": "严刑拷打",
-    "DESCRIPTION": "本回合，所有0能量 NL 单体攻击牌都将 NL 给予一层 易伤 "
+    "DESCRIPTION": "本回合，所有0能量 NL 单体攻击牌都将 NL 给予一层 易伤 ",
+    "UPGRADE_DESCRIPTION": "本回合，所有0能量 NL 单体攻击牌都将 NL 给予一层 易伤 , 保留 "
   },
   "Almighty": {
     "NAME": "首尾兼顾",
@@ -281,7 +282,7 @@
   },
   "MindControl": {
     "NAME": "攻心",
-    "DESCRIPTION": "奇策  计谋 上限降低 NL 一半(最低为1), NL 失去2点 力量 , NL 2点 敏捷 "
+    "DESCRIPTION": "奇策 计谋 上限降低 NL 一半(最低为1), NL 失去 !M! 点 力量 , NL !M! 点 敏捷 "
   },
   "WisdomForm": {
     "NAME": "智慧形态",
@@ -330,7 +331,7 @@
   },
   "Accident": {
     "NAME": "意外",
-    "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得1点 计谋 , NL 保留 ",
-    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得1点 计谋 , NL  保留 "
+    "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 ",
+    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得1点 计谋 , NL,下回合获得 [E] [E] , 保留 "
   }
 }

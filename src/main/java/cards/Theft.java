@@ -29,7 +29,7 @@ public class Theft extends CustomCard {
     public static final String IMG_PATH = "img/cards_Apex/Theft.png";
     private static final int COST = 1;
     private static final int ATTACK_DMG = 7;
-    private static final int UPGRADE_PLUS_DMG = 1;
+    private static final int UPGRADE_PLUS_DMG = 3;
     public static final String ID = "Theft";
     public Theft() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);

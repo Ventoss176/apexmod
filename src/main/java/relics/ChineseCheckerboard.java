@@ -1,8 +1,11 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
+import cards.tempCards.Conspiracy;
+import cards.tempCards.Trickery;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -58,6 +61,8 @@ public class ChineseCheckerboard extends CustomRelic {
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new DexterityPower((AbstractCreature) abstractPlayer, 1), 1));
 
             addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) abstractPlayer, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new StrengthPower((AbstractCreature) abstractPlayer, 1), 1));
+            AbstractCard card2 = new Trickery();
+            this.addToBot(new MakeTempCardInHandAction(card2));
         }
     }
 

@@ -42,7 +42,7 @@ public class Conspiracy extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 2;
         this.magicNumber = baseMagicNumber;
         this.selfRetain = true;
         this.exhaust = true;

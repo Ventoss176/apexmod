@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.powers.EquilibriumPower;
 import pathes.AbstractCardEnum;
 import powers.SchemePower;
@@ -43,6 +44,7 @@ public class Accident extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new EquilibriumPower(p, this.magicNumber), this.magicNumber));
         this.addToBot(new ApplyPowerAction(p,p,new SchemePower(p,this.magicNumber),this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new EnergizedPower(p, 2), 2));
     }
     @Override
     public AbstractCard makeCopy() {
