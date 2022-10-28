@@ -332,6 +332,6 @@
   "Accident": {
     "NAME": "意外",
     "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 ",
-    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得1点 计谋 , NL,下回合获得 [E] [E] , 保留 "
+    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 "
   }
 }
