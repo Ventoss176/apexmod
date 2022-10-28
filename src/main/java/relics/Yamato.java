@@ -32,8 +32,8 @@ public class Yamato extends CustomRelic {
         return new Yamato();
     }
 
-    public float atDamageModify(float damage, AbstractCard c) {
-        return c.hasTag(ApexTags.Batto) && (c.type == AbstractCard.CardType.ATTACK) ? damage + 10 : damage;
-    }
+//    public float atDamageModify(float damage, AbstractCard c) {
+//        return c.hasTag(ApexTags.Batto) && (c.type == AbstractCard.CardType.ATTACK) ? damage + 10 : damage;
+//    }
 
 }

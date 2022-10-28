@@ -56,7 +56,7 @@ public class ShootingPractice extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(5);
             // this.isInnate = true;
             // this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();

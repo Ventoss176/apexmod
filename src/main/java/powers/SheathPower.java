@@ -37,11 +37,19 @@ public class SheathPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        if(AbstractDungeon.player.hasRelic("Yamato")){
+            this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[3];
+        }else {
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        }
     }
 
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.35,(double)this.amount)  : damage;
+        if(AbstractDungeon.player.hasRelic("Yamato")){
+            return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.8,(double)this.amount)  : damage;
+        }else {
+            return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.35,(double)this.amount)  : damage;
+        }
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {

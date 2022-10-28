@@ -49,8 +49,15 @@ public class JueShengQianLiPower extends AbstractPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if(card.hasTag(ApexTags.STAR)){
+        if(card.hasTag(ApexTags.STAR) ||
+                card.hasTag(ApexTags.ARROW) ||
+                card.cardID == "Setup" ||
+                card.cardID == "GodGuide" ||
+                card.cardID == "Warcry" ||
+                card.cardID == "Forethought" ||
+                card.cardID == "Thinking Ahead"){
             this.addToBot(new GainBlockAction(this.owner, this.amount));
         }
+
     }
 }

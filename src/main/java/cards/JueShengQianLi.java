@@ -38,8 +38,8 @@ public class JueShengQianLi extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 7;
-        this.magicNumber = 7;
+        this.baseMagicNumber = 4;
+        this.magicNumber = 4;
     }
 
     @Override

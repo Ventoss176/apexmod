@@ -29,7 +29,7 @@
   },
   "SkillSword": {
     "NAME": "技巧出剑",
-    "DESCRIPTION": "造成 !D! 点 伤害 , NL 抽一张牌将一张牌 NL 放置于牌堆顶，NL 下回合抽 !M! 张牌"
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 抽1张牌将1张牌 NL 放置于牌堆顶， NL 下回合抽 !M! 张牌"
   },
   "StrengthSword": {
     "NAME": "力量出剑",
@@ -125,8 +125,8 @@
   },
   "Brainstorm": {
     "NAME": "阴谋诡计",
-    "DESCRIPTION": "在你的X回合开始时，阴谋 和 诡计 加入到你的手牌, 消耗 ",
-    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时，阴谋 和 诡计 加入到你的手牌, 消耗 "
+    "DESCRIPTION": "在你的X回合开始时, 阴谋 和 诡计 加入到你的手牌, 消耗 ",
+    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时, 阴谋 和 诡计 加入到你的手牌, 消耗 "
   },
   "Gamble": {
     "NAME": "赌局",
@@ -148,7 +148,7 @@
   },
   "JueShengQianLi": {
     "NAME": "决胜千里",
-    "DESCRIPTION": "每当你用卡牌 NL 观看牌堆顶时, NL 获得 !M! 点格挡"
+    "DESCRIPTION": "每当你用卡牌 NL 观看或放置牌堆顶时, NL 获得 !M! 点格挡"
   },
   "LaidoAttack": {
     "NAME": "居合斩-斩击",
@@ -194,8 +194,8 @@
   },
   "WeaknessEffect": {
     "NAME": "弱点特效",
-    "DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 5 的伤害 ( 总 !D! 点伤害)",
-    "UPGRADE_DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 10 的伤害 ( 总 !D! 点伤害)"
+    "DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 5 的伤害 ( 总 5 + !D! 点伤害)",
+    "UPGRADE_DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 10 的伤害 ( 总 10 + !D! 点伤害)"
   },
   "Contend": {
     "NAME": "周旋",
@@ -212,8 +212,8 @@
   },
   "Torture": {
     "NAME": "严刑拷打",
-    "DESCRIPTION": "本回合，所有攻击牌 NL 都将 NL 给予一层 易伤 ",
-    "UPGRADE_DESCRIPTION": "本回合，所有攻击牌 NL 都将 NL 给予一层 易伤"
+    "DESCRIPTION": "本回合，所有攻击牌 NL 都将给予 NL 所有敌人一层 易伤 ",
+    "UPGRADE_DESCRIPTION": "本回合，所有攻击牌 NL 都将给予 NL 所有敌人一层 易伤 "
   },
   "Almighty": {
     "NAME": "首尾兼顾",
@@ -221,8 +221,8 @@
   },
   "BattoWater": {
     "NAME": "纳刀术-水",
-    "DESCRIPTION": "获得 !M! 层 收刀 和 止水",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 收刀 和 止水"
+    "DESCRIPTION": "获得 !M! 层 收刀 和 止水 ",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 收刀 和 止水 "
   },
   "LaidoWink": {
     "NAME": "居合斩-瞬",

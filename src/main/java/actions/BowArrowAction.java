@@ -34,10 +34,8 @@ public class BowArrowAction extends AbstractGameAction {
             } else if (this.p.hand.size() == 1) {
                 AbstractCard c = this.p.hand.getTopCard();
                 if (c.cost > 0) {
-                    if(c.hasTag(ApexTags.ARROW)){
+                    if(c.hasTag(ApexTags.ARROW) || AbstractDungeon.player.hasRelic("CamBow")){
                         c.freeToPlayOnce = true;
-                    }else {
-                        c.costForTurn -= 1;
                     }
                 }
 
@@ -54,10 +52,8 @@ public class BowArrowAction extends AbstractGameAction {
                 for(Iterator var1 = AbstractDungeon.handCardSelectScreen.selectedCards.group.iterator(); var1.hasNext(); this.p.hand.moveToDeck(c, false)) {
                     c = (AbstractCard)var1.next();
                     if (c.cost > 0) {
-                        if(c.hasTag(ApexTags.ARROW)){
+                        if(c.hasTag(ApexTags.ARROW) || AbstractDungeon.player.hasRelic("CamBow")){
                             c.freeToPlayOnce = true;
-                        }else {
-                            c.costForTurn -= 1;
                         }
 
                     }

@@ -31,8 +31,8 @@ public class HeartWaterPower extends AbstractPower{
         this.ID = "HeartWater";
         this.owner = owner;
         this.amount = amount;
-        if (this.amount <= -999) {
-            this.amount = -999;
+        if (this.amount <= 0) {
+            this.amount = 0;
         }
 
         this.updateDescription();
@@ -58,7 +58,7 @@ public class HeartWaterPower extends AbstractPower{
             this.amount = 999;
         }
         if (this.amount <= 0) {
-            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Scheme"));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "HeartWater"));
         }
 
 
@@ -68,7 +68,7 @@ public class HeartWaterPower extends AbstractPower{
         this.fontScale = 8.0F;
         this.amount -= reduceAmount;
         if (this.amount <= 0) {
-            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Scheme"));
+            this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "HeartWater"));
 
         }
 

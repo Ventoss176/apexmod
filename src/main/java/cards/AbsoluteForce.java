@@ -27,7 +27,7 @@ public class AbsoluteForce extends CustomCard {
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/AbsoluteForce.png";
     private static final int COST = 2;
-    private static final int ATTACK_DMG = 20;
+    private static final int ATTACK_DMG = 21;
     private static final int UPGRADE_PLUS_DMG = 8;
     public static final String ID = "AbsoluteForce";
     public AbsoluteForce() {
@@ -69,7 +69,7 @@ public class AbsoluteForce extends CustomCard {
             //更改名字和提高2点伤害
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_DMG);
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
             this.initializeDescription();
         }
 

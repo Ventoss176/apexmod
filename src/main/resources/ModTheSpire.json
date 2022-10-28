@@ -8,6 +8,6 @@
   "dependencies": [
     "basemod"
   ],
-  "version": "1.0.4",
-  "sts_version": "11-7-2022"
+  "version": "1.0.9",
+  "sts_version": "28-10-2022"
 }

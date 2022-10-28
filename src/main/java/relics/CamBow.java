@@ -11,11 +11,11 @@ import pathes.ApexTags;
  * Author:Vent
  * Description:
  **/
-public class LongBow extends CustomRelic{
-    public static final String ID = "LongBow";
+public class CamBow extends CustomRelic{
+    public static final String ID = "CamBow";
     private static final String IMG = "img/relics_Apex/LongBow.png";
     private static final String IMG_OTL = "img/relics_Apex/outline/LongBow.png";
-    public LongBow() {
+    public CamBow() {
         super(ID, ImageMaster.loadImage(IMG), ImageMaster.loadImage(IMG_OTL), RelicTier.BOSS, LandingSound.CLINK);
     }
 
@@ -24,10 +24,10 @@ public class LongBow extends CustomRelic{
     }
 
     public AbstractRelic makeCopy() {
-        return new LongBow();
+        return new CamBow();
     }
 
-    public float atDamageModify(float damage, AbstractCard c) {
-        return c.hasTag(ApexTags.ARROW) && (c.type == AbstractCard.CardType.ATTACK) ? damage + (damage * 0.5F)  : damage;
-    }
+//    public float atDamageModify(float damage, AbstractCard c) {
+//        return c.hasTag(ApexTags.ARROW) && (c.type == AbstractCard.CardType.ATTACK) ? damage + (damage * 0.5F)  : damage;
+//    }
 }

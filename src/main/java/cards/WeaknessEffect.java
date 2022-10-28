@@ -92,7 +92,7 @@ public class WeaknessEffect extends CustomCard {
             //更改名字和提高2点伤害
             this.upgradeName();
             // this.upgradeDamage(UPGRADE_PLUS_DMG);
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
             this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
         }
