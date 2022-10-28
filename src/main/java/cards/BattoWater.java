@@ -11,6 +11,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import pathes.AbstractCardEnum;
 import pathes.ApexTags;
+import powers.HeartWaterPower;
 import powers.SheathPower;
 import powers.TorturePower;
 
@@ -36,8 +37,8 @@ public class BattoWater extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        // this.baseMagicNumber = 2;
-        // this.magicNumber = 2;
+         this.baseMagicNumber = 2;
+         this.magicNumber = 2;
         // this.exhaust = true;
         this.tags.add(ApexTags.Batto);
         this.exhaust = true;
@@ -45,8 +46,9 @@ public class BattoWater extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, 1),1));
-        this.addToBot(new SkillFromDeckToHandAction(1));
+        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, this.magicNumber),this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new HeartWaterPower(p, this.magicNumber),this.magicNumber));
+//        this.addToBot(new SkillFromDeckToHandAction(1));
     }
 
 
@@ -63,9 +65,9 @@ public class BattoWater extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(3);
             // this.exhaust = false;
-            this.upgradeBaseCost(0);
+//            this.upgradeBaseCost(0);
             this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);

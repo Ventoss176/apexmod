@@ -23,7 +23,7 @@ public class GodGuide extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("GodGuide");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    // public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 0;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
@@ -36,15 +36,21 @@ public class GodGuide extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 1;
-        this.magicNumber = 1;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.RED_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.5F));
-        this.addToBot(new DrawCardAction(p, this.magicNumber));
-        this.addToBot(new PutOnDeckAction(p, p, 1, false));
+        if(!this.upgraded){
+            this.addToBot(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.RED_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.5F));
+            this.addToBot(new DrawCardAction(p, this.magicNumber));
+            this.addToBot(new PutOnDeckAction(p, p, 1, true));
+        }else{
+            this.addToBot(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.RED_TEXT_COLOR, ShockWaveEffect.ShockWaveType.ADDITIVE), 0.5F));
+            this.addToBot(new DrawCardAction(p, this.magicNumber));
+            this.addToBot(new PutOnDeckAction(p, p, 1, false));
+        }
     }
     @Override
     public AbstractCard makeCopy() {
@@ -59,7 +65,8 @@ public class GodGuide extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
+            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

@@ -1,11 +1,13 @@
 package cards;
 
 import actions.ArrowRainAction;
+import actions.BowArrowAction;
 import basemod.abstracts.CustomCard;
 import cards.templates.AttackCardUnCommon;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.unique.UnloadAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -49,6 +51,8 @@ public class ArrowRain extends CustomCard {
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new ArrowRainAction(p));
+        this.addToBot(new DrawCardAction(p, 1));
+        this.addToBot(new BowArrowAction());
     }
 
     @Override

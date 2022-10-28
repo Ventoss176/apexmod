@@ -26,8 +26,8 @@ public class CloseCombat extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/CloseCombat.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 15;
-    private static final int UPGRADE_PLUS_DMG = 5;
+    private static final int ATTACK_DMG = 14;
+    private static final int UPGRADE_PLUS_DMG = 6;
     public static final String ID = "CloseCombat";
     public CloseCombat() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.COMMON, CardTarget.ENEMY);

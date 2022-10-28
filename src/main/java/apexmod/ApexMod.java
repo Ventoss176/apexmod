@@ -117,7 +117,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "奇策" }, "奇策发动时，当前所有手牌减少 [E] ，且抽2张牌, 获得 [E] ");
             BaseMod.addKeyword(new String[] { "计谋" }, "计谋 是顶尖猎杀者的专属状态，当计谋8层时将发动 奇策 ");
             BaseMod.addKeyword(new String[] { "收刀" }, "下一张攻击牌额外1.35倍层数伤害");
-            BaseMod.addKeyword(new String[] { "弓箭" }, "弓箭 顶尖猎杀者的一些牌");
+            BaseMod.addKeyword(new String[] { "弓箭" }, "抽一张牌，选择一张放置于牌堆顶， 本回合耗能-1，如果放置的是弓箭牌，则下次打出前耗能为0");
             BaseMod.addKeyword(new String[] { "阴谋" }, "阴谋是顶尖猎杀者一张牌:抽1张牌，若为攻击牌，则获得2点 敏捷 ，获得2层 计谋 , NL  消耗 , 保留 ");
             BaseMod.addKeyword(new String[] { "诡计" }, "诡计是顶尖猎杀者一张牌:抽1张牌，若为技能牌，则获得2点 力量 ，获得2层 计谋 , NL  消耗 , 保留 ");
             BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 点穴 或者 略懂 时可以造成对应层数的伤害");

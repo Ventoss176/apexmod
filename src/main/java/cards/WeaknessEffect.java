@@ -24,11 +24,11 @@ public class WeaknessEffect extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("WeaknessEffect");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    // public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/WeaknessEffect.png";
     private static final int COST = 1;
     private static final int ATTACK_DMG = 0;
-    // private static final int UPGRADE_PLUS_DMG = 2;
+//     private static final int UPGRADE_PLUS_DMG = 10;
     public static final String ID = "WeaknessEffect";
     public WeaknessEffect() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -48,18 +48,34 @@ public class WeaknessEffect extends CustomCard {
     }
 
     public void calculateCardDamage(AbstractMonster mo) {
-        if (mo.currentBlock != 0) {
-            this.baseDamage = mo.currentBlock * this.magicNumber;;
-        }else {
-            this.baseDamage = 0;
+        if(!upgraded){
+            if (mo.currentBlock != 0) {
+                this.baseDamage = mo.currentBlock * this.magicNumber + 5;;
+            }else {
+                this.baseDamage = 5;
+            }
+
+            super.calculateCardDamage(mo);
+            if (mo.currentBlock != 0) {
+                this.baseDamage = mo.currentBlock * this.magicNumber + 5;;
+            }else{
+                this.baseDamage = 5;
+            }
+        }else{
+            if (mo.currentBlock != 0) {
+                this.baseDamage = mo.currentBlock * this.magicNumber + 10;;
+            }else {
+                this.baseDamage = 10;
+            }
+
+            super.calculateCardDamage(mo);
+            if (mo.currentBlock != 0) {
+                this.baseDamage = mo.currentBlock * this.magicNumber + 10;;
+            }else{
+                this.baseDamage = 10;
+            }
         }
 
-        super.calculateCardDamage(mo);
-        if (mo.currentBlock != 0) {
-            this.baseDamage = mo.currentBlock * this.magicNumber;;
-        }else{
-            this.baseDamage = 0;
-        }
 
     }
 
@@ -77,6 +93,7 @@ public class WeaknessEffect extends CustomCard {
             this.upgradeName();
             // this.upgradeDamage(UPGRADE_PLUS_DMG);
             this.upgradeMagicNumber(1);
+            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
         }
 

@@ -44,9 +44,9 @@ public class SchemeAIntriguePower extends AbstractPower {
     public void atStartOfTurn() {
         if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
             this.flash();
-            AbstractCard card1 = new Conspiracy();
+//            AbstractCard card1 = new Conspiracy();
             AbstractCard card2 = new Trickery();
-            this.addToBot(new MakeTempCardInHandAction(card1, this.amount, false));
+//            this.addToBot(new MakeTempCardInHandAction(card1, this.amount, false));
             this.addToBot(new MakeTempCardInHandAction(card2, this.amount, false));
         }
 

@@ -29,7 +29,7 @@
   },
   "SkillSword": {
     "NAME": "技巧出剑",
-    "DESCRIPTION": "造成 !D! 点 伤害 ，下回合抽 !M! 张牌"
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 抽一张牌将一张牌 NL 放置于牌堆顶，NL 下回合抽 !M! 张牌"
   },
   "StrengthSword": {
     "NAME": "力量出剑",
@@ -82,7 +82,7 @@
   },
   "BackupDefense": {
     "NAME": "备用防御",
-    "DESCRIPTION": "获得 !B! 点 格挡 , NL  保留 。"
+    "DESCRIPTION": "获得 !B! 点 格挡 , NL 抽一张牌将一张牌放置于牌堆顶, 保留 。"
   },
   "SickWork": {
     "NAME": "抱病坚持",
@@ -124,9 +124,9 @@
     "DESCRIPTION": "对所有敌人造成 NL 2次 !D! 点伤害, NL 并弃掉所有攻击牌, NL 弓箭 "
   },
   "Brainstorm": {
-    "NAME": "头脑风暴",
-    "DESCRIPTION": "在你的X回合开始时，两张 诡计 加入到你的手牌, 消耗 ",
-    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时，两张 诡计 加入到你的手牌, 消耗 "
+    "NAME": "阴谋诡计",
+    "DESCRIPTION": "在你的X回合开始时，阴谋 和 诡计 加入到你的手牌, 消耗 ",
+    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时，阴谋 和 诡计 加入到你的手牌, 消耗 "
   },
   "Gamble": {
     "NAME": "赌局",
@@ -156,7 +156,7 @@
   },
   "Battojutsu": {
     "NAME": "纳刀术-神威",
-    "DESCRIPTION": "获得 !B! 点 格挡 , NL 进入 收刀 状态"
+    "DESCRIPTION": "获得 !B! 点 格挡 , NL 获得 收刀 !M! 层"
   },
   "AbsoluteForce": {
     "NAME": "一力降十会",
@@ -180,7 +180,8 @@
   },
   "GodGuide": {
     "NAME": "仙人指路",
-    "DESCRIPTION": "抽 !M! 张牌, 将一张牌放置于牌堆顶 "
+    "DESCRIPTION": "抽 !M! 张牌, 随机将一张牌放置于牌堆顶 ",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌, 将一张牌放置于牌堆顶  "
   },
   "OffensiveAttack": {
     "NAME": "减负攻击",
@@ -193,7 +194,8 @@
   },
   "WeaknessEffect": {
     "NAME": "弱点特效",
-    "DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 的伤害 ( !D! )"
+    "DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 5 的伤害 ( 总 !D! 点伤害)",
+    "UPGRADE_DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 10 的伤害 ( 总 !D! 点伤害)"
   },
   "Contend": {
     "NAME": "周旋",
@@ -210,8 +212,8 @@
   },
   "Torture": {
     "NAME": "严刑拷打",
-    "DESCRIPTION": "本回合，所有0能量 NL 单体攻击牌都将 NL 给予一层 易伤 ",
-    "UPGRADE_DESCRIPTION": "本回合，所有0能量 NL 单体攻击牌都将 NL 给予一层 易伤 , 保留 "
+    "DESCRIPTION": "本回合，所有攻击牌 NL 都将 NL 给予一层 易伤 ",
+    "UPGRADE_DESCRIPTION": "本回合，所有攻击牌 NL 都将 NL 给予一层 易伤"
   },
   "Almighty": {
     "NAME": "首尾兼顾",
@@ -219,8 +221,8 @@
   },
   "BattoWater": {
     "NAME": "纳刀术-水",
-    "DESCRIPTION": "进入收刀状态, NL 将一张技能牌 NL 加入手牌, 消耗 ",
-    "UPGRADE_DESCRIPTION": "进入收刀状态, NL 将一张技能牌 NL 加入手牌 , 消耗 "
+    "DESCRIPTION": "获得 !M! 层 收刀 和 止水",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 收刀 和 止水"
   },
   "LaidoWink": {
     "NAME": "居合斩-瞬",
@@ -236,8 +238,8 @@
   },
   "Purposeful": {
     "NAME": "成竹在胸",
-    "DESCRIPTION": "每回合开始，获得 计谋 层数两倍的 格挡 ",
-    "UPGRADE_DESCRIPTION": "每回合开始，获得 计谋 层数三倍的 格挡 "
+    "DESCRIPTION": "每回合开始，获得 计谋 层数一倍的 格挡 ",
+    "UPGRADE_DESCRIPTION": "每回合开始，获得 计谋 层数两倍的 格挡 "
   },
   "AmnesiaAgain": {
     "NAME": "再次失忆",
@@ -245,7 +247,7 @@
   },
   "BattoSky": {
     "NAME": "纳刀术-天",
-    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入抽牌堆，本场战斗费用均为0, 进入 收刀 状态, 消耗 "
+    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌，本场战斗费用均为0, 进入 收刀 状态, 消耗 "
   },
   "MirrorTrick": {
     "NAME": "镜子戏法",
@@ -265,7 +267,7 @@
   },
   "SwordMaster": {
     "NAME": "剑圣",
-    "DESCRIPTION": "回合开始 获得一层 收刀 "
+    "DESCRIPTION": "回合开始 获得一层 收刀 和 一层 止水 "
   },
   "Cardiotonic": {
     "NAME": "强心剂",
@@ -312,9 +314,9 @@
     "DESCRIPTION": "弃掉所有手牌，选择抽牌中一张牌打出并 消耗 , 消耗 "
   },
   "SchemeAIntrigue": {
-    "NAME": "阴谋诡计",
-    "DESCRIPTION": "每回合开始, NL 将一张 阴谋 和 诡计 , NL 加入你的手牌",
-    "UPGRADE_DESCRIPTION": "每回合开始, NL 将一张 阴谋 和 诡计 , NL 加入你的手牌, 固有 "
+    "NAME": "诡计多端",
+    "DESCRIPTION": "每回合开始, NL 将一张 诡计 , NL 加入你的手牌",
+    "UPGRADE_DESCRIPTION": "每回合开始, NL 将一张 诡计 , NL 加入你的手牌, 固有 "
   },
   "SilentAssassin": {
     "NAME": "沉默刺客",

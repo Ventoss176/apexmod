@@ -1,6 +1,7 @@
 package powers;
 
 import cards.*;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -15,6 +16,7 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import pathes.ApexTags;
 
 import java.util.Iterator;
@@ -68,8 +70,13 @@ public class TorturePower extends AbstractPower {
 
     @Override
     public void onPlayCard(AbstractCard c, AbstractMonster m) {
-        if (c.costForTurn == 0 && c.type == AbstractCard.CardType.ATTACK) {
-            this.addToBot(new ApplyPowerAction(m, AbstractDungeon.player, new VulnerablePower(m, this.amount, false), this.amount));
+        if (c.type == AbstractCard.CardType.ATTACK) {
+            Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+
+            while(var3.hasNext()) {
+                AbstractMonster mo = (AbstractMonster)var3.next();
+                this.addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, this.amount, false), this.amount, true, AbstractGameAction.AttackEffect.NONE));
+            }
         }
     }
 

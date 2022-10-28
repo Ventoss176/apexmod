@@ -3,6 +3,7 @@ package cards;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -23,7 +24,7 @@ public class BattoSky extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 2;
+    private static final int COST = 1;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
     public static final String ID = "BattoSky";
@@ -36,8 +37,8 @@ public class BattoSky extends CustomCard {
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
         // this.tags.add(ApexTags.Batto);
-        this.baseMagicNumber = 3;
-        this.magicNumber = 3;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
         this.exhaust = true;
     }
 
@@ -52,7 +53,7 @@ public class BattoSky extends CustomCard {
                         card.costForTurn = 0;
                         card.isCostModified = true;
                     }
-                    this.addToBot(new MakeTempCardInDrawPileAction(card, 1, true, true));
+                    this.addToBot(new MakeTempCardInHandAction(card, 1, true));
                     break;
                 }
             }
@@ -82,7 +83,7 @@ public class BattoSky extends CustomCard {
             // this.upgradeMagicNumber(1);
             // this.isInnate = true;
             // this.selfRetain = true;
-            this.upgradeMagicNumber(2);
+            this.upgradeMagicNumber(1);
             // this.upgradeBaseCost(2);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
             // this.rawDescription = UPGRADED_DESCRIPTION;

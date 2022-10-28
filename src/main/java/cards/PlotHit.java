@@ -1,10 +1,12 @@
 package cards;
 
+import actions.BowArrowAction;
 import basemod.abstracts.CustomCard;
 import cards.templates.AttackCardUnCommon;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -29,8 +31,8 @@ public class PlotHit extends CustomCard {
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/PlotHit.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 10;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int ATTACK_DMG = 9;
+    private static final int UPGRADE_PLUS_DMG = 2;
     public static final String ID = "PlotHit";
     public PlotHit() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -48,6 +50,8 @@ public class PlotHit extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new DrawCardAction(p, 1));
+        this.addToBot(new BowArrowAction());
     }
 
     @Override

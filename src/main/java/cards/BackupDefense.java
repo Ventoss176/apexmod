@@ -2,7 +2,9 @@ package cards;
 
 import basemod.abstracts.CustomCard;
 import cards.templates.SkillCardTem;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -39,7 +41,9 @@ public class BackupDefense extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        addToBot(new GainBlockAction(p, this.block));
+        this.addToBot(new GainBlockAction(p, this.block));
+        this.addToBot(new DrawCardAction(p, 1));
+        this.addToBot(new PutOnDeckAction(p, p, 1, false));
 
     }
     @Override

@@ -35,14 +35,14 @@ public class Battojutsu extends CustomCard {
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         this.tags.add(ApexTags.Batto);
         this.baseBlock = BLOCK_AMT;
-        // this.baseMagicNumber = 1;
-        // this.magicNumber = 1;
+         this.baseMagicNumber = 1;
+         this.magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainBlockAction(p, this.block));
-        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, 1),1));
+        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, this.magicNumber),this.magicNumber));
     }
     @Override
     public AbstractCard makeCopy() {
@@ -57,7 +57,7 @@ public class Battojutsu extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            // this.upgradeMagicNumber(1);
+             this.upgradeMagicNumber(1);
             this.upgradeBlock(UPGRADE_PLUS_BLOCK);
             this.initializeDescription();
         }

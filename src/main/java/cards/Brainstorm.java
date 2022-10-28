@@ -41,7 +41,9 @@ public class Brainstorm extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+
         this.addToBot(new BrainstormAction(p, this.freeToPlayOnce, this.energyOnUse, this.upgraded));
+
     }
     @Override
     public AbstractCard makeCopy() {

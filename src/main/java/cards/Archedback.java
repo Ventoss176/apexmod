@@ -1,9 +1,12 @@
 package cards;
 
+import actions.BowArrowAction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
 import com.megacrit.cardcrawl.actions.common.ReduceCostAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -29,7 +32,7 @@ public class Archedback extends CustomCard {
     public static final String IMG_PATH = "img/cards_Apex/Archedback.png";
     private static final int COST = 1;
     private static final int ATTACK_DMG = 9;
-    private static final int UPGRADE_PLUS_DMG = 4;
+    private static final int UPGRADE_PLUS_DMG = 3;
     public static final String ID = "Archedback";
     public Archedback() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -48,6 +51,8 @@ public class Archedback extends CustomCard {
 
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
         this.addToBot(new ReduceCostAction(this.uuid, this.magicNumber));
+        this.addToBot(new DrawCardAction(p, 1));
+        this.addToBot(new BowArrowAction());
     }
 
     @Override

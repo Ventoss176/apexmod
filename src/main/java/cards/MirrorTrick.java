@@ -1,9 +1,11 @@
 package cards;
 
+import actions.BowArrowAction;
 import basemod.abstracts.CustomCard;
 import cards.templates.ATKCardRare;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -47,6 +49,8 @@ public class MirrorTrick extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.LIGHTNING));
+        this.addToBot(new DrawCardAction(p, 1));
+        this.addToBot(new BowArrowAction());
 
     }
 

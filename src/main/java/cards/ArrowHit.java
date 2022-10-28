@@ -1,10 +1,13 @@
 package cards;
 
+import actions.BowArrowAction;
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -28,7 +31,7 @@ public class ArrowHit extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/ArrowHit.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 10;
+    private static final int ATTACK_DMG = 9;
     private static final int UPGRADE_PLUS_DMG = 2;
     public static final String ID = "ArrowHit";
     public ArrowHit() {
@@ -48,6 +51,8 @@ public class ArrowHit extends CustomCard {
         //使用卡牌时触发的动作
         AbstractDungeon.actionManager.addToBottom((AbstractGameAction)new DamageAction((AbstractCreature)m, new DamageInfo((AbstractCreature)p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new ApplyPowerAction(m, p, new VulnerablePower(m, this.magicNumber, false), this.magicNumber));
+        this.addToBot(new DrawCardAction(p, 1));
+        this.addToBot(new BowArrowAction());
     }
 
     @Override
