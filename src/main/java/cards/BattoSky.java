@@ -37,8 +37,8 @@ public class BattoSky extends CustomCard {
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
         // this.tags.add(ApexTags.Batto);
-        this.baseMagicNumber = 1;
-        this.magicNumber = 1;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
         this.exhaust = true;
     }
 
