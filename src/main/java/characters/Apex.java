@@ -57,7 +57,7 @@ public class Apex extends CustomPlayer {
     private static final int HAND_SIZE = 0;
     private static final int ASCENSION_MAX_HP_LOSS = 5;
     //返回一个颜色
-    public static final Color SILVER = CardHelper.getColor(200, 200, 200);
+    public static final Color DEEPRED = CardHelper.getColor(255, 99, 71);
 
     public Apex(String name) {
         //构造方法，初始化参数
@@ -143,7 +143,7 @@ public class Apex extends CustomPlayer {
 
     @Override
     public Color getCardRenderColor() {
-        return SILVER;
+        return DEEPRED;
     }
 
     @Override
@@ -154,7 +154,7 @@ public class Apex extends CustomPlayer {
 
     @Override
     public Color getCardTrailColor() {
-        return SILVER;
+        return DEEPRED;
     }
 
     @Override
@@ -207,7 +207,7 @@ public class Apex extends CustomPlayer {
 
     @Override
     public Color getSlashAttackColor() {
-        return SILVER;
+        return DEEPRED;
     }
 
     @Override

@@ -57,14 +57,14 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
     //选英雄界面的角色图标、选英雄时的背景图片
     private static final String MY_CHARACTER_BUTTON = "img/charSelect/apex/apexButton.png";
     private static final String MARISA_PORTRAIT = "img/charSelect/apex/SelectBg2.png";
-    public static final Color SILVER = CardHelper.getColor(200, 200, 200);
+    public static final Color DEEPRED = CardHelper.getColor(255, 99, 71);
     private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
     public static ArrayList<AbstractCard> recyclecards = new ArrayList<>();
 
     public ApexMod() {
         //构造方法，初始化各种参数
         BaseMod.subscribe((ISubscriber)this);
-        BaseMod.addColor(AbstractCardEnum.Apex_COLOR, SILVER, SILVER, SILVER, SILVER, SILVER, SILVER, SILVER, ATTACK_CC, SKILL_CC, POWER_CC, ENERGY_ORB_CC, ATTACK_CC_PORTRAIT, SKILL_CC_PORTRAIT,POWER_CC_PORTRAIT, ENERGY_ORB_CC_PORTRAIT, CARD_ENERGY_ORB);
+        BaseMod.addColor(AbstractCardEnum.Apex_COLOR, DEEPRED, DEEPRED, DEEPRED, DEEPRED, DEEPRED, DEEPRED, DEEPRED, ATTACK_CC, SKILL_CC, POWER_CC, ENERGY_ORB_CC, ATTACK_CC_PORTRAIT, SKILL_CC_PORTRAIT,POWER_CC_PORTRAIT, ENERGY_ORB_CC_PORTRAIT, CARD_ENERGY_ORB);
     }
     @Override
     public void receiveEditCharacters() {
@@ -253,7 +253,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
         BaseMod.addRelicToCustomPool((AbstractRelic)new ChineseCheckerboard(),AbstractCardEnum.Apex_COLOR);
         BaseMod.addRelicToCustomPool((AbstractRelic)new PeakedCap(),AbstractCardEnum.Apex_COLOR);
         BaseMod.addRelicToCustomPool((AbstractRelic)new CamBow(),AbstractCardEnum.Apex_COLOR);
-        BaseMod.addRelicToCustomPool((AbstractRelic)new SilverDancer(),AbstractCardEnum.Apex_COLOR);
+        BaseMod.addRelicToCustomPool((AbstractRelic)new DEEPREDDancer(),AbstractCardEnum.Apex_COLOR);
         BaseMod.addRelicToCustomPool((AbstractRelic)new Vest(),AbstractCardEnum.Apex_COLOR);
     }
 
