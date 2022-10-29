@@ -86,7 +86,7 @@
   },
   "SickWork": {
     "NAME": "抱病坚持",
-    "DESCRIPTION": "获得1层 虚弱 ,抽 !M! 张牌 。"
+    "DESCRIPTION": "获得1层 虚弱 ,抽 !M! 张 NL 牌 , 将1张牌 NL 放置于牌堆顶。"
   },
   "KnowLittle": {
     "NAME": "略懂",
