@@ -41,7 +41,7 @@ public class BattoWater extends CustomCard {
          this.magicNumber = 2;
         // this.exhaust = true;
         this.tags.add(ApexTags.Batto);
-        this.exhaust = true;
+//        this.exhaust = true;
     }
 
     @Override
