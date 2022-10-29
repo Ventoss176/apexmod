@@ -288,8 +288,8 @@
   },
   "WisdomForm": {
     "NAME": "智慧形态",
-    "DESCRIPTION": "每回合开始, NL 多抽 !M! 张牌, 虚无 ",
-    "UPGRADE_DESCRIPTION": "每回合开始, NL 多抽 !M! 张牌。"
+    "DESCRIPTION": "每回合开始, NL 抽 !M! 张牌, 虚无 ",
+    "UPGRADE_DESCRIPTION": "每回合开始, NL 抽 !M! 张牌。"
   },
   "GodSlay": {
     "NAME": "鬼神居合斩",
