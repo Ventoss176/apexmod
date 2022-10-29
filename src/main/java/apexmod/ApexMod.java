@@ -253,7 +253,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
         BaseMod.addRelicToCustomPool((AbstractRelic)new ChineseCheckerboard(),AbstractCardEnum.Apex_COLOR);
         BaseMod.addRelicToCustomPool((AbstractRelic)new PeakedCap(),AbstractCardEnum.Apex_COLOR);
         BaseMod.addRelicToCustomPool((AbstractRelic)new CamBow(),AbstractCardEnum.Apex_COLOR);
-        BaseMod.addRelicToCustomPool((AbstractRelic)new DEEPREDDancer(),AbstractCardEnum.Apex_COLOR);
+        BaseMod.addRelicToCustomPool((AbstractRelic)new SilverDancer(),AbstractCardEnum.Apex_COLOR);
         BaseMod.addRelicToCustomPool((AbstractRelic)new Vest(),AbstractCardEnum.Apex_COLOR);
     }
 

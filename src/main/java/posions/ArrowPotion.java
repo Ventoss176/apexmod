@@ -37,7 +37,7 @@ public class ArrowPotion extends CustomPotion {
     public ArrowPotion() {
         super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.FAIRY, PotionColor.GREEN);
         this.isThrown = false;
-        this.labOutlineColor = Apex.SILVER;
+        this.labOutlineColor = Apex.DEEPRED;
     }
 
     public void initializeData() {

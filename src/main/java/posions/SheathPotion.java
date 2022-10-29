@@ -31,7 +31,7 @@ public class SheathPotion extends CustomPotion {
     public SheathPotion() {
         super(NAME, POTION_ID, PotionRarity.UNCOMMON, PotionSize.S, PotionColor.FIRE);
         this.isThrown = false;
-        this.labOutlineColor = Apex.SILVER;
+        this.labOutlineColor = Apex.DEEPRED;
     }
 
     public void initializeData() {

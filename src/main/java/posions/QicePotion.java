@@ -30,7 +30,7 @@ public class QicePotion extends CustomPotion {
     public QicePotion() {
         super(NAME, POTION_ID, PotionRarity.RARE, PotionSize.SNECKO, PotionColor.BLUE);
         this.isThrown = false;
-        this.labOutlineColor = Apex.SILVER;
+        this.labOutlineColor = Apex.DEEPRED;
     }
 
     public void initializeData() {
