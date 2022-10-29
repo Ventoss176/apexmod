@@ -46,7 +46,7 @@ public class SheathPower extends AbstractPower {
 
     public float atDamageGive(float damage, DamageInfo.DamageType type) {
         if(AbstractDungeon.player.hasRelic("Yamato")){
-            return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.8,(double)this.amount)  : damage;
+            return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.5,(double)this.amount)  : damage;
         }else {
             return type == DamageInfo.DamageType.NORMAL ? damage * (float)Math.pow(1.35,(double)this.amount)  : damage;
         }
