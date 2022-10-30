@@ -1,6 +1,9 @@
 package powers;
 
+import actions.CostReduction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -34,6 +37,23 @@ public class SheathPower extends AbstractPower {
         this.loadRegion("vigor");
         this.type = PowerType.BUFF;
         this.isTurnBased = false;
+        if (this.amount >= 5) {
+            this.amount = 5;
+        }
+
+    }
+
+    public void stackPower(int stackAmount) {
+        this.fontScale = 8.0F;
+        this.amount += stackAmount;
+
+
+        if (this.amount >= 5) {
+            this.amount = 5;
+        }
+
+
+
     }
 
     public void updateDescription() {

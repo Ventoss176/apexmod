@@ -114,14 +114,14 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
     @Override
     public void receiveEditKeywords() {
         if (Settings.language == Settings.GameLanguage.ZHS) {
-            BaseMod.addKeyword(new String[] { "奇策" }, "奇策发动时，当前所有手牌减少 [E] ，且抽2张牌, 获得 [E] ");
-            BaseMod.addKeyword(new String[] { "计谋" }, "计谋 是顶尖猎杀者的专属状态，当计谋8层时将发动 奇策 ");
-            BaseMod.addKeyword(new String[] { "收刀" }, "下一张攻击牌额外1.35倍层数伤害");
+            BaseMod.addKeyword(new String[] { "奇策" }, "奇策发动时，当前所有手牌减少 [E] ，且抽 #b2 张牌, 获得 [E] ");
+            BaseMod.addKeyword(new String[] { "计谋" }, "计谋 是顶尖猎杀者的专属状态，当计谋 #b8 层时将发动 #y奇策 ");
+            BaseMod.addKeyword(new String[] { "收刀" }, "下一张攻击牌额外 #b1.35 倍层数伤害,最大为 #b5 层");
             BaseMod.addKeyword(new String[] { "止水" }, "如果当拥有 收刀 状态但是打出攻击牌时不消耗 #y收刀 消耗一层 #y止水 ");
-            BaseMod.addKeyword(new String[] { "弓箭" }, "抽一张牌，选择一张放置于牌堆顶，如果放置的是弓箭牌，则下次打出前耗能为0");
-            BaseMod.addKeyword(new String[] { "阴谋" }, "阴谋是顶尖猎杀者一张牌:抽1张牌，若为攻击牌，则获得2点 敏捷 ，获得2层 计谋 , NL  消耗 , 保留 ");
-            BaseMod.addKeyword(new String[] { "诡计" }, "诡计是顶尖猎杀者一张牌:抽1张牌，若为技能牌，则获得2点 力量 ，获得2层 计谋 , NL  消耗 , 保留 ");
-            BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 点穴 或者 略懂 时可以造成对应层数的伤害");
+            BaseMod.addKeyword(new String[] { "弓箭" }, "抽 #b1 张牌，选择 #b1 张放置于牌堆顶，如果放置的是 #y弓箭 牌，则下次打出前耗能为 #b0 ");
+            BaseMod.addKeyword(new String[] { "阴谋" }, " #y阴谋 是顶尖猎杀者一张牌:抽 #b1 张牌，若为攻击牌，则获得 #b2 点 #y敏捷 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
+            BaseMod.addKeyword(new String[] { "诡计" }, " #y诡计 是顶尖猎杀者一张牌:抽 #b1 张牌，若为技能牌，则获得 #b2 点 #y力量 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
+            BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 #y点穴 或者 #y略懂 时可以造成对应层数的伤害");
             BaseMod.addKeyword(new String[] { "略懂" }, "略懂是顶尖猎杀者的一张牌");
 
         }
