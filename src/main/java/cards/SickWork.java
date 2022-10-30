@@ -63,7 +63,8 @@ public class SickWork extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
+            this.upgradeBaseCost(0);
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

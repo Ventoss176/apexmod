@@ -19,8 +19,8 @@ public class Seethrough extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("Seethrough");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    // public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 2;
+     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final int COST = 1;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
     public static final String ID = "Seethrough";
@@ -40,7 +40,7 @@ public class Seethrough extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         CardCrawlGame.sound.play("STANCE_ENTER_WRATH");
-        this.addToBot(new RemoveAllPowersAction(m, false));
+        this.addToBot(new RemoveAllPowersAction(p, true));
         // this.addToBot(new Remove);
     }
     @Override
@@ -56,7 +56,9 @@ public class Seethrough extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeBaseCost(1);
+            this.exhaust = false;
+            this.rawDescription = UPGRADED_DESCRIPTION;
+//            this.upgradeBaseCost(1);
             this.initializeDescription();
             // this.upgradeMagicNumber(1);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);

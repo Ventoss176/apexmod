@@ -135,7 +135,8 @@
   },
   "Seethrough": {
     "NAME": "看破",
-    "DESCRIPTION": "移除一个敌人 NL 所有状态 , 消耗 "
+    "DESCRIPTION": "移除自身 NL 所有负面状态 , 消耗 ",
+    "UPGRADE_DESCRIPTION": "移除自身 NL 所有负面状态"
   },
   "LoneWolf": {
     "NAME": "独狼",
