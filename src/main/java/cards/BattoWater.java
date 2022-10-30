@@ -65,7 +65,7 @@ public class BattoWater extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeMagicNumber(3);
+            this.upgradeMagicNumber(1);
             // this.exhaust = false;
 //            this.upgradeBaseCost(0);
             this.rawDescription = UPGRADED_DESCRIPTION;
