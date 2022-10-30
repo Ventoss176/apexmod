@@ -329,8 +329,8 @@
   },
   "StrikeDefend": {
     "NAME": "打击防御",
-    "DESCRIPTION": "升级所有基础 NL  打击 和 防御 , 消耗 ",
-    "UPGRADE_DESCRIPTION": "升级所有基础 NL  打击 和 防御 , 消耗 , 固有 "
+    "DESCRIPTION": "本场战斗升级所有 NL 基础 打击 和 防御 , 消耗 ",
+    "UPGRADE_DESCRIPTION": "本场战斗升级所有 NL 基础 打击 和 防御 , 消耗 , 固有 "
   },
   "Accident": {
     "NAME": "意外",
