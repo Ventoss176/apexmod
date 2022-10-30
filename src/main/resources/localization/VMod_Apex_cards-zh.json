@@ -195,8 +195,8 @@
   },
   "WeaknessEffect": {
     "NAME": "弱点特效",
-    "DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 5 的伤害 ( 总 5 + !D! 点伤害)",
-    "UPGRADE_DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 10 的伤害 ( 总 10 + !D! 点伤害)"
+    "DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 5 的伤害 ( 总 !D! 点伤害)",
+    "UPGRADE_DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 10 的伤害 ( 总 !D! 点伤害)"
   },
   "Contend": {
     "NAME": "周旋",
