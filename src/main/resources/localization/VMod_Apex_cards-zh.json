@@ -204,7 +204,7 @@
   },
   "Chameleon": {
     "NAME": "变色龙",
-    "DESCRIPTION": "获得一层 无实体 , NL 受到伤害抽 !M! 张牌, NL 失去1点 敏捷 , 消耗 "
+    "DESCRIPTION": "获得一层 无实体 , NL 受到伤害抽 !M! 张牌, NL 回合结束失去 NL 1点 敏捷 , 消耗 "
   },
   "Ambition": {
     "NAME": "野心",
@@ -285,7 +285,7 @@
   },
   "MindControl": {
     "NAME": "攻心",
-    "DESCRIPTION": "奇策 计谋 上限降低 NL 一半(最低为1), NL 失去 !M! 点 力量 , NL !M! 点 敏捷 "
+    "DESCRIPTION": "奇策 计谋 上限降低 NL 一半(最低为1), NL 回合结束失去 NL !M! 点 力量 , !M! 点 敏捷 "
   },
   "WisdomForm": {
     "NAME": "智慧形态",

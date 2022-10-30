@@ -54,7 +54,14 @@ public class SchemePower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0];
+        if (this.amount > 0) {
+            this.description = DESCRIPTIONS[0];
+            this.type = PowerType.BUFF;
+        } else {
+            this.description = DESCRIPTIONS[0];
+            this.type = PowerType.DEBUFF;
+        }
+
     }
 
     public void stackPower(int stackAmount) {

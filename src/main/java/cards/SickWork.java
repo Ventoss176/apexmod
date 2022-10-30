@@ -27,7 +27,7 @@ public class SickWork extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 0;
+    private static final int COST = 1;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
     public static final String ID = "SickWork";
