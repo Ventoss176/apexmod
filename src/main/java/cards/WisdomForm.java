@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.powers.LoseDexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import pathes.AbstractCardEnum;
 import powers.MindControlPower;
+import powers.WisdomFormPower;
 
 /**
  * Date:2022/6/22
@@ -43,6 +44,8 @@ public class WisdomForm extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 1), 1));
+
     }
     @Override
     public AbstractCard makeCopy() {
