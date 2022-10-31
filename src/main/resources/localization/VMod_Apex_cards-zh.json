@@ -271,7 +271,7 @@
   },
   "SwordMaster": {
     "NAME": "剑圣",
-    "DESCRIPTION": "回合开始 获得一层 收刀 和 一层 止水 "
+    "DESCRIPTION": "回合开始 获得一层 NL 收刀 ,若没有 止水 则 NL 获得 一层 止水 "
   },
   "Cardiotonic": {
     "NAME": "强心剂",

@@ -37,8 +37,8 @@ public class BattoWater extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-         this.baseMagicNumber = 2;
-         this.magicNumber = 2;
+         this.baseMagicNumber = 1;
+         this.magicNumber = 1;
         // this.exhaust = true;
         this.tags.add(ApexTags.Batto);
 //        this.exhaust = true;
