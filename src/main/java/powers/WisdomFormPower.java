@@ -38,11 +38,14 @@ public class WisdomFormPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
+//    @Override
+//    public void atStartOfTurn() {
+//        this.addToBot(new PutOnDeckAction(this.owner, this.owner, this.amount, false));
+//    }
+
     @Override
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
+        this.flash();
         this.addToBot(new PutOnDeckAction(this.owner, this.owner, this.amount, false));
     }
-
-
-
 }
