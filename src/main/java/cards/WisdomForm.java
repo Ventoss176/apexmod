@@ -59,7 +59,7 @@ public class WisdomForm extends CustomCard {
             this.upgradeName();
             this.isEthereal = false;
             // this.upgradeBaseCost(2);
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
             this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
