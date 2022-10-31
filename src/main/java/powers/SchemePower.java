@@ -67,24 +67,17 @@ public class SchemePower extends AbstractPower {
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
+        int quickScheme;
         if (AbstractDungeon.player.hasPower("MindControl")) {
             int mindControls = AbstractDungeon.player.getPower("MindControl").amount;
-            int quickScheme = 8 / (mindControls * 2);
-            if (quickScheme < 1) {
+            quickScheme = (int) (8 / (Math.pow(2,mindControls)));
+            if (quickScheme <= 1) {
                 quickScheme = 1;
             }
-            if (this.amount >= quickScheme) {
-                CardCrawlGame.sound.play("STANCE_DIVINITY", 0.05F);
-                this.addToBot(new GainEnergyAction(1));
-                this.addToBot(new DrawCardAction(2));
-                this.addToTop(new CostReduction(this.owner, 99, true));
-                this.amount -= quickScheme;
-                if (this.amount == 0) {
-                    this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Scheme"));
-                }
-
-            }
-        } else if (this.amount >= 8) {
+        } else {
+            quickScheme = 8;
+        }
+        if (this.amount >= quickScheme) {
             CardCrawlGame.sound.play("STANCE_DIVINITY", 0.05F);
             this.addToBot(new GainEnergyAction(1));
             this.addToBot(new DrawCardAction(2));
