@@ -49,9 +49,10 @@ public class BattoSky extends CustomCard {
                 AbstractCard card = AbstractDungeon.returnTrulyRandomCardInCombat();
                 if(card.hasTag(ApexTags.Batto)){
                     if (card.cost > 0) {
-                        card.cost = 0;
-                        card.costForTurn = 0;
-                        card.isCostModified = true;
+                        card.freeToPlayOnce = true;
+                        if(this.upgraded){
+                            card.upgraded = true;
+                        }
                     }
                     this.addToBot(new MakeTempCardInHandAction(card, 1, true));
                     break;
@@ -83,10 +84,10 @@ public class BattoSky extends CustomCard {
             // this.upgradeMagicNumber(1);
             // this.isInnate = true;
             // this.selfRetain = true;
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
             // this.upgradeBaseCost(2);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
-            // this.rawDescription = UPGRADED_DESCRIPTION;
+             this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
         }
     }

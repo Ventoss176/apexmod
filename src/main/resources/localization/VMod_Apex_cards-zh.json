@@ -65,11 +65,13 @@
   },
   "Conspiracy": {
     "NAME": "阴谋",
-    "DESCRIPTION": "抽1张牌，若为攻击牌，则获得 !M! 点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
+    "DESCRIPTION": "抽1张牌，若为攻击牌，则获得1点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
+    "UPGRADE_DESCRIPTION": "抽1张牌，若为技能牌，则获得2点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
   },
   "Trickery": {
     "NAME": "诡计",
-    "DESCRIPTION": "抽1张牌，若为技能牌，则获得 !M! 点 力量 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
+    "DESCRIPTION": "抽1张牌，若为技能牌，则获得1点 力量 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
+    "UPGRADE_DESCRIPTION": "抽1张牌，若为技能牌，则获得2点 力量 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
   },
   "StepByStep": {
     "NAME": "步步为营",
@@ -121,7 +123,7 @@
   },
   "ArrowRain": {
     "NAME": "万箭齐发",
-    "DESCRIPTION": "对所有敌人造成 NL 2次 !D! 点伤害, NL 并弃掉所有攻击牌, NL 弓箭 "
+    "DESCRIPTION": "对所有敌人造成 NL 2次 !D! 点伤害, 弓箭  NL 并弃掉所有攻击牌"
   },
   "Brainstorm": {
     "NAME": "阴谋诡计",
@@ -248,7 +250,8 @@
   },
   "BattoSky": {
     "NAME": "纳刀术-天",
-    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌，本场战斗费用均为0, 进入 收刀 状态, 消耗 "
+    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌，下次打出前耗能为0, 进入 收刀 状态, 消耗 ",
+    "UPGRADE_DESCRIPTION": "随机 收刀 相关的牌 NL 升级 !M! 张加入手牌, NL 下次打出前耗能为0, NL 进入 收刀 状态, 消耗 "
   },
   "MirrorTrick": {
     "NAME": "镜子戏法",
@@ -272,8 +275,8 @@
   },
   "Cardiotonic": {
     "NAME": "强心剂",
-    "DESCRIPTION": "获得 [E] [E] , NL 恢复8点生命值, NL  消耗 ",
-    "UPGRADE_DESCRIPTION": "获得 [E] [E] [E] , NL 恢复11点生命值, NL  消耗 "
+    "DESCRIPTION": "获得 [E] , NL 恢复6点生命值, NL  消耗 ",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] , NL 恢复8点生命值, NL  消耗 "
   },
   "InsectKiller": {
     "NAME": "虫子杀手",
@@ -289,8 +292,8 @@
   },
   "WisdomForm": {
     "NAME": "智慧形态",
-    "DESCRIPTION": "每回合开始, NL 抽 !M! 张牌, 虚无 ",
-    "UPGRADE_DESCRIPTION": "每回合开始, NL 抽 !M! 张牌。"
+    "DESCRIPTION": "每回合开始, NL 抽 !M! 张牌, NL 将1张牌放置于 NL 牌堆顶, 虚无 ",
+    "UPGRADE_DESCRIPTION": "每回合开始, NL 抽 !M! 张牌, NL 将1张牌放置于 NL 牌堆顶 。"
   },
   "GodSlay": {
     "NAME": "鬼神居合斩",

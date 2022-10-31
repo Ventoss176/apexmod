@@ -34,8 +34,8 @@ public class Cardiotonic extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.baseMagicNumber = 1;
+        this.magicNumber = 1;
         this.exhaust = true;
         // this.selfRetain = true;
     }
@@ -44,9 +44,9 @@ public class Cardiotonic extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new GainEnergyAction(this.magicNumber));
         if(this.upgraded){
-            this.addToBot(new HealAction(p, p, 11));
-        }else{
             this.addToBot(new HealAction(p, p, 8));
+        }else{
+            this.addToBot(new HealAction(p, p, 6));
         }
     }
     @Override

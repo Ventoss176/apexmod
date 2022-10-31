@@ -50,9 +50,9 @@ public class ArrowRain extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
         this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        this.addToBot(new ArrowRainAction(p));
         this.addToBot(new DrawCardAction(p, 1));
         this.addToBot(new BowArrowAction());
+        this.addToBot(new ArrowRainAction(p));
     }
 
     @Override
