@@ -10,7 +10,7 @@
   "Provoke": {
     "NAME": "挑衅",
     "DESCRIPTION": "造成 !D! 点伤害。 NL 将本回合手牌中随机 NL 1张牌减少 [E] 。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将本回合手牌中 NL 1张张牌减少 [E] 。"
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将本回合手牌中 NL 选择1张牌减少 [E] 。"
   },
   "Formation": {
     "NAME": "阵法",
@@ -288,7 +288,7 @@
   },
   "MindControl": {
     "NAME": "攻心",
-    "DESCRIPTION": "奇策 计谋 上限降低 NL 一半(最低为1), NL 回合结束失去 NL !M! 点 力量 , !M! 点 敏捷 "
+    "DESCRIPTION": "每次获得 计谋 增加1, NL 回合结束失去 NL !M! 点 力量 , !M! 点 敏捷 "
   },
   "WisdomForm": {
     "NAME": "智慧形态",

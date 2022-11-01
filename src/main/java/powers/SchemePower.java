@@ -31,6 +31,9 @@ public class SchemePower extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
+    private static int quickScheme;
+
+
     public SchemePower(AbstractCreature owner, int amount) {
         this.name = NAME;
         this.ID = "Scheme";
@@ -38,6 +41,11 @@ public class SchemePower extends AbstractPower {
         this.amount = amount;
         if (this.amount <= -999) {
             this.amount = -999;
+        }
+
+        if (AbstractDungeon.player.hasPower("MindControl")) {
+            int mindControls = AbstractDungeon.player.getPower("MindControl").amount;
+            this.amount += mindControls;
         }
 
         this.updateDescription();
@@ -54,6 +62,7 @@ public class SchemePower extends AbstractPower {
     }
 
     public void updateDescription() {
+
         if (this.amount > 0) {
             this.description = DESCRIPTIONS[0];
             this.type = PowerType.BUFF;
@@ -67,28 +76,14 @@ public class SchemePower extends AbstractPower {
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
-        int quickScheme;
+
         if (AbstractDungeon.player.hasPower("MindControl")) {
             int mindControls = AbstractDungeon.player.getPower("MindControl").amount;
-            quickScheme = (int) (8 / (Math.pow(2,mindControls)));
-            if (quickScheme <= 1) {
-                quickScheme = 1;
-            }
-        } else {
-            quickScheme = 8;
+            this.amount += mindControls;
         }
-        if (this.amount >= quickScheme) {
-            CardCrawlGame.sound.play("STANCE_DIVINITY", 0.05F);
-            this.addToBot(new GainEnergyAction(1));
-            this.addToBot(new DrawCardAction(2));
-            this.addToTop(new CostReduction(this.owner, 99, true));
-            this.amount -= 8;
-            if (this.amount == 0) {
-                this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Scheme"));
-            }
 
+        qiceFunction(this.amount);
 
-        }
 
         if (this.amount <= -999) {
             this.amount = -999;
@@ -100,9 +95,29 @@ public class SchemePower extends AbstractPower {
 
     }
 
+    public void qiceFunction(int sAmount){
+        if (this.amount >= 8) {
+            CardCrawlGame.sound.play("STANCE_DIVINITY", 0.05F);
+            this.addToBot(new GainEnergyAction(1));
+            this.addToBot(new DrawCardAction(2));
+            this.addToTop(new CostReduction(this.owner, 99, true));
+            this.amount -= quickScheme;
+            if(this.amount != 0){
+                qiceFunction(this.amount);
+            }
+            if (this.amount == 0) {
+                this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Scheme"));
+            }
+        }
+
+    }
+
     public void reducePower(int reduceAmount) {
         this.fontScale = 8.0F;
         this.amount -= reduceAmount;
+
+        qiceFunction(this.amount);
+
         if (this.amount == 0) {
             this.addToTop(new RemoveSpecificPowerAction(this.owner, this.owner, "Scheme"));
 
