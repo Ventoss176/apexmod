@@ -72,7 +72,7 @@ public class CraftyPlan extends CustomCard {
 
     public void triggerOnGlowCheck() {
         this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
-        if (AbstractDungeon.player.drawPile.isEmpty()) {
+        if (AbstractDungeon.player.drawPile.size() == AbstractDungeon.player.discardPile.size()) {
             this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
         }
 
