@@ -68,7 +68,7 @@ public class BattoWater extends CustomCard {
             this.upgradeMagicNumber(1);
             // this.exhaust = false;
 //            this.upgradeBaseCost(0);
-            this.rawDescription = UPGRADED_DESCRIPTION;
+//            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

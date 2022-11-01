@@ -88,8 +88,8 @@
   "MindControl": {
     "NAME": "攻心",
     "DESCRIPTIONS": [
-      " #y奇策 上限减少一半",
-      "次"
+      "每次额外获得 #y计谋 ",
+      "点"
     ]
   },
   "SchemeAIntrigue": {

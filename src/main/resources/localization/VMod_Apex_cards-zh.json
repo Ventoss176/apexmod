@@ -224,8 +224,7 @@
   },
   "BattoWater": {
     "NAME": "纳刀术-水",
-    "DESCRIPTION": "获得 !M! 层 收刀 和 止水 ",
-    "UPGRADE_DESCRIPTION": "获得 !M! 层 收刀 和 止水 "
+    "DESCRIPTION": "获得 !M! 层 收刀 和 止水 "
   },
   "LaidoWink": {
     "NAME": "居合斩-瞬",
