@@ -52,7 +52,9 @@ public class BattoSky extends CustomCard {
                         card.freeToPlayOnce = true;
                         if(this.upgraded){
                             card.upgraded = true;
+                            card.flash();
                         }
+                        card.flash();
                     }
                     this.addToBot(new MakeTempCardInHandAction(card, 1, true));
                     break;
