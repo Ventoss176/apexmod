@@ -1,6 +1,8 @@
 package powers;
 
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -34,7 +36,7 @@ public class PurposefulPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
     }
 
     // @Override
@@ -47,18 +49,27 @@ public class PurposefulPower extends AbstractPower {
     //
     // }
 
+//    @Override
+//    public void atStartOfTurn() {
+//        if(AbstractDungeon.player.hasPower("Scheme") &&  AbstractDungeon.player.getPower("Scheme").amount > 0 ){
+//            int scheme = AbstractDungeon.player.getPower("Scheme").amount;
+//            if(scheme > 0){
+//
+//                scheme *= this.amount ;
+//                this.addToBot(new GainBlockAction(this.owner, this.owner, scheme));
+//            }else{
+//                this.addToBot(new GainBlockAction(this.owner, this.owner, 0));
+//            }
+//
+//        }
+//    }
+
     @Override
-    public void atStartOfTurn() {
-        if(AbstractDungeon.player.hasPower("Scheme") &&  AbstractDungeon.player.getPower("Scheme").amount > 0 ){
-            int scheme = AbstractDungeon.player.getPower("Scheme").amount;
-            if(scheme > 0){
+    public void atStartOfTurnPostDraw() {
+        this.addToBot(new DrawCardAction(this.owner, this.amount));
+        this.addToBot(new PutOnDeckAction(this.owner, this.owner, this.amount, false));
 
-                scheme *= this.amount ;
-                this.addToBot(new GainBlockAction(this.owner, this.owner, scheme));
-            }else{
-                this.addToBot(new GainBlockAction(this.owner, this.owner, 0));
-            }
-
-        }
     }
+
+
 }

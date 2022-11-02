@@ -47,7 +47,7 @@ public class Trump extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        CardCrawlGame.sound.play("STANCE_DIVINITY", 0.05F);
+        CardCrawlGame.sound.play("STANCE_ENTER_CALM");
         this.addToBot(new GainEnergyAction(1));
         this.addToBot(new DrawCardAction(2));
         this.addToTop(new CostReduction(p, 99, true));

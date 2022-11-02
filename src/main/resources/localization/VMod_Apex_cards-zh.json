@@ -66,7 +66,7 @@
   "Conspiracy": {
     "NAME": "阴谋",
     "DESCRIPTION": "抽1张牌，若为攻击牌，则获得1点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
-    "UPGRADE_DESCRIPTION": "抽1张牌，若为技能牌，则获得2点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
+    "UPGRADE_DESCRIPTION": "抽1张牌，若为攻击牌，则获得2点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
   },
   "Trickery": {
     "NAME": "诡计",
@@ -240,8 +240,7 @@
   },
   "Purposeful": {
     "NAME": "成竹在胸",
-    "DESCRIPTION": "每回合开始，获得 计谋 层数一倍的 格挡 ",
-    "UPGRADE_DESCRIPTION": "每回合开始，获得 计谋 层数两倍的 格挡 "
+    "DESCRIPTION": "每回合开始，抽一张牌，将一张牌放置于牌堆顶 "
   },
   "AmnesiaAgain": {
     "NAME": "再次失忆",
@@ -291,8 +290,7 @@
   },
   "WisdomForm": {
     "NAME": "智慧形态",
-    "DESCRIPTION": "每回合开始, NL 抽 !M! 张牌, NL 将1张牌放置于 NL 牌堆顶, 虚无 ",
-    "UPGRADE_DESCRIPTION": "每回合开始, NL 抽 !M! 张牌, NL 将1张牌放置于 NL 牌堆顶 。"
+    "DESCRIPTION": "立刻触发 奇策 ,且 NL 下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 "
   },
   "GodSlay": {
     "NAME": "鬼神居合斩",

@@ -100,7 +100,7 @@ public class SchemePower extends AbstractPower {
             return;
         }
         if (this.amount >= 8) {
-//            CardCrawlGame.sound.play("STANCE_DIVINITY", 0.05F);
+            CardCrawlGame.sound.play("STANCE_ENTER_CALM");
             this.addToBot(new GainEnergyAction(1));
             this.addToBot(new DrawCardAction(2));
             this.addToTop(new CostReduction(this.owner, 99, true));

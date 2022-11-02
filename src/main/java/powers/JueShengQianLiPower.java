@@ -45,6 +45,10 @@ public class JueShengQianLiPower extends AbstractPower {
         if(AbstractDungeon.player.hasPower("DeviseStrategies")){
             this.addToBot(new GainBlockAction(this.owner, this.amount));
         }
+        if(AbstractDungeon.player.hasPower("Purposeful")){
+            int pAmount = AbstractDungeon.player.getPower("Purposeful").amount;
+            this.addToBot(new GainBlockAction(this.owner, this.amount * pAmount));
+        }
     }
 
     @Override

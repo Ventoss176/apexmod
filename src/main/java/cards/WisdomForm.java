@@ -1,7 +1,10 @@
 package cards;
 
+import actions.CostReduction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,8 +13,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.DrawPower;
 import com.megacrit.cardcrawl.powers.LoseDexterityPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.WraithFormPower;
 import pathes.AbstractCardEnum;
 import powers.MindControlPower;
+import powers.WisdomFormDebuffPower;
 import powers.WisdomFormPower;
 
 /**
@@ -36,15 +41,19 @@ public class WisdomForm extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 3;
-        this.magicNumber = 3;
-        this.isEthereal = true;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
+//        this.isEthereal = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, this.magicNumber), this.magicNumber));
-        this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 1), 1));
+        this.addToBot(new GainEnergyAction(1));
+        this.addToBot(new DrawCardAction(2));
+        this.addToTop(new CostReduction(p, 99, true));
+//        this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, this.magicNumber), this.magicNumber));
+        this.addToBot(new ApplyPowerAction(p, p, new WisdomFormDebuffPower(p, -1), -1));
 
     }
     @Override
@@ -60,10 +69,10 @@ public class WisdomForm extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.isEthereal = false;
+//            this.isEthereal = false;
             // this.upgradeBaseCost(2);
-//            this.upgradeMagicNumber(1);
-            this.rawDescription = UPGRADED_DESCRIPTION;
+            this.upgradeMagicNumber(1);
+//            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

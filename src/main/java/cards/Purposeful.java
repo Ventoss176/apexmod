@@ -20,7 +20,7 @@ public class Purposeful extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings("Purposeful");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+//    public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
     // private static final int BLOCK_AMT = 6;
     // private static final int UPGRADE_PLUS_BLOCK = 4;
@@ -34,7 +34,7 @@ public class Purposeful extends CustomCard {
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 1;
-        this.magicNumber = baseMagicNumber;
+        this.magicNumber = 1;
     }
 
     @Override
@@ -55,8 +55,9 @@ public class Purposeful extends CustomCard {
             //更改名字和提高3点格挡
             this.upgradeName();
             // this.isInnate = true;
-            this.upgradeMagicNumber(1);
-            this.rawDescription = UPGRADED_DESCRIPTION;
+//            this.upgradeMagicNumber(1);
+            this.upgradeBaseCost(0);
+//            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }
