@@ -48,11 +48,15 @@ public class WisdomForm extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new GainEnergyAction(1));
-        this.addToBot(new DrawCardAction(2));
-        this.addToTop(new CostReduction(p, 99, true));
 //        this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, this.magicNumber), this.magicNumber));
-        this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, this.magicNumber), this.magicNumber));
+        if(this.upgraded){
+            this.addToBot(new GainEnergyAction(1));
+            this.addToBot(new DrawCardAction(2));
+            this.addToTop(new CostReduction(p, 99, true));
+            this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 3), 3));
+        }else {
+            this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 3), 3));
+        }
         this.addToBot(new ApplyPowerAction(p, p, new WisdomFormDebuffPower(p, -1), -1));
 
     }
@@ -71,8 +75,8 @@ public class WisdomForm extends CustomCard {
             this.upgradeName();
 //            this.isEthereal = false;
             // this.upgradeBaseCost(2);
-            this.upgradeMagicNumber(1);
-//            this.rawDescription = UPGRADED_DESCRIPTION;
+//            this.upgradeMagicNumber(1);
+            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

@@ -30,7 +30,6 @@ import posions.SheathPotion;
 import relics.*;
 
 
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -232,8 +231,8 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
         this.cardsToAdd.add(new IngeniousPlan());
         this.cardsToAdd.add(new SchemeAIntrigue());
         this.cardsToAdd.add(new InterlockingStratagems());
-        this.cardsToAdd.add(new KravMaga());
-        this.cardsToAdd.add(new StrikeDefend());
+        this.cardsToAdd.add(new BurnStrongholds());
+        this.cardsToAdd.add(new DaoistMagic());
         this.cardsToAdd.add(new Accident());
 
 

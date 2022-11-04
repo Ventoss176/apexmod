@@ -24,8 +24,8 @@ import java.util.Iterator;
  * Author:Vent
  * Description:
  **/
-public class StrikeDefendAction extends AbstractGameAction {
-    public StrikeDefendAction() {
+public class DaoistMagicAction extends AbstractGameAction {
+    public DaoistMagicAction() {
         this.duration = Settings.ACTION_DUR_MED;
         this.actionType = ActionType.WAIT;
     }

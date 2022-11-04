@@ -60,7 +60,8 @@ public class JueShengQianLiPower extends AbstractPower {
                 card.cardID == "Warcry" ||
                 card.cardID == "Forethought" ||
                 card.cardID == "Thinking Ahead" ||
-                card.cardID == "SickWork"){
+                card.cardID == "SickWork" ||
+                card.cardID == "SkillSword"){
             this.addToBot(new GainBlockAction(this.owner, this.amount));
         }
 

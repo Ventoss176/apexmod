@@ -19,8 +19,8 @@ import java.util.Iterator;
  * Author:Vent
  * Description:
  **/
-public class KravMagaPower extends AbstractPower {
-    public static final String POWER_ID = "KravMaga";
+public class BurnStrongholdsPower extends AbstractPower {
+    public static final String POWER_ID = "BurnStrongholds";
     // 能力的本地化字段
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     // 能力的名称
@@ -30,9 +30,9 @@ public class KravMagaPower extends AbstractPower {
 
     private int damage;
 
-    public KravMagaPower(AbstractCreature owner, int amt) {
+    public BurnStrongholdsPower(AbstractCreature owner, int amt) {
         this.name = powerStrings.NAME;
-        this.ID = "KravMaga";
+        this.ID = "BurnStrongholds";
         this.owner = owner;
         this.amount = amt;
         this.updateDescription();

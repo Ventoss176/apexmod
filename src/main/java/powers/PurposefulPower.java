@@ -32,7 +32,7 @@ public class PurposefulPower extends AbstractPower {
         this.owner = owner;
         this.amount = amt;
         this.updateDescription();
-        this.loadRegion("armor");
+        this.loadRegion("tools");
     }
 
     public void updateDescription() {

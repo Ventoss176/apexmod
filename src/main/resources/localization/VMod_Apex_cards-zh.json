@@ -290,7 +290,8 @@
   },
   "WisdomForm": {
     "NAME": "智慧形态",
-    "DESCRIPTION": "立刻触发 奇策 ,且 NL 下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 "
+    "DESCRIPTION": "下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 ",
+    "UPGRADE_DESCRIPTION": "立刻触发 奇策 ,且 NL 下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 "
   },
   "GodSlay": {
     "NAME": "鬼神居合斩",
@@ -323,14 +324,15 @@
     "NAME": "沉默刺客",
     "DESCRIPTION": "给予 !M! 层 中毒 和 印记 , 消耗 "
   },
-  "KravMaga": {
-    "NAME": "异世界格斗术",
-    "DESCRIPTION": "每打出一张 NL 0耗能牌, NL 抽 !M! 张牌"
+  "BurnStrongholds": {
+    "NAME": "火烧连营",
+    "DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张1点 计谋 , 消耗 ",
+    "UPGRADE_DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得 1点 计谋 "
   },
-  "StrikeDefend": {
-    "NAME": "打击防御",
-    "DESCRIPTION": "本场战斗升级所有 NL 基础 打击 和 防御 , 消耗 ",
-    "UPGRADE_DESCRIPTION": "本场战斗升级所有 NL 基础 打击 和 防御 , 消耗 , 固有 "
+  "DaoistMagic": {
+    "NAME": "奇门遁甲",
+    "DESCRIPTION": "弃置所有手牌, NL 从抽牌堆选择2 NL 张牌加入手牌 , 消耗 ",
+    "UPGRADE_DESCRIPTION": "弃置所有手牌, NL 从抽牌堆选择2 NL 张牌加入手牌 "
   },
   "Accident": {
     "NAME": "意外",
