@@ -113,7 +113,9 @@ public class Apex extends CustomPlayer {
         if (Settings.language == Settings.GameLanguage.ZHS) {
             title = "顶尖猎杀者";
             flavor = "使用智慧来作战的杀手,寻求真理而来, NL 又或许得到的只是虚无,没有人能够知道答案";
-        } else if (Settings.language == Settings.GameLanguage.ZHT) {
+        } else if (Settings.language == Settings.GameLanguage.ENG) {
+            title = "顶尖猎杀者";
+            flavor = "An assassin who uses wisdom to fight come from seeking truth, NL or she may get nothing, and no one can know the answer.";
             //当设定为中国台湾省，title和flavor为繁体描述
         } else {
             //其他用英文替代
@@ -127,8 +129,8 @@ public class Apex extends CustomPlayer {
         String title="";
         if (Settings.language == Settings.GameLanguage.ZHS) {
             title = "顶尖猎杀者";
-        } else if (Settings.language == Settings.GameLanguage.ZHT) {
-            title = "頂尖獵殺者";
+        } else if (Settings.language == Settings.GameLanguage.ENG) {
+            title = "Apex Predator";
         } else {
             title = "Apex Predator";
         }
@@ -187,8 +189,8 @@ public class Apex extends CustomPlayer {
         String char_name;
         if (Settings.language == Settings.GameLanguage.ZHS) {
             char_name = "顶尖猎杀者";
-        } else if (Settings.language == Settings.GameLanguage.ZHT) {
-            char_name = "頂尖獵殺者";
+        } else if (Settings.language == Settings.GameLanguage.ENG) {
+            char_name = "Apex Predator";
         } else {
             char_name = "Apex Predator";
         }
@@ -202,7 +204,15 @@ public class Apex extends CustomPlayer {
 
     @Override
     public String getSpireHeartText() {
-        return "这就是心脏吗？ 你出刀挥舞了好几次, 结果是";
+        String heartText;
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+            heartText = "这就是心脏吗？ 你出刀挥舞了好几次, 结果是";
+        } else if (Settings.language == Settings.GameLanguage.ENG) {
+            heartText = "Apex Predator";
+        } else {
+            heartText = "Apex Predator";
+        }
+        return heartText;
     }
 
     @Override

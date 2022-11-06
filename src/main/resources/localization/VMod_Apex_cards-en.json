@@ -1,0 +1,342 @@
+{
+  "Strike_Apex": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害 。"
+  },
+  "Defend_Apex": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "Provoke": {
+    "NAME": "挑衅",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 将本回合手牌中随机 NL 1张牌减少 [E] 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 将本回合手牌中 NL 选择1张牌减少 [E] 。"
+  },
+  "Formation": {
+    "NAME": "阵法",
+    "DESCRIPTION": "获得 !B! 格挡. NL 观看牌堆顶 !M! 张牌",
+    "UPGRADE_DESCRIPTION": "获得 !B! 格挡. NL 观看牌堆顶 !M! 张牌"
+  },
+  "Layout": {
+    "NAME": "布局",
+    "DESCRIPTION": "获得 !B! 点 格挡 , NL 获得 !M! 点 计谋",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 , NL 获得 !M! 点 计谋"
+  },
+  "Shoot": {
+    "NAME": "开枪",
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 失去 !M! 点 计谋",
+    "UPGRADE_DESCRIPTION": "获得 !D! 点 伤害 , NL 失去 !M! 点 计谋"
+  },
+  "SkillSword": {
+    "NAME": "技巧出剑",
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 抽1张牌将1张牌 NL 放置于牌堆顶， NL 下回合抽 !M! 张牌"
+  },
+  "StrengthSword": {
+    "NAME": "力量出剑",
+    "DESCRIPTION": "造成 !D! 点 伤害 !M! 次 ， NL 本回合无法再抽牌"
+  },
+  "AFlash": {
+    "NAME": "一闪",
+    "DESCRIPTION": "获得 !M! 点 敏捷 ， NL 回合结束失去 !M! 点 敏捷 "
+  },
+  "Yangmou": {
+    "NAME": "阳谋",
+    "DESCRIPTION": "造成伤害 NL 为 !M! 倍 计谋 ( !D! )"
+  },
+  "ArrowHit": {
+    "NAME": "弓箭一击",
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 给予 !M! 层 易伤, NL 弓箭 "
+  },
+  "DefensiveBack": {
+    "NAME": "防守反击",
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 获得 !B! 点 格挡 "
+  },
+  "ScabbardHit": {
+    "NAME": "剑鞘一击",
+    "DESCRIPTION": "造成 !D! 点 伤害, NL 给予 !M! 层 虚弱 "
+  },
+  "CloseCombat": {
+    "NAME": "近身搏斗",
+    "DESCRIPTION": "获得 !M! 层 易伤 , NL 造成 !D! 点 伤害 "
+  },
+  "RepairEquipment": {
+    "NAME": "修理装备",
+    "DESCRIPTION": "获得 !M! 层 多层护甲 , NL 获得 !B! 点 格挡 , NL  消耗 "
+  },
+  "Conspiracy": {
+    "NAME": "阴谋",
+    "DESCRIPTION": "抽1张牌，若为攻击牌，则获得1点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
+    "UPGRADE_DESCRIPTION": "抽1张牌，若为攻击牌，则获得2点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
+  },
+  "Trickery": {
+    "NAME": "诡计",
+    "DESCRIPTION": "抽1张牌，若为技能牌，则获得1点 力量 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
+    "UPGRADE_DESCRIPTION": "抽1张牌，若为技能牌，则获得2点 力量 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
+  },
+  "StepByStep": {
+    "NAME": "步步为营",
+    "DESCRIPTION": "获得 !B! 点 格挡 , 在 NL 抽牌堆加入1张 NL  阴谋 "
+  },
+  "InformationWork": {
+    "NAME": "情报工作",
+    "DESCRIPTION": "观看抽牌堆10张牌顺序，抽一张牌，下回合获得 [E] ",
+    "UPGRADE_DESCRIPTION": "观看抽牌堆10张牌顺序，抽一张牌，下回合获得 [E] [E] "
+  },
+  "BackupDefense": {
+    "NAME": "备用防御",
+    "DESCRIPTION": "获得 !B! 点 格挡 , NL 抽一张牌将一张牌放置于牌堆顶, 保留 。"
+  },
+  "SickWork": {
+    "NAME": "抱病坚持",
+    "DESCRIPTION": "获得1层 虚弱 ,抽 !M! 张 NL 牌 , 将1张牌 NL 放置于牌堆顶。"
+  },
+  "KnowLittle": {
+    "NAME": "略懂",
+    "DESCRIPTION": "给予2层 中毒 , NL 给予4层 标记 , NL 获得 1 点 计谋 ",
+    "UPGRADE_DESCRIPTION": "给予3层 中毒 , NL 给予6层 标记 , NL 获得 2 点 计谋 "
+  },
+  "HiddenKnife": {
+    "NAME": "藏刀",
+    "DESCRIPTION": "获得 !B! 点 格挡 ,从抽 NL 牌堆将一张攻击牌 NL 加入手牌, NL 获得1点 计谋 。"
+  },
+  "ThrowingKnife": {
+    "NAME": "飞刀",
+    "DESCRIPTION": "打出牌堆顶 NL 一张牌。"
+  },
+  "Bombard": {
+    "NAME": "当头炮",
+    "DESCRIPTION": "对所有敌人造 NL 成 !D! 点 伤害 , NL 并查看牌堆 NL 顶5张牌"
+  },
+  "Coping": {
+    "NAME": "策应",
+    "DESCRIPTION": "当前每有一名 NL 敌人, 抽一张牌",
+    "UPGRADE_DESCRIPTION": "当前每有一名 NL 敌人, 抽一张牌, NL 固有 "
+  },
+  "Theft": {
+    "NAME": "侠盗",
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 获得8 金币 , 消耗 ",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点 伤害 , NL 获得8 金币 "
+  },
+  "Command": {
+    "NAME": "指挥",
+    "DESCRIPTION": "获得 !M! 点 计谋 "
+  },
+  "ArrowRain": {
+    "NAME": "万箭齐发",
+    "DESCRIPTION": "对所有敌人造成 NL 2次 !D! 点伤害, 弓箭 NL 并弃掉所有攻击牌"
+  },
+  "Brainstorm": {
+    "NAME": "阴谋诡计",
+    "DESCRIPTION": "在你的X回合开始时, 阴谋 和 诡计 加入到你的手牌, 消耗 ",
+    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时, 阴谋 和 诡计 加入到你的手牌, 消耗 "
+  },
+  "Gamble": {
+    "NAME": "赌局",
+    "DESCRIPTION": "从3张任意颜色的技能牌中选择一张加入你的手牌， 消耗 ",
+    "UPGRADE_DESCRIPTION": "从3张任意颜色的技能牌中选择一张加入你的手牌，本回合耗能变为0， 消耗 "
+  },
+  "Seethrough": {
+    "NAME": "看破",
+    "DESCRIPTION": "移除自身 NL 所有负面状态 , 消耗 ",
+    "UPGRADE_DESCRIPTION": "移除自身 NL 所有负面状态"
+  },
+  "LoneWolf": {
+    "NAME": "独狼",
+    "DESCRIPTION": "所有攻击牌 NL 耗能变为999, NL 每打出一张技能牌, NL 对所有敌人造成 NL !M! 点 伤害 "
+  },
+  "DeviseStrategies": {
+    "NAME": "运筹帷幄",
+    "DESCRIPTION": "在你的回合开始时, NL 观看牌顶10张牌, NL 本回合立刻 NL 获得3点 计谋 ",
+    "UPGRADE_DESCRIPTION": "在你的回合开始时, NL 观看牌顶10张牌, NL 本回合立刻 NL 获得3点 计谋 , 固有 "
+  },
+  "JueShengQianLi": {
+    "NAME": "决胜千里",
+    "DESCRIPTION": "每当你用卡牌 NL 观看或放置牌堆顶时, NL 获得 !M! 点格挡"
+  },
+  "LaidoAttack": {
+    "NAME": "居合斩-斩击",
+    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! )， 如果未处于 收刀 状态则进入 收刀 状态"
+  },
+  "Battojutsu": {
+    "NAME": "纳刀术-神威",
+    "DESCRIPTION": "获得 !B! 点 格挡 , NL 获得 收刀 !M! 层"
+  },
+  "AbsoluteForce": {
+    "NAME": "一力降十会",
+    "DESCRIPTION": "造成 !D! 点伤害, NL 失去 !M! 点计谋"
+  },
+  "FieldDressing": {
+    "NAME": "战地止血",
+    "DESCRIPTION": "恢复 !M! 点 生命值 , NL 在抽排堆中加 NL 入一张 伤口 , 消耗 "
+  },
+  "FlashBang": {
+    "NAME": "闪光弹",
+    "DESCRIPTION": "所有敌人失去 !M! 点 力量 ， 消耗 "
+  },
+  "Sinpe": {
+    "NAME": "狙击",
+    "DESCRIPTION": "造成 !D! 点 伤害, NL 弓箭 "
+  },
+  "Archedback": {
+    "NAME": "弓背一击",
+    "DESCRIPTION": "造成 !D! 点 伤害 , 每打出一次耗能-1, 弓箭 "
+  },
+  "GodGuide": {
+    "NAME": "仙人指路",
+    "DESCRIPTION": "抽 !M! 张牌, 随机将一张牌放置于牌堆顶 ",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌, 将一张牌放置于牌堆顶  "
+  },
+  "OffensiveAttack": {
+    "NAME": "减负攻击",
+    "DESCRIPTION": "造成2次 !D! 点 伤害 ， 本回合每打出一张技能牌，该牌耗能-1 "
+  },
+  "LongPlanned": {
+    "NAME": "蓄谋已久",
+    "DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] ",
+    "UPGRADE_DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] [E] "
+  },
+  "WeaknessEffect": {
+    "NAME": "弱点特效",
+    "DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 5 的伤害 ( 总 !D! 点伤害)",
+    "UPGRADE_DESCRIPTION": "造成为对象 格挡 数 NL 的 !M! 倍 加 10 的伤害 ( 总 !D! 点伤害)"
+  },
+  "Contend": {
+    "NAME": "周旋",
+    "DESCRIPTION": "获得 !B! 点格挡，每存在一名敌人获得一次"
+  },
+  "Chameleon": {
+    "NAME": "变色龙",
+    "DESCRIPTION": "获得一层 无实体 , NL 受到伤害抽 !M! 张牌, NL 回合结束失去 NL 1点 敏捷 , 消耗 "
+  },
+  "Ambition": {
+    "NAME": "野心",
+    "DESCRIPTION": "当你有计谋层数小于等于2时, NL 获得 !M! 点 计谋 ",
+    "UPGRADE_DESCRIPTION": "当你计谋层数小于等于3时, NL 获得 !M! 点 计谋 "
+  },
+  "Torture": {
+    "NAME": "严刑拷打",
+    "DESCRIPTION": "本回合，所有攻击牌 NL 都将给予 NL 所有敌人一层 易伤 ",
+    "UPGRADE_DESCRIPTION": "本回合，所有攻击牌 NL 都将给予 NL 所有敌人一层 易伤 "
+  },
+  "Almighty": {
+    "NAME": "首尾兼顾",
+    "DESCRIPTION": "获得 !M! 点 敏捷 和 力量 "
+  },
+  "BattoWater": {
+    "NAME": "纳刀术-水",
+    "DESCRIPTION": "获得 !M! 层 收刀 和 止水 "
+  },
+  "LaidoWink": {
+    "NAME": "居合斩-瞬",
+    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! )， 如果未处于 收刀 状态则进入 收刀 状态"
+  },
+  "TooFocus": {
+    "NAME": "偏科",
+    "DESCRIPTION": "造成 !D! 点伤害,若敌人有 中毒 或 印记 或 人工制品 或 标记 ,则抽一张牌获得 [E] "
+  },
+  "PlotHit": {
+    "NAME": "图谋一击",
+    "DESCRIPTION": "造成 !D! 点伤害, NL 获得 !M! 点计谋, NL  弓箭 "
+  },
+  "Purposeful": {
+    "NAME": "成竹在胸",
+    "DESCRIPTION": "每回合开始，抽一张牌，将一张牌放置于牌堆顶 "
+  },
+  "AmnesiaAgain": {
+    "NAME": "再次失忆",
+    "DESCRIPTION": "获得 !M! 点 力量 和 敏捷 , 失去 999 层 计谋"
+  },
+  "BattoSky": {
+    "NAME": "纳刀术-天",
+    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌，下次打出前耗能为0, 进入 收刀 状态, 消耗 ",
+    "UPGRADE_DESCRIPTION": "随机 收刀 相关的牌 NL 升级 !M! 张加入手牌, NL 下次打出前耗能为0, NL 进入 收刀 状态, 消耗 "
+  },
+  "MirrorTrick": {
+    "NAME": "镜子戏法",
+    "DESCRIPTION": "造成 !D! 点伤害, NL 弓箭 , 消耗 "
+  },
+  "Skillful": {
+    "NAME": "穿杨射柳",
+    "DESCRIPTION": "随机 弓箭 相关的牌 !M! 张加入抽牌堆，本场战斗费用均为0, 消耗 "
+  },
+  "ShootingPractice": {
+    "NAME": "打靶",
+    "DESCRIPTION": "提高所有 弓箭 牌 NL  !M! 点伤害"
+  },
+  "InterlockingStratagems": {
+    "NAME": "连环计",
+    "DESCRIPTION": "每回合开始 NL 获得 !M! 点 计谋 "
+  },
+  "SwordMaster": {
+    "NAME": "剑圣",
+    "DESCRIPTION": "回合开始 获得一层 NL 收刀 ,若没有 止水 则 NL 获得 一层 止水 "
+  },
+  "Cardiotonic": {
+    "NAME": "强心剂",
+    "DESCRIPTION": "获得 [E] , NL 恢复6点生命值, NL  消耗 ",
+    "UPGRADE_DESCRIPTION": "获得 [E] [E] , NL 恢复8点生命值, NL  消耗 "
+  },
+  "InsectKiller": {
+    "NAME": "虫子杀手",
+    "DESCRIPTION": "击杀所有血量 NL 低于等于 !M! 的敌人 "
+  },
+  "Trump": {
+    "NAME": "底牌",
+    "DESCRIPTION": "直接触发 奇策 , NL 下回合失去3点 [E] , NL  保留 , 消耗 "
+  },
+  "MindControl": {
+    "NAME": "攻心",
+    "DESCRIPTION": "每次获得 计谋 增加1, NL 回合结束失去 NL !M! 点 力量 , !M! 点 敏捷 "
+  },
+  "WisdomForm": {
+    "NAME": "智慧形态",
+    "DESCRIPTION": "下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 ",
+    "UPGRADE_DESCRIPTION": "立刻触发 奇策 ,且 NL 下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 "
+  },
+  "GodSlay": {
+    "NAME": "鬼神居合斩",
+    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! ), 如果未处 NL 于 收刀 状态则 NL 进入 收刀 状态, 虚无 ",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! ), 如果未处 NL 于 收刀 状态则 NL 进入 收刀 状态 "
+  },
+  "CraftyPlan": {
+    "NAME": "神机妙算",
+    "DESCRIPTION": "当抽牌堆数等于弃牌堆 NL 数时,才可以打出, 对所有 NL 敌人造成 !D! 点伤害"
+  },
+  "PowerArmor": {
+    "NAME": "动力装甲",
+    "DESCRIPTION": "获得 !M! 多层护甲 , 且 格挡 不在你的 NL 回合开始时消失 "
+  },
+  "ExtremePill": {
+    "NAME": "极限药",
+    "DESCRIPTION": "获得 !M! 点 NL 临时 力量 和 NL 临时 敏捷 ,抽2张牌, NL  消耗 , 保留 ",
+    "UPGRADE_DESCRIPTION": "获得 !M! 点 NL 临时 力量 和 NL 临时 敏捷 ,抽3张牌, NL  消耗 , 保留 "
+  },
+  "IngeniousPlan": {
+    "NAME": "奇谋",
+    "DESCRIPTION": "弃掉所有手牌，选择抽牌中一张牌打出并 消耗 , 消耗 "
+  },
+  "SchemeAIntrigue": {
+    "NAME": "诡计多端",
+    "DESCRIPTION": "每回合开始, NL 将一张 诡计 , NL 加入你的手牌",
+    "UPGRADE_DESCRIPTION": "每回合开始, NL 将一张 诡计 , NL 加入你的手牌, 固有 "
+  },
+  "SilentAssassin": {
+    "NAME": "沉默刺客",
+    "DESCRIPTION": "给予 !M! 层 中毒 和 印记 , 消耗 "
+  },
+  "BurnStrongholds": {
+    "NAME": "火烧连营",
+    "DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得1点 计谋 NL 、, 消耗 ",
+    "UPGRADE_DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得 1点 计谋 "
+  },
+  "DaoistMagic": {
+    "NAME": "奇门遁甲",
+    "DESCRIPTION": "弃置所有手牌, NL 从抽牌堆选择2 NL 张牌加入手牌 , 消耗 ",
+    "UPGRADE_DESCRIPTION": "弃置所有手牌, NL 从抽牌堆选择2 NL 张牌加入手牌 "
+  },
+  "Accident": {
+    "NAME": "意外",
+    "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 ",
+    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 "
+  }
+}

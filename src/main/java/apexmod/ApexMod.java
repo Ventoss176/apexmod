@@ -134,8 +134,8 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
         if (Settings.language == Settings.GameLanguage.ZHS) {
             card = "localization/VMod_Apex_cards-zh.json";
             relic = "localization/VMod_Apex_relics-zh.json";
-            power = "localization/VMod_powers.json";
-            potion = "localization/VMod_potions.json";
+            power = "localization/VMod_powers_zh.json";
+            potion = "localization/VMod_potions_zh.json";
             //event = "localization/ThMod_YM_events-zh.json";
         } else {
             //其他语言配置的JSON
