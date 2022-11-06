@@ -1,5 +1,6 @@
 package relics;
 
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import cards.tempCards.Conspiracy;
 import cards.tempCards.Trickery;
@@ -26,6 +27,7 @@ public class Checkerboard extends CustomRelic {
     public static final String ID = "Checkerboard";
     private static final String IMG = "img/relics_Apex/Checkerboard.png";
     private static final String IMG_OTL = "img/relics_Apex/outline/Checkerboard.png";
+    public static int HAND_SIZE_ADD = 0;
 
     public Checkerboard() {
         super(ID, ImageMaster.loadImage(IMG), ImageMaster.loadImage(IMG_OTL), AbstractRelic.RelicTier.STARTER, AbstractRelic.LandingSound.MAGICAL);
@@ -59,7 +61,13 @@ public class Checkerboard extends CustomRelic {
 
     @Override
     public void onVictory() {
+        if(AbstractDungeon.player.hasRelic("PeakedCap")){
+            BaseMod.MAX_HAND_SIZE = 20;
+        }else {
+            BaseMod.MAX_HAND_SIZE = 10;
+        }
         //在胜利时触发
+
         this.counter = -1;
     }
 

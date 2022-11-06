@@ -1,6 +1,7 @@
 package relics;
 
 import actions.CostReduction;
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -9,6 +10,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
+import powers.HandSizePower;
 import powers.SchemePower;
 
 /**
@@ -28,20 +30,30 @@ public class PeakedCap extends CustomRelic {
     public void atBattleStart() {
         //在战斗开始时触发
         this.flash();
-        // this.addToBot(new GainEnergyAction(1));
-        this.addToBot(new DrawCardAction(3));
-        // this.addToTop(new CostReduction(AbstractDungeon.player, 99, true));
-        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new HandSizePower(AbstractDungeon.player, 10), 10));
+
     }
 
     @Override
-    public void onShuffle() {
-        this.flash();
-        // this.addToBot(new GainEnergyAction(1));
-        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-        this.addToBot(new DrawCardAction(3));
-        // this.addToTop(new CostReduction(AbstractDungeon.player, 99, true));
+    public void onEquip() {
+        super.onEquip();
+        BaseMod.MAX_HAND_SIZE += 10;
     }
+
+    @Override
+    public void onUnequip() {
+        super.onUnequip();
+        BaseMod.MAX_HAND_SIZE -= 10;
+    }
+
+    //    @Override
+//    public void onShuffle() {
+//        this.flash();
+//        // this.addToBot(new GainEnergyAction(1));
+//        this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
+//        this.addToBot(new DrawCardAction(3));
+//        // this.addToTop(new CostReduction(AbstractDungeon.player, 99, true));
+//    }
 
     public String getUpdatedDescription() {
         return this.DESCRIPTIONS[0];

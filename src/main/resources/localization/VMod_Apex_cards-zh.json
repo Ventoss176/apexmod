@@ -326,7 +326,7 @@
   },
   "BurnStrongholds": {
     "NAME": "火烧连营",
-    "DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张1点 计谋 , 消耗 ",
+    "DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得1点 计谋 NL 、, 消耗 ",
     "UPGRADE_DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得 1点 计谋 "
   },
   "DaoistMagic": {

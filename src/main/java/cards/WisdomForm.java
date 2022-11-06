@@ -1,6 +1,8 @@
 package cards;
 
 import actions.CostReduction;
+import actions.QiceAction;
+import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -50,9 +52,8 @@ public class WisdomForm extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 //        this.addToBot(new ApplyPowerAction(p, p, new DrawPower(p, this.magicNumber), this.magicNumber));
         if(this.upgraded){
-            this.addToBot(new GainEnergyAction(1));
-            this.addToBot(new DrawCardAction(2));
-            this.addToTop(new CostReduction(p, 99, true));
+//            BaseMod.MAX_HAND_SIZE += 999;
+            this.addToBot(new QiceAction());
             this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 3), 3));
         }else {
             this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 3), 3));

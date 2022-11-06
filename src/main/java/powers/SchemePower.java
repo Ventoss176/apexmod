@@ -1,6 +1,7 @@
 package powers;
 
 import actions.CostReduction;
+import actions.QiceAction;
 import com.megacrit.cardcrawl.actions.GameActionManager;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
@@ -100,10 +101,7 @@ public class SchemePower extends AbstractPower {
             return;
         }
         if (this.amount >= 8) {
-            CardCrawlGame.sound.play("STANCE_ENTER_CALM");
-            this.addToBot(new GainEnergyAction(1));
-            this.addToBot(new DrawCardAction(2));
-            this.addToTop(new CostReduction(this.owner, 99, true));
+            this.addToBot(new QiceAction());
             this.amount -= 8;
             if(this.amount != 0){
                 qiceFunction(this.amount);

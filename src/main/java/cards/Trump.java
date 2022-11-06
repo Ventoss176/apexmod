@@ -1,6 +1,7 @@
 package cards;
 
 import actions.CostReduction;
+import actions.QiceAction;
 import basemod.abstracts.CustomCard;
 import basemod.devcommands.energy.Energy;
 import cards.templates.SKCardRare;
@@ -47,10 +48,7 @@ public class Trump extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        CardCrawlGame.sound.play("STANCE_ENTER_CALM");
-        this.addToBot(new GainEnergyAction(1));
-        this.addToBot(new DrawCardAction(2));
-        this.addToTop(new CostReduction(p, 99, true));
+        this.addToBot(new QiceAction());
         this.addToBot(new ApplyPowerAction(p, p, new TrumpPower(p, this.magicNumber), this.magicNumber));
     }
     @Override

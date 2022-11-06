@@ -1,5 +1,6 @@
 package relics;
 
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import cards.tempCards.Conspiracy;
 import cards.tempCards.Trickery;
@@ -69,6 +70,11 @@ public class ChineseCheckerboard extends CustomRelic {
 
     @Override
     public void onVictory() {
+        if(AbstractDungeon.player.hasRelic("PeakedCap")){
+            BaseMod.MAX_HAND_SIZE = 20;
+        }else {
+            BaseMod.MAX_HAND_SIZE = 10;
+        }
         //在胜利时触发
         this.counter = -1;
     }

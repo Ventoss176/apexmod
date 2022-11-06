@@ -1,6 +1,7 @@
 package powers;
 
 import actions.CostReduction;
+import actions.QiceAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -58,14 +59,10 @@ public class WisdomFormPower extends AbstractPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (!card.purgeOnUse && this.amount > 0 && AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1) {
-                CardCrawlGame.sound.play("STANCE_ENTER_CALM");
-                this.addToBot(new GainEnergyAction(1));
-                this.addToBot(new DrawCardAction(2));
-                this.addToTop(new CostReduction(this.owner, 99, true));
+            this.addToBot(new QiceAction());
             }
 
     }
-
 
 
 
