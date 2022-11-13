@@ -1,0 +1,342 @@
+{
+  "Strike_Apex": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! damage."
+  },
+  "Defend_Apex": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block."
+  },
+  "Provoke": {
+    "NAME": "Provoke",
+    "DESCRIPTION": "Deal !D! damage. NL Reduce a random card's NL cost by 1 this turn.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Reduce a card's NL cost by 1 this turn."
+  },
+  "Formation": {
+    "NAME": "Formation",
+    "DESCRIPTION": "Gain !B! Block. NL Look at the top !M! NL cards of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Look at the top !M! NL cards of your draw pile."
+  },
+  "Layout": {
+    "NAME": "Layout",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Plan.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Gain !M! Plan."
+  },
+  "Shoot": {
+    "NAME": "Fire!",
+    "DESCRIPTION": "Deal !D! damage. NL Lose !M! Plan",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! Plan"
+  },
+  "SkillSword": {
+    "NAME": "Skillfull Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Put a card from your NL hand onto the top fo NL your pile.Next turn NL draw !M! additional cards."
+  },
+  "StrengthSword": {
+    "NAME": "Powerful Slash",
+    "DESCRIPTION": "Deal !D! damage !M! NL times.You cannot draw NL additional cards this NL turn."
+  },
+  "AFlash": {
+    "NAME": "A Flash",
+    "DESCRIPTION": "Gain !M! Dexterity.At the end of this turn NL lose !M! Dexterity."
+  },
+  "Yangmou": {
+    "NAME": "Open Conspiracy",
+    "DESCRIPTION": "Deal !M!x Plan NL damage( !D! )."
+  },
+  "ArrowHit": {
+    "NAME": "Arrow Hit",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Arrow."
+  },
+  "DefensiveBack": {
+    "NAME": "Defensive Attack",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block."
+  },
+  "ScabbardHit": {
+    "NAME": "Sheath Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "CloseCombat": {
+    "NAME": "Close Combat",
+    "DESCRIPTION": "Gain !M! Vulnerable. NL Deal !D! damage. "
+  },
+  "RepairEquipment": {
+    "NAME": "Repair Equipments",
+    "DESCRIPTION": "Gain !M! *Plated *Armor. NL Gain !B! Block. NL  Exhaust."
+  },
+  "Conspiracy": {
+    "NAME": "Conspiracy",
+    "DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Attack card, gain 1 Dexterity, NL gain !M! Plan. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Attack card, gain 2 Dexterity, NL gain !M! Plan. NL Exhaust."
+  },
+  "Trickery": {
+    "NAME": "Trickery",
+    "DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Skill card, NL gain 1 Strength, NL gain !M! Plan. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Skill card, NL gain 2 Strength, NL gain !M! Plan. NL Exhaust."
+  },
+  "StepByStep": {
+    "NAME": "StepByStep",
+    "DESCRIPTION": "Gain !B! Block. NL Shuffle a Conspiracy NL into your draw pile."
+  },
+  "InformationWork": {
+    "NAME": "Information Work",
+    "DESCRIPTION": "Look at the top 10 NL cards of your draw pile. NL Draw 1 card. NL Next turn gain [E] .",
+    "UPGRADE_DESCRIPTION": "Look at the top 10 NL cards of your draw pile. NL Draw 1 card. NL Next turn gain [E] [E] ."
+  },
+  "BackupDefense": {
+    "NAME": "Backup Defense",
+    "DESCRIPTION": " Retain.Gain !B! Block. NL Draw 1 card. NL Put a card from your hand onto the top of your draw pile."
+  },
+  "SickWork": {
+    "NAME": "Hard Work",
+    "DESCRIPTION": "Gain 1 Weak. Draw !M! cards. NL Put a card from your hand onto the top of your draw pile."
+  },
+  "KnowLittle": {
+    "NAME": "Know A Little",
+    "DESCRIPTION": "Apply 2 Poison. NL Apply 4 Markv. NL Gain 1 Plan.",
+    "UPGRADE_DESCRIPTION": "Apply 3 Poison. NL Apply 6 Markv. NL Gain 2 Plan."
+  },
+  "HiddenKnife": {
+    "NAME": "Hidden Knife",
+    "DESCRIPTION": "Gain !B! Block. NL Put an Attack from your draw pile into your hand."
+  },
+  "ThrowingKnife": {
+    "NAME": "Throw Knife",
+    "DESCRIPTION": "Play the top card of your draw pile."
+  },
+  "Bombard": {
+    "NAME": "Bombard",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Look at the top 5 NL cards of your draw pile."
+  },
+  "Coping": {
+    "NAME": "Coping",
+    "DESCRIPTION": "Draw 1 card for NL each enemy in combat.",
+    "UPGRADE_DESCRIPTION": " Innate. NL Draw 1 card for NL each enemy in combat."
+  },
+  "Theft": {
+    "NAME": "Steal",
+    "DESCRIPTION": "Deal !D! damage. NL gain 8 Gold. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL gain 8 Gold."
+  },
+  "Command": {
+    "NAME": "Command",
+    "DESCRIPTION": "Gain !M! Plan ."
+  },
+  "ArrowRain": {
+    "NAME": "Arrows Rain",
+    "DESCRIPTION": "Deal !D! damage to ALL NL enemies 2 times. Arrow. Discard all Attacks in your hand."
+  },
+  "Brainstorm": {
+    "NAME": "Brainstorming",
+    "DESCRIPTION": "Put a *Conspiracy and a *Trickery into your hand at the start of your next X turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put a *Conspiracy and a *Trickery into your hand at the start of your next X+1 turns. NL Exhaust."
+  },
+  "Gamble": {
+    "NAME": "Gamble",
+    "DESCRIPTION": "Choose 1 of 3 Skills of any color to add into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 Skills of any color to add into your hand. NL It costs 0 this turn. NL Exhaust."
+  },
+  "Seethrough": {
+    "NAME": "See through",
+    "DESCRIPTION": "Remove all of your debuffs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Remove all of your debuffs."
+  },
+  "LoneWolf": {
+    "NAME": "Lone Wolf",
+    "DESCRIPTION": "Attacks cost 999. NL Whenever you play a Skill card this combat, NL deal !M! damage to ALL enemies."
+  },
+  "DeviseStrategies": {
+    "NAME": "Operation",
+    "DESCRIPTION": "Gain 3 Plan. At the start of your turn, Look at the top 10 cards of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 3 Plan. At the start of your turn, Look at the top 10 cards of your draw pile."
+  },
+  "JueShengQianLi": {
+    "NAME": "Good Plan",
+    "DESCRIPTION": "Whenever you look at the top cards of your draw pile or put a card from your hand onto the top of your draw pile, NL gain !M! Block."
+  },
+  "LaidoAttack": {
+    "NAME": "lai Spirit Slash",
+    "DESCRIPTION": "Deal !D! damage. NL If you have Sheathe, deal !D! damge again. If you don't have Sheathe, gain 1 Sheathe."
+  },
+  "Battojutsu": {
+    "NAME": "Sacred Sheathe",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! Sheathe."
+  },
+  "AbsoluteForce": {
+    "NAME": "Absolute Force",
+    "DESCRIPTION": "Deal !D! damage. NL Lose !M! Plan."
+  },
+  "FieldDressing": {
+    "NAME": "Field Dressing",
+    "DESCRIPTION": "Heal !M! HP. NL Shuffle a *Wound NL into your draw pile. NL Exhaust."
+  },
+  "FlashBang": {
+    "NAME": "Flashbang",
+    "DESCRIPTION": "ALL enemies lose !M! Strength. NL Exhaust."
+  },
+  "Sinpe": {
+    "NAME": "Sinpe",
+    "DESCRIPTION": "Deal !D! damage. NL Arrow."
+  },
+  "Archedback": {
+    "NAME": "Bow Slam",
+    "DESCRIPTION": "Deal !D! damage. NL Reduce this card's cost by !M! this combat. NL Arrow."
+  },
+  "GodGuide": {
+    "NAME": "Divine guidance",
+    "DESCRIPTION": "Draw !M! cards. NL Put a *random card from your hand onto the top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Put a card from your hand onto the top of your draw pile."
+  },
+  "OffensiveAttack": {
+    "NAME": "Release Power",
+    "DESCRIPTION": "Costs 1 less [E] NL for each Skill card played this turn. NL Deal !D! damage 2 times."
+  },
+  "LongPlanned": {
+    "NAME": "Long planned",
+    "DESCRIPTION": "If you have !M! or more Plan , NL gain [E] [E] .",
+    "UPGRADE_DESCRIPTION": "If you have !M! or more Plan , NL gain [E] [E] [E] ."
+  },
+  "WeaknessEffect": {
+    "NAME": "Weakness Exploit",
+    "DESCRIPTION": "Deal !M!x enemy's Block plus 5 damage ( !D! ).",
+    "UPGRADE_DESCRIPTION": "Deal !M!x enemy's Block plus 10 damage ( !D! )."
+  },
+  "Contend": {
+    "NAME": "Guerrilla Warfare",
+    "DESCRIPTION": "Gain !B! Block for NL each enemy in combat."
+  },
+  "Chameleon": {
+    "NAME": "Chameleon",
+    "DESCRIPTION": "Gain 1 Intangible. NL Next time you lose HP, draw !M! cards.At end of this turn, lose 1 Dexterity. NL Exhaust."
+  },
+  "Ambition": {
+    "NAME": "Ambition",
+    "DESCRIPTION": "If you have 2 or less Plan, NL gain !M! Plan.",
+    "UPGRADE_DESCRIPTION": "If you have 3 or less Plan, NL gain !M! Plan."
+  },
+  "Torture": {
+    "NAME": "Torture",
+    "DESCRIPTION": "Apply 1 Vulnerable to ALL enemies for each Attack card played this turn.",
+    "UPGRADE_DESCRIPTION": "Apply 1 Vulnerable to ALL enemies for each Attack card played this turn."
+  },
+  "Almighty": {
+    "NAME": "Strength Dexterity",
+    "DESCRIPTION": "Gain !M! Dexterity. NL Gain !M! Strength."
+  },
+  "BattoWater": {
+    "NAME": "Water Sheathe",
+    "DESCRIPTION": "Gain !M! Sheathe. NL Gain !M! Waterstop."
+  },
+  "LaidoWink": {
+    "NAME": "lai Slash",
+    "DESCRIPTION": "Deal !D! damage. NL If you have Sheathe, deal !D! damge again. If you don't have Sheathe, gain 1 Sheathe."
+  },
+  "TooFocus": {
+    "NAME": "Advantage",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy has Poison / Mark / NL Markv / Artifact, NL gain [E] and NL draw 1 card."
+  },
+  "PlotHit": {
+    "NAME": "Planned Hit",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Plan. NL Arrow. "
+  },
+  "Purposeful": {
+    "NAME": "Purposeful Plan",
+    "DESCRIPTION": "At the start of your turn, draw 1 card and put a card from your hand onto the top of your draw pile."
+  },
+  "AmnesiaAgain": {
+    "NAME": "Amnesia Again",
+    "DESCRIPTION": "Gain !M! Strength. NL Gain !M! Dexterity. NL Lose 999 Plan."
+  },
+  "BattoSky": {
+    "NAME": "Tian Sheathe",
+    "DESCRIPTION": "Put !M! Sheathe cards into your hand, they costs 0 until played. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put !M! *Sheathe+ cards into your hand, they costs 0 until played. NL Exhaust."
+  },
+  "MirrorTrick": {
+    "NAME": "Mirror Trick",
+    "DESCRIPTION": "Deal !D! damage. NL Arrow. NL Exhaust."
+  },
+  "Skillful": {
+    "NAME": "Marksman",
+    "DESCRIPTION": "Shuffle !M! random Arrows into your draw pile. They cost 0 this combat. NL Exhaust."
+  },
+  "ShootingPractice": {
+    "NAME": "Shooting Practice",
+    "DESCRIPTION": "Arrows deal !M! additional damage."
+  },
+  "InterlockingStratagems": {
+    "NAME": "More Plans",
+    "DESCRIPTION": "At the start of your turn, gain !M! Plan."
+  },
+  "SwordMaster": {
+    "NAME": "Swordmaster",
+    "DESCRIPTION": "At the start of your turn, gain 1 Sheathe, if you don't have Waterstop, gain 1 Waterstop."
+  },
+  "Cardiotonic": {
+    "NAME": "Cardiotonic",
+    "DESCRIPTION": "Gain [E]. NL Heal 6 HP. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Gain [E] [E]. NL Heal 8 HP. NL Exhaust."
+  },
+  "InsectKiller": {
+    "NAME": "Insect Slayer",
+    "DESCRIPTION": "Kill all enemies with not greater than !M! HP."
+  },
+  "Trump": {
+    "NAME": "Ace",
+    "DESCRIPTION": "Retain. NL Trigger Strategy. NL Next turn lose [E] [E] [E]. NL Exhaust. "
+  },
+  "MindControl": {
+    "NAME": "Psywar",
+    "DESCRIPTION": "Whenever you gain Plan, gain 1 additional Plan.  NL At the end of your turn lose !M! Strength, NL lose !M! Dexterity."
+  },
+  "WisdomForm": {
+    "NAME": "Wisdom Form",
+    "DESCRIPTION": "Next !M! turns, the first card you play will trigger Strategy. At the end of your turn, lose 1 Dexterity, lose 1 Strength.",
+    "UPGRADE_DESCRIPTION": "Trigger Strategy. Next !M! turns, the first card you play will trigger Strategy. At the end of your turn, lose 1 Dexterity, lose 1 Strength."
+  },
+  "GodSlay": {
+    "NAME": "Spirit Release Slash",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL If you have Sheathe, deal !D! damge again. If you don't have Sheathe, gain 1 Sheathe.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL If you have Sheathe, deal !D! damge again. If you don't have Sheathe, gain 1 Sheathe."
+  },
+  "CraftyPlan": {
+    "NAME": "Crafty Plan",
+    "DESCRIPTION": "Can only be played if your draw pile is equal to discard pile. NL Deal !D! damage to ALL enemies."
+  },
+  "PowerArmor": {
+    "NAME": "Power Armor",
+    "DESCRIPTION": "Gain !M! *Plated *Armor. NL Block is not removed at the start of your turn."
+  },
+  "ExtremePill": {
+    "NAME": "Ultimate pill",
+    "DESCRIPTION": "Retain. Gain !M! Dexterity. Gain !M! Strength. At the end of this turn NL lose !M! Dexterity, lose !M! Dexterity.Draw 2 cards. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Gain !M! Dexterity. Gain !M! Strength. At the end of this turn NL lose !M! Dexterity, lose !M! Dexterity.Draw 3 cards. Exhaust."
+  },
+  "IngeniousPlan": {
+    "NAME": "Unexpected Plan",
+    "DESCRIPTION": "Discard your hand. Choose a card in your draw pile. Play the chosen card and exhaust it. NL Exhaust."
+  },
+  "SchemeAIntrigue": {
+    "NAME": "Crafty",
+    "DESCRIPTION": "At the start of your turn, add a *Trickery into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a *Trickery into your hand."
+  },
+  "SilentAssassin": {
+    "NAME": "Silent Assassin",
+    "DESCRIPTION": ""
+  },
+  "BurnStrongholds": {
+    "NAME": "Burn All",
+    "DESCRIPTION": "Exhaust all non-Skill cards and Starter Defends in your hand.Gain 1 Plan for each card Exhausted. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Exhaust all non-Skill cards and Starter Defends in your hand.Gain 1 Plan for each card Exhausted."
+  },
+  "DaoistMagic": {
+    "NAME": "Daoist Magic",
+    "DESCRIPTION": "Discard your hand. NL Put 2 card from your draw pile into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard your hand. Put 2 card from your draw pile into your hand."
+  },
+  "Accident": {
+    "NAME": "Accident",
+    "DESCRIPTION": "Retain. Retain your hand this turn. Gain 1 Plan. NL Next turn gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Retain. Retain your hand this turn. Gain 1 Plan. NL Next turn gain [E] [E]."
+  }
+}

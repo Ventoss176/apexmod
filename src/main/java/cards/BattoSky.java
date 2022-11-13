@@ -64,7 +64,7 @@ public class BattoSky extends CustomCard {
 
 
         // this.addToBot(new DrawBattoToHandAction(this.magicNumber));
-        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, 1),1));
+//        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, 1),1));
 
     }
 

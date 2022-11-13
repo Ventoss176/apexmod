@@ -43,8 +43,17 @@ public class BowArrowAction extends AbstractGameAction {
                 AbstractDungeon.player.hand.refreshHandLayout();
                 this.isDone = true;
             } else {
-                AbstractDungeon.handCardSelectScreen.open("选择一张牌", 1, false);
-                this.tickDuration();
+                if (Settings.language == Settings.GameLanguage.ZHS) {
+                    AbstractDungeon.handCardSelectScreen.open("放置于牌堆顶", 1, false);
+                    this.tickDuration();
+                } else if (Settings.language == Settings.GameLanguage.ENG) {
+                    AbstractDungeon.handCardSelectScreen.open("put on top of your draw pile.", 1, false);
+                    this.tickDuration();
+                } else {
+                    AbstractDungeon.handCardSelectScreen.open("put on top of your draw pile.", 1, false);
+                    this.tickDuration();
+                }
+
             }
         } else {
             if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {

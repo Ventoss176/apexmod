@@ -1,0 +1,79 @@
+{
+  "Checkerboard": {
+    "NAME": "Chess Board",
+    "FLAVOR": "You don't know how to play this kind of chess, but you can learn it.",
+    "DESCRIPTIONS": [
+      "Whenever you draw #b16 cards, gain #b2 #yStrength, gain #b2 #yDexterity, put a #yConspiracy into your hand. At the end of this turn lose #b2 #yDexterity, lose #b2 #yDexterity. Whenever you trigger #yStrategy, increase #yHand #ySize by #b2 this combat."
+    ]
+  },
+  "SilkBag": {
+    "NAME": "Silk Bag",
+    "FLAVOR": "This is Zhuge Liang's relic.",
+    "DESCRIPTIONS": [
+      "Start each combat with #b3 Plan. "
+    ]
+  },
+  "FeatherFan": {
+    "NAME": "Feather Fan",
+    "FLAVOR": "It looks very elegant.",
+    "DESCRIPTIONS": [
+      "Whenever you draw #b16 cards, gain [E] ."
+    ]
+  },
+  "Yamato": {
+    "NAME": "Yamato",
+    "FLAVOR": "Bury The Light.",
+    "DESCRIPTIONS": [
+      " #ySheathe 's magnification is adjusted to #b1.5."
+    ]
+  },
+  "ChineseChessHorse": {
+    "NAME": "Chinese Chess Horse",
+    "FLAVOR": "Masters can skillfully use this.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add #b2 #yConspiracies into your hand."
+    ]
+  },
+  "ChessHorse": {
+    "NAME": "Chess Knight",
+    "FLAVOR": "You don't know how to play it.",
+    "DESCRIPTIONS": [
+      "At the start of each combat, add #b2 #yTrickeries into your hand."
+    ]
+  },
+  "ChineseCheckerboard": {
+    "NAME": "Chinese Chess Board",
+    "FLAVOR": "You are good at playing this kind of chess, but you can't learn more things from it.",
+    "DESCRIPTIONS": [
+      "Replaces #rChess #rBoard. Whenever you draw #b16 cards, gain #b1 #yStrength, gain #b1 #yDexterity, put a #yTrickery into your hand. Whenever you trigger #yStrategy, increase #yHand #ySize by #b2 this combat."
+    ]
+  },
+  "PeakedCap": {
+    "NAME": "PeakedCap",
+    "FLAVOR": "You look very handsome.",
+    "DESCRIPTIONS": [
+      "Increase #yHand #ySize by #b10."
+    ]
+  },
+  "SilverDancer": {
+    "NAME": "Silver Dancer",
+    "FLAVOR": "This weapon may have come from a super assassin.",
+    "DESCRIPTIONS": [
+      "Whenever you draw a card, deal #b1 damage to a random enemy."
+    ]
+  },
+  "Vest": {
+    "NAME": "Vest",
+    "FLAVOR": "Don't get hurt!",
+    "DESCRIPTIONS": [
+      "Whenever you draw #b3 cards, gain #b3 #yBlock."
+    ]
+  },
+  "CamBow": {
+    "NAME": "CamBow",
+    "FLAVOR": "Almost all archers have amazing strength.",
+    "DESCRIPTIONS": [
+      "All the cards with #yArrow effect placed at the top of your draw pile will cost 0 util played."
+    ]
+  }
+}

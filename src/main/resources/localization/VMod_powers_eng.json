@@ -1,0 +1,160 @@
+{
+  "Scheme": {
+    "NAME": "Plan",
+    "DESCRIPTIONS": [
+      "When you obtain #b8 #yPlan ,trigger #yStrategy."
+    ]
+  },
+  "Brainstorm": {
+    "NAME": "Brainstorm",
+    "DESCRIPTIONS": [
+      "At the start of your next turn, put a #yTrickery and a #yConspiracy into your hand."
+    ]
+  },
+  "LoneWolf": {
+    "NAME": "Lone Wolf",
+    "DESCRIPTIONS": [
+      "Attacks cost #b999 ."
+    ]
+  },
+  "LoneWolfA": {
+    "NAME": "Lone Wolf Power",
+    "DESCRIPTIONS": [
+      "Whenever you play a Skill card,  deal #b"," damage to ALL enemies."
+    ]
+  },
+  "DeviseStrategies": {
+    "NAME": "Operation",
+    "DESCRIPTIONS": [
+      "At the start of your turn, Look at the top #b"," cards of your draw pile."
+    ]
+  },
+  "JueShengQianLi": {
+    "NAME": "Good Plan",
+    "DESCRIPTIONS": [
+      "Whenever you look at the top cards of your draw pile or put a card from your hand onto the top of your draw pile, gain #b",
+      " #yBlock."
+    ]
+  },
+  "Sheath": {
+    "NAME": "Sheathe",
+    "DESCRIPTIONS": [
+      "Your next Attack deal ( #b1.35 ^ #y"," )x damage. MAX #ySheathe is #b5.",
+      "Your next Attack deal ( #b1.5 ^ #y"," )x damage. MAX #ySheathe is #b5."
+    ]
+  },
+  "Chameleon": {
+    "NAME": "Chameleon",
+    "DESCRIPTIONS": [
+      "The next time you lose HP, draw #b",
+      " cards."
+
+    ]
+  },
+  "Torture": {
+    "NAME": "Torture",
+    "DESCRIPTIONS": [
+      "Whenever you play a Attack card, apply #b",
+      " #yVulnerable to ALL enemies."
+    ]
+  },
+  "Purposeful": {
+    "NAME": "Purposeful",
+    "DESCRIPTIONS": [
+      "At the start of your turn, draw #b",
+      " card and put #b",
+      " card on the top of your draw pile.",
+      "At the start of your turn, draw #b",
+      " cards and put #b",
+      " cards on the top of your draw pile."
+    ]
+  },
+  "InterlockingStratagems": {
+    "NAME": "More Plans",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b",
+      " #yPlan."
+    ]
+  },
+  "SwordMaster": {
+    "NAME": "Swordmaster",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain #b"," #ySheathe, if you don't have Waterstop , gain #b", " #yWaterstop."
+    ]
+  },
+  "Trump": {
+    "NAME": "Ace",
+    "DESCRIPTIONS": [
+      "Next turn lose #b",
+      " [E] "
+    ]
+  },
+  "MindControl": {
+    "NAME": "Psywar",
+    "DESCRIPTIONS": [
+      "Whenever you gain Plan, gain #b",
+      " additional Plan."
+    ]
+  },
+  "SchemeAIntrigue": {
+    "NAME": "Crafty",
+    "DESCRIPTIONS": [
+      "At the start of your turn, add #b",
+      " #yTrickery into your hand.",
+      "At the start of your turn, add #b",
+      " #yTrickeries into your hand."
+    ]
+  },
+  "BurnStrongholds": {
+    "NAME": "异世界格斗术",
+    "DESCRIPTIONS": [
+      "手牌中所有0耗能牌打出均可以抽",
+      " 张牌"
+    ]
+  },
+  "ShootingPractice": {
+    "NAME": "Shooting Practice",
+    "DESCRIPTIONS": [
+      "#yArrows deal #b",
+      " additional damage."
+    ]
+  },
+  "NewMarkPower": {
+    "NAME": "Markv",
+    "DESCRIPTIONS": [
+      "Whenever you play #yPressure #yPoints or #yKnow #yA #yLittle, loses #b",
+      " HP."
+    ]
+  },
+  "HeartWater": {
+    "NAME": "Waterstop",
+    "DESCRIPTIONS": [
+      "If you have Sheathe ,you next Attack will not lose #ySheathe but lose 1 #yWaterstop."
+    ]
+  },
+  "WisdomForm": {
+    "NAME": "Wisdom Form",
+    "DESCRIPTIONS": [
+      "The first card you play each turn will trigger #yStrategy. You have #b",
+      " turn left."
+    ]
+  },
+  "WisdomFormDebuff": {
+    "NAME": "The Price of Wisdom",
+    "DESCRIPTIONS": [
+      "At the end of your turn, lose #b",
+      " #yDexterity, lose #b",
+      " #yStrength."
+    ]
+  },
+  "HandSizePower": {
+    "NAME": "Hand Size",
+    "DESCRIPTIONS": [
+      "Increase Hand Size by #b",
+      " this combat. "
+    ]
+  }
+
+
+
+}

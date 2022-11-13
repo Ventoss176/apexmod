@@ -20,7 +20,8 @@
   "LoneWolfA": {
     "NAME": "独狼之力",
     "DESCRIPTIONS": [
-      "每打出一张技能牌造成该状态层数的伤害 "
+      "每打出一张技能牌造成",
+      "伤害"
     ]
   },
   "DeviseStrategies": {
@@ -69,7 +70,7 @@
   "InterlockingStratagems": {
     "NAME": "连环计",
     "DESCRIPTIONS": [
-      "每回合开始若没有计谋，获得",
+      "每回合开始，获得",
       "点 计谋 "
     ]
   },
@@ -97,7 +98,7 @@
     "NAME": "诡计多端",
     "DESCRIPTIONS": [
       "每回合开始加入",
-      " #y阴谋 和 #y诡计 到手牌"
+      " 张 #y诡计 到手牌"
     ]
   },
   "BurnStrongholds": {

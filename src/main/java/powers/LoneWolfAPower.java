@@ -31,7 +31,7 @@ public class LoneWolfAPower extends AbstractPower {
         this.name = NAME;
         this.ID = "Panache";
         this.owner = owner;
-        this.amount = 5;
+        this.amount = damage;
         this.damage = damage;
         this.updateDescription();
         this.loadRegion("panache");
@@ -39,7 +39,7 @@ public class LoneWolfAPower extends AbstractPower {
 
     public void updateDescription() {
         // if (this.amount == 1) {
-            this.description = DESCRIPTIONS[0];
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
         // } else {
         //     this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[3] + this.damage + DESCRIPTIONS[2];
         // }

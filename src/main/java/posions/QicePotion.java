@@ -1,12 +1,14 @@
 package posions;
 
 import actions.CostReduction;
+import actions.QiceAction;
 import basemod.abstracts.CustomPotion;
 import characters.Apex;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.GameDictionary;
 import com.megacrit.cardcrawl.helpers.PowerTip;
@@ -35,16 +37,22 @@ public class QicePotion extends CustomPotion {
 
     public void initializeData() {
         this.potency = this.getPotency();
-        this.description = potionStrings.DESCRIPTIONS[0] + this.potency + potionStrings.DESCRIPTIONS[1];
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+            this.description = potionStrings.DESCRIPTIONS[0] + this.potency + potionStrings.DESCRIPTIONS[1];
+        } else{
+            this.description = potionStrings.DESCRIPTIONS[0] + this.potency + potionStrings.DESCRIPTIONS[1];
+        }
         this.tips.clear();
         this.tips.add(new PowerTip(this.name, this.description));
         this.tips.add(new PowerTip(TipHelper.capitalize(GameDictionary.BLOCK.NAMES[0]), (String)GameDictionary.keywords.get(GameDictionary.BLOCK.NAMES[0])));
     }
 
     public void use(AbstractCreature target) {
-        this.addToBot(new GainEnergyAction(1*this.potency));
-        this.addToBot(new DrawCardAction(2*this.potency));
-        this.addToTop(new CostReduction(AbstractDungeon.player, 99, true));
+        for (int i = 0; i < this.potency; i++) {
+            this.addToBot(new QiceAction());
+        }
+
+
     }
 
     public int getPotency(int ascensionLevel) {

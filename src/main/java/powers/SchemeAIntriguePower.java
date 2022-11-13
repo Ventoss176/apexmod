@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.cards.tempCards.Smite;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -59,7 +60,21 @@ public class SchemeAIntriguePower extends AbstractPower {
 
     public void updateDescription() {
 
-        this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+
+            this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
+
+        } else {
+            if (this.amount == 1){
+
+                this.description = powerStrings.DESCRIPTIONS[0] + this.amount + powerStrings.DESCRIPTIONS[1];
+            }else {
+
+                this.description = powerStrings.DESCRIPTIONS[2] + this.amount + powerStrings.DESCRIPTIONS[3];
+
+            }
+        }
+
 
     }
 }

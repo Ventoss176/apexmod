@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -36,33 +37,20 @@ public class PurposefulPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
+
+        } else {
+            if (this.amount == 1){
+                this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + this.amount + DESCRIPTIONS[2];
+            }else {
+                this.description = DESCRIPTIONS[3] + this.amount + DESCRIPTIONS[4] + this.amount + DESCRIPTIONS[5];
+
+            }
+        }
     }
 
-    // @Override
-    // public void atEndOfTurn(boolean isPlayer) {
-    //     if(AbstractDungeon.player.hasPower("Scheme") &&  AbstractDungeon.player.getPower("Scheme").amount > 0 ){
-    //         int scheme = AbstractDungeon.player.getPower("Scheme").amount;
-    //         this.amount *= scheme;
-    //         this.addToBot(new GainBlockAction(this.owner, this.owner, this.amount));
-    //     }
-    //
-    // }
 
-//    @Override
-//    public void atStartOfTurn() {
-//        if(AbstractDungeon.player.hasPower("Scheme") &&  AbstractDungeon.player.getPower("Scheme").amount > 0 ){
-//            int scheme = AbstractDungeon.player.getPower("Scheme").amount;
-//            if(scheme > 0){
-//
-//                scheme *= this.amount ;
-//                this.addToBot(new GainBlockAction(this.owner, this.owner, scheme));
-//            }else{
-//                this.addToBot(new GainBlockAction(this.owner, this.owner, 0));
-//            }
-//
-//        }
-//    }
 
     @Override
     public void atStartOfTurnPostDraw() {

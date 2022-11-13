@@ -11,10 +11,6 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.UIStrings;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.util.Strings;
 
 import java.time.Duration;
 import java.util.ArrayList;
@@ -33,7 +29,7 @@ public class CostReduction extends AbstractGameAction {
     private boolean isRandom;
     public static int numCostReduce;
     public static float DURATION;
-    public static final Logger logger = LogManager.getLogger(CostReduction.class);
+//    public static final Logger logger = LogManager.getLogger(CostReduction.class);
 
     public CostReduction(AbstractCreature target, int amount, boolean isRandom) {
         this.p = (AbstractPlayer)target;
@@ -51,13 +47,13 @@ public class CostReduction extends AbstractGameAction {
                 return;
             }
             if(this.p.hand.size() <= this.amount){
-                logger.info("hand.size <= 1");
+//                logger.info("hand.size <= 1");
                 // System.out.println("hand.size <= 1");
                 Iterator var1 = this.p.hand.group.iterator();
 
                 while(var1.hasNext()) {
-                    logger.info("All card cost -1");
-                    System.out.println("All card cost -1");
+//                    logger.info("All card cost -1");
+//                    System.out.println("All card cost -1");
                     AbstractCard c = (AbstractCard)var1.next();
                     if (c.costForTurn > 0) {
                         c.costForTurn = c.costForTurn - 1;
@@ -71,10 +67,16 @@ public class CostReduction extends AbstractGameAction {
 
 
             if(!isRandom){
-                // logger.info("No Random Cost -1");
+//                 logger.info("No Random Cost -1");
                 // System.out.println("No Random card cost -1");
                 numCostReduce = this.amount;
-                AbstractDungeon.handCardSelectScreen.open("减少耗能", this.amount, false, true);
+                if (Settings.language == Settings.GameLanguage.ZHS) {
+                    AbstractDungeon.handCardSelectScreen.open("减少耗能", this.amount, false, true);
+                } else if (Settings.language == Settings.GameLanguage.ENG) {
+                    AbstractDungeon.handCardSelectScreen.open("to reduce Cost", this.amount, false, true);
+                } else {
+                    AbstractDungeon.handCardSelectScreen.open("to reduce Cost", this.amount, false, true);
+                }
                 this.addToBot(new WaitAction(0.25F));
                 this.tickDuration();
                 return;
@@ -101,7 +103,7 @@ public class CostReduction extends AbstractGameAction {
         }
 
         if (!AbstractDungeon.handCardSelectScreen.wereCardsRetrieved) {
-            logger.info("Select Card Cost -1");
+//            logger.info("Select Card Cost -1");
             // System.out.println("Select card cost -1");
             Iterator var4 = AbstractDungeon.handCardSelectScreen.selectedCards.group.iterator();
 

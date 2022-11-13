@@ -3,6 +3,7 @@ package powers;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
@@ -46,7 +47,15 @@ public class WisdomFormDebuffPower extends AbstractPower {
     }
 
     public void updateDescription() {
-        this.description = DESCRIPTIONS[0] + -this.amount + DESCRIPTIONS[1];
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+
+            this.description = DESCRIPTIONS[0] + -this.amount + DESCRIPTIONS[1];
+        } else {
+
+            this.description = DESCRIPTIONS[0] + -this.amount + DESCRIPTIONS[1] + -this.amount + DESCRIPTIONS[2];
+
+        }
+
     }
 
 

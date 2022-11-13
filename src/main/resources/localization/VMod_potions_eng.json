@@ -1,0 +1,14 @@
+{
+  "ArrowPotion": {
+    "NAME": "Arrow Potion",
+    "DESCRIPTIONS": ["Choose #b", " of 3 Skills of any color to add into your hand. It costs 0 this turn."]
+  },
+  "QicePotion": {
+    "NAME": "Strategy Potion",
+    "DESCRIPTIONS": ["Trigger #b", " #yStrategy."]
+  },
+  "SheathPotion": {
+    "NAME": "Sheathe Potion",
+    "DESCRIPTIONS": ["Gain #b", " #ySheathe."]
+  }
+}

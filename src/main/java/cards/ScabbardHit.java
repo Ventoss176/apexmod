@@ -32,7 +32,7 @@ public class ScabbardHit extends CustomCard {
     public static final String ID = "ScabbardHit";
     public ScabbardHit() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.COMMON, CardTarget.ENEMY);
-        // this.tags.add(BaseModCardTags.BASIC_STRIKE);
+        this.tags.add(CardTags.STRIKE);
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = 1;
         this.magicNumber = baseMagicNumber;

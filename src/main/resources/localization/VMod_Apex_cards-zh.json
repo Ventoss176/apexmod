@@ -52,7 +52,7 @@
     "DESCRIPTION": "造成 !D! 点 伤害 , NL 获得 !B! 点 格挡 "
   },
   "ScabbardHit": {
-    "NAME": "剑鞘一击",
+    "NAME": "剑鞘打击",
     "DESCRIPTION": "造成 !D! 点 伤害, NL 给予 !M! 层 虚弱 "
   },
   "CloseCombat": {
@@ -248,8 +248,8 @@
   },
   "BattoSky": {
     "NAME": "纳刀术-天",
-    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌，下次打出前耗能为0, 进入 收刀 状态, 消耗 ",
-    "UPGRADE_DESCRIPTION": "随机 收刀 相关的牌 NL 升级 !M! 张加入手牌, NL 下次打出前耗能为0, NL 进入 收刀 状态, 消耗 "
+    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌，下次打出前耗能为0, 消耗 ",
+    "UPGRADE_DESCRIPTION": "随机 收刀 相关的牌 NL 升级 !M! 张加入手牌, NL 下次打出前耗能为0, 消耗 "
   },
   "MirrorTrick": {
     "NAME": "镜子戏法",
@@ -326,7 +326,7 @@
   },
   "BurnStrongholds": {
     "NAME": "火烧连营",
-    "DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得1点 计谋 NL 、, 消耗 ",
+    "DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得1点 计谋 NL , 消耗 ",
     "UPGRADE_DESCRIPTION": " 消耗 手牌所有非技能 NL 牌和基础防御牌, NL 每张获得 1点 计谋 "
   },
   "DaoistMagic": {

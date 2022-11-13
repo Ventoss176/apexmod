@@ -1,5 +1,6 @@
 package apexmod;
 
+import actions.CostReduction;
 import basemod.BaseMod;
 import basemod.interfaces.*;
 import cards.*;
@@ -59,6 +60,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
     public static final Color DEEPRED = CardHelper.getColor(255, 99, 71);
     private ArrayList<AbstractCard> cardsToAdd = new ArrayList<>();
     public static ArrayList<AbstractCard> recyclecards = new ArrayList<>();
+//    public static final Logger logger = LogManager.getLogger(CostReduction.class);
 
     public ApexMod() {
         //构造方法，初始化各种参数
@@ -123,6 +125,17 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 #y点穴 或者 #y略懂 时可以造成对应层数的伤害");
             BaseMod.addKeyword(new String[] { "略懂" }, "略懂是顶尖猎杀者的一张牌");
 
+        }else {
+//            System.out.println("eng keyword start....");
+            BaseMod.addKeyword(new String[] { "Strategy", "strategy" }, "When you trigger #yStrategy, reduce all hand's cost by #b1 this turn, draw #b2 cards, gain [E] .");
+            BaseMod.addKeyword(new String[] { "Plan", "plan" }, "When you obtain #b8 #yPlan ,trigger #yStrategy.");
+            BaseMod.addKeyword(new String[] { "Sheathe", "sheathe" }, "Your next Attack deal ( #b1.35 ^ #ySheathe )x damage. MAX #ySheathe is #b5.");
+            BaseMod.addKeyword(new String[] { "Waterstop", "waterstop"}, "If you have Sheathe ,you next Attack will not lose #ySheathe but lose 1 #yWaterstop.");
+            BaseMod.addKeyword(new String[] { "Arrow","arrow","Arrows","arrows" }, "Draw #b1 card.Put #b1 card from your hand onto the top of your draw pile.If you put a #yArrow card, it costs #b0 until played.");
+            BaseMod.addKeyword(new String[] { "Conspiracy","conspiracy","Conspiracies","conspiracies" }, " #yConspiracy :Draw #b1 card.If you draw a Attack card, gain #b1 #yDexterity and #b2 #yPlan , #yExhaust , #yRetain.");
+            BaseMod.addKeyword(new String[] { "Trickery","trickery","Trickeries","trickeries" }, " #yTrickery :Draw #b1 card.If you draw a Skill card, gain #b1 #yStrength and #b2 #yPlan , NL  #yExhaust , #yRetain.");
+            BaseMod.addKeyword(new String[] { "Markv","markv" }, "Whenever you play #yPressure #yPoints or #yKnow #yA #yLittle, the enemy loses #yMark plus #yMarkv HP.");
+//            System.out.println("eng keyword end....");
         }
 
     }
@@ -138,7 +151,10 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             potion = "localization/VMod_potions_zh.json";
             //event = "localization/ThMod_YM_events-zh.json";
         } else {
-            //其他语言配置的JSON
+            card = "localization/VMod_Apex_cards-eng.json";
+            relic = "localization/VMod_Apex_relics-eng.json";
+            power = "localization/VMod_powers_eng.json";
+            potion = "localization/VMod_potions_eng.json";
         }
 
         String relicStrings = Gdx.files.internal(relic).readString(String.valueOf(StandardCharsets.UTF_8));

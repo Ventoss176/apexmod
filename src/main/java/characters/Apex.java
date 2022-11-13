@@ -114,11 +114,11 @@ public class Apex extends CustomPlayer {
             title = "顶尖猎杀者";
             flavor = "使用智慧来作战的杀手,寻求真理而来, NL 又或许得到的只是虚无,没有人能够知道答案";
         } else if (Settings.language == Settings.GameLanguage.ENG) {
-            title = "顶尖猎杀者";
-            flavor = "An assassin who uses wisdom to fight come from seeking truth, NL or she may get nothing, and no one can know the answer.";
-            //当设定为中国台湾省，title和flavor为繁体描述
+            title = "Apex Predator";
+            flavor = "An assassin who uses her wisdom to seek truth, NL she may get nothing, but no one knows the answer.";
         } else {
-            //其他用英文替代
+            title = "Apex Predator";
+            flavor = "An assassin who uses her wisdom to seek truth, NL she may get nothing, but no one knows the answer.";
         }
 
         return new CharSelectInfo(title, flavor, STARTING_HP, MAX_HP,HAND_SIZE , STARTING_GOLD, ASCENSION_MAX_HP_LOSS, this, getStartingRelics(), getStartingDeck(), false);
@@ -208,9 +208,9 @@ public class Apex extends CustomPlayer {
         if (Settings.language == Settings.GameLanguage.ZHS) {
             heartText = "这就是心脏吗？ 你出刀挥舞了好几次, 结果是";
         } else if (Settings.language == Settings.GameLanguage.ENG) {
-            heartText = "Apex Predator";
+            heartText = "Is this the heart? You waved the blade several times, and the result is";
         } else {
-            heartText = "Apex Predator";
+            heartText = "Is this the heart? You waved the blade several times, and the result is";
         }
         return heartText;
     }
@@ -230,8 +230,15 @@ public class Apex extends CustomPlayer {
 
     @Override
     public String getVampireText() {
-
-        return "我想上次你已经拒绝过我了, NL 所以这次呢?";
+        String vampireText;
+        if (Settings.language == Settings.GameLanguage.ZHS) {
+            vampireText = "我想上次你已经拒绝过我了, NL 所以这次呢?";
+        } else if (Settings.language == Settings.GameLanguage.ENG) {
+            vampireText = "I think you refused me last time, so what about this time?";
+        } else {
+            vampireText = "I think you refused me last time, so what about this time?";
+        }
+        return vampireText;
     }
     //允许开启终局
     public void applyEndOfTurnTriggers() {

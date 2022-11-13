@@ -52,34 +52,15 @@ public class StargazingAction extends AbstractGameAction {
                         tmpGroup.addToTop((AbstractCard) AbstractDungeon.player.drawPile.group.get(AbstractDungeon.player.drawPile.size() - i - 1));
                     }
                 }
-                // } else {
-                //     Iterator var5 = AbstractDungeon.player.drawPile.group.iterator();
-                //
-                //     while(var5.hasNext()) {
-                //         c = (AbstractCard)var5.next();
-                //         tmpGroup.addToBottom(c);
-                //     }
-                // }
 
-                AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, "观看牌顶");
+                if (Settings.language == Settings.GameLanguage.ZHS) {
+                    AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, "观看牌顶");
+                } else if (Settings.language == Settings.GameLanguage.ENG) {
+                    AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, "The top cards of your draw pile.");
+                } else {
+                    AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, "The top cards of your draw pile.");
+                }
             }
-            // else if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
-            //     var1 = AbstractDungeon.gridSelectScreen.selectedCards.iterator();
-
-                // while(var1.hasNext()) {
-                //     c = (AbstractCard)var1.next();
-                //     AbstractDungeon.player.drawPile.moveToDiscardPile(c);
-                // }
-
-                // AbstractDungeon.gridSelectScreen.selectedCards.clear();
-            // }
-
-            // var1 = AbstractDungeon.player.discardPile.group.iterator();
-
-            // while(var1.hasNext()) {
-            //     c = (AbstractCard)var1.next();
-            //     c.triggerOnScry();
-            // }
 
             this.tickDuration();
         }
