@@ -37,13 +37,13 @@ public class PeakedCap extends CustomRelic {
     @Override
     public void onEquip() {
         super.onEquip();
-        BaseMod.MAX_HAND_SIZE += 10;
+        BaseMod.MAX_HAND_SIZE += 4;
     }
 
     @Override
     public void onUnequip() {
         super.onUnequip();
-        BaseMod.MAX_HAND_SIZE -= 10;
+        BaseMod.MAX_HAND_SIZE -= 4;
     }
 
     //    @Override
