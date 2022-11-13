@@ -35,12 +35,12 @@ public class QiceAction extends AbstractGameAction {
             this.addToBot(new DrawCardAction(2));
             this.addToTop(new CostReduction(AbstractDungeon.player, 99, true));
 //            HAND_SIZE_ADD += 2;
-            if(AbstractDungeon.player.hasRelic("Checkerboard") ||
-                    AbstractDungeon.player.hasRelic("ChineseCheckerboard")){
-                this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new HandSizePower(AbstractDungeon.player, 2), 2));
-                BaseMod.MAX_HAND_SIZE += 2;
-
-            }
+//            if(AbstractDungeon.player.hasRelic("Checkerboard") ||
+//                    AbstractDungeon.player.hasRelic("ChineseCheckerboard")){
+//                this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new HandSizePower(AbstractDungeon.player, 2), 2));
+//                BaseMod.MAX_HAND_SIZE += 2;
+//
+//            }
         }
         this.isDone = true;
 

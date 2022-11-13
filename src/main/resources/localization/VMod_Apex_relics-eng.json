@@ -3,7 +3,7 @@
     "NAME": "Chess Board",
     "FLAVOR": "You don't know how to play this kind of chess, but you can learn it.",
     "DESCRIPTIONS": [
-      "Whenever you draw #b16 cards, gain #b2 #yStrength, gain #b2 #yDexterity, put a #yConspiracy into your hand. At the end of this turn lose #b2 #yDexterity, lose #b2 #yDexterity. Whenever you trigger #yStrategy, increase #yHand #ySize by #b2 this combat."
+      "Whenever you draw #b16 cards, gain #b2 #yStrength, gain #b2 #yDexterity, put a #yConspiracy into your hand. At the end of this turn lose #b2 #yStrength, lose #b2 #yDexterity."
     ]
   },
   "SilkBag": {
@@ -45,14 +45,14 @@
     "NAME": "Chinese Chess Board",
     "FLAVOR": "You are good at playing this kind of chess, but you can't learn more things from it.",
     "DESCRIPTIONS": [
-      "Replaces #rChess #rBoard. Whenever you draw #b16 cards, gain #b1 #yStrength, gain #b1 #yDexterity, put a #yTrickery into your hand. Whenever you trigger #yStrategy, increase #yHand #ySize by #b2 this combat."
+      "Replaces #rChess #rBoard. Whenever you draw #b16 cards, gain #b1 #yStrength, gain #b1 #yDexterity, put a #yTrickery into your hand."
     ]
   },
   "PeakedCap": {
     "NAME": "PeakedCap",
     "FLAVOR": "You look very handsome.",
     "DESCRIPTIONS": [
-      "Increase #yHand #ySize by #b10."
+      "At the start of your turn, reduce a random card's NL cost by 1 this turn. Increase #yHand #ySize by #b4."
     ]
   },
   "SilverDancer": {

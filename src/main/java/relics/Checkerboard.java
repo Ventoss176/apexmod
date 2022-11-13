@@ -61,11 +61,11 @@ public class Checkerboard extends CustomRelic {
 
     @Override
     public void onVictory() {
-        if(AbstractDungeon.player.hasRelic("PeakedCap")){
-            BaseMod.MAX_HAND_SIZE = 20;
-        }else {
-            BaseMod.MAX_HAND_SIZE = 10;
-        }
+//        if(AbstractDungeon.player.hasRelic("PeakedCap")){
+//            BaseMod.MAX_HAND_SIZE = 14;
+//        }else {
+//            BaseMod.MAX_HAND_SIZE = 10;
+//        }
         //在胜利时触发
 
         this.counter = -1;

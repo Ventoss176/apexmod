@@ -30,8 +30,14 @@ public class PeakedCap extends CustomRelic {
     public void atBattleStart() {
         //在战斗开始时触发
         this.flash();
-        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new HandSizePower(AbstractDungeon.player, 10), 10));
+        this.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new HandSizePower(AbstractDungeon.player, 4), 4));
 
+    }
+
+    @Override
+    public void atTurnStartPostDraw() {
+        this.flash();
+        this.addToBot(new CostReduction(AbstractDungeon.player, 1, true));
     }
 
     @Override

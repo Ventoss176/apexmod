@@ -1,5 +1,6 @@
 package cards;
 
+import actions.CostReduction;
 import basemod.abstracts.CustomCard;
 import cards.templates.SkillCardTem;
 import com.megacrit.cardcrawl.actions.common.PlayTopCardAction;
@@ -33,13 +34,14 @@ public class ThrowingKnife extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        // this.baseMagicNumber = 1;
-        // this.magicNumber = 1;
+         this.baseMagicNumber = 1;
+         this.magicNumber = 1;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         this.addToBot(new PlayTopCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster((AbstractMonster)null, true, AbstractDungeon.cardRandomRng), false));
+        AbstractDungeon.actionManager.addToBottom(new CostReduction(p, this.magicNumber, false));
     }
     @Override
     public AbstractCard makeCopy() {
@@ -54,9 +56,10 @@ public class ThrowingKnife extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeBaseCost(0);
+//            this.upgradeBaseCost(0);
+            this.upgradeMagicNumber(1);
+            this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
-            // this.upgradeMagicNumber(1);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }
     }

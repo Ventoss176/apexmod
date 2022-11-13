@@ -1,6 +1,7 @@
 package cards;
 
 import actions.BowArrowAction;
+import actions.CostReduction;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -50,7 +51,8 @@ public class Archedback extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage,this.damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
-        this.addToBot(new ReduceCostAction(this.uuid, this.magicNumber));
+//        this.addToBot(new ReduceCostAction(this.uuid, this.magicNumber));
+        this.addToBot(new CostReduction(p, this.magicNumber, false));
         this.addToBot(new DrawCardAction(p, 1));
         this.addToBot(new BowArrowAction());
     }

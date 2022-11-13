@@ -101,7 +101,7 @@
   },
   "ThrowingKnife": {
     "NAME": "飞刀",
-    "DESCRIPTION": "打出牌堆顶 NL 一张牌。"
+    "DESCRIPTION": "打出牌堆顶 NL 一张牌, 选择 !M! 张牌减少 [E] ."
   },
   "Bombard": {
     "NAME": "当头炮",
@@ -179,7 +179,7 @@
   },
   "Archedback": {
     "NAME": "弓背一击",
-    "DESCRIPTION": "造成 !D! 点 伤害 , 每打出一次耗能-1, 弓箭 "
+    "DESCRIPTION": "造成 !D! 点 伤害 , 选择 !M! 张牌减少 [E] , 弓箭 "
   },
   "GodGuide": {
     "NAME": "仙人指路",

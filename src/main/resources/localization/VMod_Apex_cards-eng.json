@@ -101,7 +101,8 @@
   },
   "ThrowingKnife": {
     "NAME": "Throw Knife",
-    "DESCRIPTION": "Play the top card of your draw pile."
+    "DESCRIPTION": "Play the top card of your draw pile. NL Reduce !M! card's NL cost by 1 this turn.",
+    "UPGRADE_DESCRIPTION": "Play the top card of your draw pile. NL Reduce !M! cards's NL cost by 1 this turn."
   },
   "Bombard": {
     "NAME": "Bombard",
@@ -114,7 +115,7 @@
   },
   "Theft": {
     "NAME": "Steal",
-    "DESCRIPTION": "Deal !D! damage. NL gain 8 Gold. Exhaust.",
+    "DESCRIPTION": "Deal !D! damage. NL gain 8 Gold. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL gain 8 Gold."
   },
   "Command": {
@@ -179,7 +180,7 @@
   },
   "Archedback": {
     "NAME": "Bow Slam",
-    "DESCRIPTION": "Deal !D! damage. NL Reduce this card's cost by !M! this combat. NL Arrow."
+    "DESCRIPTION": "Deal !D! damage. NL Reduce !M! card's NL cost by 1 this turn. NL Arrow."
   },
   "GodGuide": {
     "NAME": "Divine guidance",
