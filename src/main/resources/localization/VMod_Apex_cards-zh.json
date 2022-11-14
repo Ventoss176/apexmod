@@ -65,13 +65,13 @@
   },
   "Conspiracy": {
     "NAME": "阴谋",
-    "DESCRIPTION": "抽1张牌，若为攻击牌，则获得1点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
-    "UPGRADE_DESCRIPTION": "抽1张牌，若为攻击牌，则获得2点 敏捷 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
+    "DESCRIPTION": "抽1张牌，若为攻击牌，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
+    "UPGRADE_DESCRIPTION": "抽1张牌，若为攻击牌，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
   },
   "Trickery": {
     "NAME": "诡计",
-    "DESCRIPTION": "抽1张牌，若为技能牌，则获得1点 力量 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
-    "UPGRADE_DESCRIPTION": "抽1张牌，若为技能牌，则获得2点 力量 ，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
+    "DESCRIPTION": "抽1张牌，若为技能牌，获得 !M! 层 计谋 ， NL  消耗 ， 保留 ",
+    "UPGRADE_DESCRIPTION": "抽1张牌，若为技能牌，获得 !M! 层 计谋 ， NL  消耗 ， 保留 "
   },
   "StepByStep": {
     "NAME": "步步为营",
@@ -101,7 +101,8 @@
   },
   "ThrowingKnife": {
     "NAME": "飞刀",
-    "DESCRIPTION": "打出牌堆顶 NL 一张牌, 选择 !M! 张牌减少 [E] ."
+    "DESCRIPTION": "打出牌堆顶 NL !M! 张牌, 选择 1 张牌减少 [E] .",
+    "UPGRADE_DESCRIPTION": "打出牌堆顶 NL !M! 张牌, 选择 1 张牌减少 [E] ."
   },
   "Bombard": {
     "NAME": "当头炮",
@@ -127,8 +128,8 @@
   },
   "Brainstorm": {
     "NAME": "阴谋诡计",
-    "DESCRIPTION": "在你的X回合开始时, 阴谋 和 诡计 加入到你的手牌, 消耗 ",
-    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时, 阴谋 和 诡计 加入到你的手牌, 消耗 "
+    "DESCRIPTION": "在你的X回合开始时, 阴谋 *+ 和 诡计 *+ 加入到你的手牌, 消耗 ",
+    "UPGRADE_DESCRIPTION": "在你的X+1回合开始时, 阴谋 *+ 和 诡计 *+ 加入到你的手牌, 消耗 "
   },
   "Gamble": {
     "NAME": "赌局",
@@ -211,7 +212,7 @@
   "Ambition": {
     "NAME": "野心",
     "DESCRIPTION": "当你有计谋层数小于等于2时, NL 获得 !M! 点 计谋 ",
-    "UPGRADE_DESCRIPTION": "当你计谋层数小于等于3时, NL 获得 !M! 点 计谋 "
+    "UPGRADE_DESCRIPTION": "当你计谋层数小于等于4时, NL 获得 !M! 点 计谋 "
   },
   "Torture": {
     "NAME": "严刑拷打",
@@ -248,8 +249,8 @@
   },
   "BattoSky": {
     "NAME": "纳刀术-天",
-    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌，下次打出前耗能为0, 消耗 ",
-    "UPGRADE_DESCRIPTION": "随机 收刀 相关的牌 NL 升级 !M! 张加入手牌, NL 下次打出前耗能为0, 消耗 "
+    "DESCRIPTION": "随机 收刀 相关的牌 !M! 张加入手牌, NL 下次打出前耗能为0, NL 获得 !M! 层收刀, 消耗 ",
+    "UPGRADE_DESCRIPTION": "随机 收刀 相关的牌 NL 升级 !M! 张加入手牌, NL 下次打出前耗能为0, NL 获得 !M! 层收刀, 消耗 "
   },
   "MirrorTrick": {
     "NAME": "镜子戏法",

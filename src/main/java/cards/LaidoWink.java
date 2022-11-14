@@ -25,7 +25,7 @@ public class LaidoWink extends CustomCard {
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/LaidoWink.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 10;
+    private static final int ATTACK_DMG = 9;
     private static final int UPGRADE_PLUS_DMG = 2;
     public static final String ID = "LaidoWink";
     public LaidoWink() {

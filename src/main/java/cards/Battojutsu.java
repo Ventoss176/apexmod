@@ -23,8 +23,8 @@ public class Battojutsu extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 1;
-    private static final int BLOCK_AMT = 8;
-    private static final int UPGRADE_PLUS_BLOCK = 3;
+    private static final int BLOCK_AMT = 7;
+    private static final int UPGRADE_PLUS_BLOCK = 2;
     public static final String ID = "Battojutsu";
     public static final String IMG_PATH = "img/cards_Apex/Battojutsu.png";
 

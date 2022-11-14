@@ -40,8 +40,10 @@ public class ThrowingKnife extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        this.addToBot(new PlayTopCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster((AbstractMonster)null, true, AbstractDungeon.cardRandomRng), false));
-        AbstractDungeon.actionManager.addToBottom(new CostReduction(p, this.magicNumber, false));
+        for (int i = 0; i < this.magicNumber; i++) {
+            this.addToBot(new PlayTopCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster((AbstractMonster)null, true, AbstractDungeon.cardRandomRng), false));
+        }
+        AbstractDungeon.actionManager.addToBottom(new CostReduction(p, 1, false));
     }
     @Override
     public AbstractCard makeCopy() {

@@ -62,7 +62,7 @@ public class LoneWolf extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeBaseCost(2);
+//            this.upgradeBaseCost(3);
             this.upgradeMagicNumber(5);
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);

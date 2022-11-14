@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Trickery;
 import cards.templates.PCardRare;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -36,6 +37,7 @@ public class SchemeAIntrigue extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         // this.baseMagicNumber = 1;
         // this.magicNumber = 1;
+        this.cardsToPreview = new Trickery();
     }
 
     @Override

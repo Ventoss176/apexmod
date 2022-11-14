@@ -34,7 +34,9 @@ public class Brainstorm extends CustomCard {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.Apex_COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
-        this.cardsToPreview = new Trickery();
+        AbstractCard card = new Trickery();
+        card.upgrade();
+        this.cardsToPreview = card;
         // this.magicNumber = 1;
         this.exhaust = true;
     }

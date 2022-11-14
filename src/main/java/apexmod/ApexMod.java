@@ -120,8 +120,8 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "收刀" }, "下一张攻击牌额外 #b1.35 倍层数伤害,最大为 #b5 层");
             BaseMod.addKeyword(new String[] { "止水" }, "如果当拥有 收刀 状态但是打出攻击牌时不消耗 #y收刀 消耗一层 #y止水 ");
             BaseMod.addKeyword(new String[] { "弓箭" }, "抽 #b1 张牌，选择 #b1 张放置于牌堆顶，如果放置的是 #y弓箭 牌，则下次打出前耗能为 #b0 ");
-            BaseMod.addKeyword(new String[] { "阴谋" }, " #y阴谋 是顶尖猎杀者一张牌:抽 #b1 张牌，若为攻击牌，则获得 #b1 点 #y敏捷 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
-            BaseMod.addKeyword(new String[] { "诡计" }, " #y诡计 是顶尖猎杀者一张牌:抽 #b1 张牌，若为技能牌，则获得 #b1 点 #y力量 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
+            BaseMod.addKeyword(new String[] { "阴谋" }, " #y阴谋 是顶尖猎杀者一张牌:抽 #b1 张牌，若为攻击牌 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
+            BaseMod.addKeyword(new String[] { "诡计" }, " #y诡计 是顶尖猎杀者一张牌:抽 #b1 张牌，若为技能牌 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
             BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 #y点穴 或者 #y略懂 时可以造成对应层数的伤害");
             BaseMod.addKeyword(new String[] { "略懂" }, "略懂是顶尖猎杀者的一张牌");
 
@@ -132,8 +132,8 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "Sheathe", "sheathe" }, "Your next Attack deal ( #b1.35 ^ #ySheathe )x damage. MAX #ySheathe is #b5.");
             BaseMod.addKeyword(new String[] { "Waterstop", "waterstop"}, "If you have Sheathe ,you next Attack will not lose #ySheathe but lose 1 #yWaterstop.");
             BaseMod.addKeyword(new String[] { "Arrow","arrow","Arrows","arrows" }, "Draw #b1 card.Put #b1 card from your hand onto the top of your draw pile.If you put a #yArrow card, it costs #b0 until played.");
-            BaseMod.addKeyword(new String[] { "Conspiracy","conspiracy","Conspiracies","conspiracies" }, " #yConspiracy :Draw #b1 card.If you draw a Attack card, gain #b1 #yDexterity and #b2 #yPlan , #yExhaust , #yRetain.");
-            BaseMod.addKeyword(new String[] { "Trickery","trickery","Trickeries","trickeries" }, " #yTrickery :Draw #b1 card.If you draw a Skill card, gain #b1 #yStrength and #b2 #yPlan , NL  #yExhaust , #yRetain.");
+            BaseMod.addKeyword(new String[] { "Conspiracy","conspiracy","Conspiracies","conspiracies" }, " #yConspiracy :Draw #b1 card.If you draw a Attack card, gain #b2 #yPlan , #yExhaust , #yRetain.");
+            BaseMod.addKeyword(new String[] { "Trickery","trickery","Trickeries","trickeries" }, " #yTrickery :Draw #b1 card.If you draw a Skill card, gain #b2 #yPlan , NL  #yExhaust , #yRetain.");
             BaseMod.addKeyword(new String[] { "Markv","markv" }, "Whenever you play #yPressure #yPoints or #yKnow #yA #yLittle, the enemy loses #yMark plus #yMarkv HP.");
 //            System.out.println("eng keyword end....");
         }

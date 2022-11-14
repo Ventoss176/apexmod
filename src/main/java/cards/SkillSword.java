@@ -30,7 +30,7 @@ public class SkillSword extends CustomCard {
     public static final String IMG_PATH = "img/cards_Apex/SkillSword.png";
     private static final int COST = 1;
     private static final int ATTACK_DMG = 9;
-    private static final int UPGRADE_PLUS_DMG = 3;
+    private static final int UPGRADE_PLUS_DMG = 2;
     public static final String ID = "SkillSword";
 
     public SkillSword() {

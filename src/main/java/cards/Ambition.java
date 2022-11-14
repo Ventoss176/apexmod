@@ -35,8 +35,8 @@ public class Ambition extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 5;
-        this.magicNumber = 5;
+        this.baseMagicNumber = 4;
+        this.magicNumber = 4;
         // this.exhaust = true;
     }
 
@@ -44,7 +44,7 @@ public class Ambition extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(p.hasPower("Scheme")){
             if(this.upgraded){
-                if(p.getPower("Scheme").amount <= 3){
+                if(p.getPower("Scheme").amount <= 4){
                     this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
 
                 }
@@ -73,7 +73,7 @@ public class Ambition extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
             this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBaseCost(2);

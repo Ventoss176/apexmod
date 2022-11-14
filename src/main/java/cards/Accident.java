@@ -60,10 +60,10 @@ public class Accident extends CustomCard {
             //更改名字和提高3点格挡
             this.upgradeName();
             // this.selfRetain = true;
+             this.upgradeMagicNumber(1);
             this.rawDescription = UPGRADED_DESCRIPTION;
-            this.upgradeBaseCost(0);
+//            this.upgradeBaseCost(0);
             this.initializeDescription();
-            // this.upgradeMagicNumber(1);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }
     }

@@ -27,7 +27,7 @@ public class ScabbardHit extends CustomCard {
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String IMG_PATH = "img/cards_Apex/ScabbardHit.png";
     private static final int COST = 1;
-    private static final int ATTACK_DMG = 10;
+    private static final int ATTACK_DMG = 9;
     private static final int UPGRADE_PLUS_DMG = 2;
     public static final String ID = "ScabbardHit";
     public ScabbardHit() {

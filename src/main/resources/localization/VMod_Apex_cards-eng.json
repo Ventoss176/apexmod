@@ -65,13 +65,13 @@
   },
   "Conspiracy": {
     "NAME": "Conspiracy",
-    "DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Attack card, gain 1 Dexterity, NL gain !M! Plan. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Attack card, gain 2 Dexterity, NL gain !M! Plan. NL Exhaust."
+    "DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Attack card, NL gain !M! Plan. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Attack card, NL gain !M! Plan. NL Exhaust."
   },
   "Trickery": {
     "NAME": "Trickery",
-    "DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Skill card, NL gain 1 Strength, NL gain !M! Plan. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Skill card, NL gain 2 Strength, NL gain !M! Plan. NL Exhaust."
+    "DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Skill card, NL gain !M! Plan. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": " Retain. Draw 1 card. NL If you draw a *Skill card, NL gain !M! Plan. NL Exhaust."
   },
   "StepByStep": {
     "NAME": "StepByStep",
@@ -84,7 +84,7 @@
   },
   "BackupDefense": {
     "NAME": "Backup Defense",
-    "DESCRIPTION": " Retain.Gain !B! Block. NL Draw 1 card. NL Put a card from your hand onto the top of your draw pile."
+    "DESCRIPTION": " Retain. Gain !B! Block. NL Draw 1 card. NL Put a card from your hand onto the top of your draw pile."
   },
   "SickWork": {
     "NAME": "Hard Work",
@@ -101,8 +101,8 @@
   },
   "ThrowingKnife": {
     "NAME": "Throw Knife",
-    "DESCRIPTION": "Play the top card of your draw pile. NL Reduce !M! card's NL cost by 1 this turn.",
-    "UPGRADE_DESCRIPTION": "Play the top card of your draw pile. NL Reduce !M! cards's NL cost by 1 this turn."
+    "DESCRIPTION": "Play the top card of your draw pile. NL Reduce a card's NL cost by 1 this turn.",
+    "UPGRADE_DESCRIPTION": "Play the top 2 cards of your draw pile. NL Reduce a card's NL cost by 1 this turn."
   },
   "Bombard": {
     "NAME": "Bombard",
@@ -128,8 +128,8 @@
   },
   "Brainstorm": {
     "NAME": "Brainstorming",
-    "DESCRIPTION": "Put a *Conspiracy and a *Trickery into your hand at the start of your next X turns. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Put a *Conspiracy and a *Trickery into your hand at the start of your next X+1 turns. NL Exhaust."
+    "DESCRIPTION": "Put a *Conspiracy+ and a *Trickery+ into your hand at the start of your next X turns. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put a *Conspiracy+ and a *Trickery+ into your hand at the start of your next X+1 turns. NL Exhaust."
   },
   "Gamble": {
     "NAME": "Gamble",
@@ -212,7 +212,7 @@
   "Ambition": {
     "NAME": "Ambition",
     "DESCRIPTION": "If you have 2 or less Plan, NL gain !M! Plan.",
-    "UPGRADE_DESCRIPTION": "If you have 3 or less Plan, NL gain !M! Plan."
+    "UPGRADE_DESCRIPTION": "If you have 4 or less Plan, NL gain !M! Plan."
   },
   "Torture": {
     "NAME": "Torture",
@@ -249,8 +249,8 @@
   },
   "BattoSky": {
     "NAME": "Tian Sheathe",
-    "DESCRIPTION": "Put !M! Sheathe cards into your hand, they costs 0 until played. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Put !M! *Sheathe+ cards into your hand, they costs 0 until played. NL Exhaust."
+    "DESCRIPTION": "Put !M! Sheathe card into your hand, it costs 0 until played. NL Gain !M! Sheathe. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Put !M! *Sheathe+ card into your hand, it costs 0 until played. NL Gain !M! Sheathe. NL Exhaust."
   },
   "MirrorTrick": {
     "NAME": "Mirror Trick",
@@ -337,7 +337,7 @@
   },
   "Accident": {
     "NAME": "Accident",
-    "DESCRIPTION": "Retain. Retain your hand this turn. Gain 1 Plan. NL Next turn gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Retain. Retain your hand this turn. Gain 1 Plan. NL Next turn gain [E] [E]."
+    "DESCRIPTION": "Retain. Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Retain. Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E]."
   }
 }

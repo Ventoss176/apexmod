@@ -35,7 +35,7 @@ public class TrickeryAction extends AbstractGameAction{
             AbstractCard c = (AbstractCard)var1.next();
             if (c.type == AbstractCard.CardType.SKILL) {
                 System.out.println(this.mNumber);
-                addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) AbstractDungeon.player, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new StrengthPower((AbstractCreature) AbstractDungeon.player, this.mNumber - 1), this.mNumber - 1));
+//                addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) AbstractDungeon.player, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new StrengthPower((AbstractCreature) AbstractDungeon.player, this.mNumber - 1), this.mNumber - 1));
                 addToBot((AbstractGameAction) new ApplyPowerAction((AbstractCreature) AbstractDungeon.player, (AbstractCreature) AbstractDungeon.player, (AbstractPower) new SchemePower((AbstractCreature) AbstractDungeon.player, this.mNumber), this.mNumber));
                 break;
             }

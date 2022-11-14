@@ -37,8 +37,8 @@ public class BattoSky extends CustomCard {
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
         // this.tags.add(ApexTags.Batto);
-        this.baseMagicNumber = 2;
-        this.magicNumber = 2;
+        this.baseMagicNumber = 1;
+        this.magicNumber = 1;
         this.exhaust = true;
     }
 
@@ -64,7 +64,7 @@ public class BattoSky extends CustomCard {
 
 
         // this.addToBot(new DrawBattoToHandAction(this.magicNumber));
-//        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, 1),1));
+        this.addToBot(new ApplyPowerAction(p, p, new SheathPower(p, this.magicNumber),this.magicNumber));
 
     }
 
@@ -86,7 +86,7 @@ public class BattoSky extends CustomCard {
             // this.isInnate = true;
             // this.selfRetain = true;
 //            this.upgradeMagicNumber(1);
-            // this.upgradeBaseCost(2);
+             this.upgradeBaseCost(0);
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
              this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
