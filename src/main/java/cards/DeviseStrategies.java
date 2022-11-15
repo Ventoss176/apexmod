@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.PowerCardTem;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -43,6 +44,7 @@ public class DeviseStrategies extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         // this.baseMagicNumber = 1;
         // this.magicNumber = 1;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

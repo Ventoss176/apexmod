@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.SKCardRare;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -38,6 +39,7 @@ public class Accident extends CustomCard {
         this.selfRetain = true;
         this.baseMagicNumber = 1;
         this.magicNumber = 1;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

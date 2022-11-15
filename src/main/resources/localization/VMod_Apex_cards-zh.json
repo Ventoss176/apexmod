@@ -14,8 +14,8 @@
   },
   "Formation": {
     "NAME": "阵法",
-    "DESCRIPTION": "获得 !B! 格挡. NL 观看牌堆顶 !M! 张牌",
-    "UPGRADE_DESCRIPTION": "获得 !B! 格挡. NL 观看牌堆顶 !M! 张牌"
+    "DESCRIPTION": "获得 !B! 格挡. NL 观星 !M! ",
+    "UPGRADE_DESCRIPTION": "获得 !B! 格挡. NL 观星 !M! "
   },
   "Layout": {
     "NAME": "布局",
@@ -79,8 +79,8 @@
   },
   "InformationWork": {
     "NAME": "情报工作",
-    "DESCRIPTION": "观看抽牌堆10张牌顺序，抽一张牌，下回合获得 [E] ",
-    "UPGRADE_DESCRIPTION": "观看抽牌堆10张牌顺序，抽一张牌，下回合获得 [E] [E] "
+    "DESCRIPTION": "观星 10，抽一张牌，下回合获得 [E] ",
+    "UPGRADE_DESCRIPTION": "观星 10，抽一张牌，下回合获得 [E] [E] "
   },
   "BackupDefense": {
     "NAME": "备用防御",
@@ -147,12 +147,12 @@
   },
   "DeviseStrategies": {
     "NAME": "运筹帷幄",
-    "DESCRIPTION": "在你的回合开始时, NL 观看牌顶10张牌, NL 本回合立刻 NL 获得3点 计谋 ",
-    "UPGRADE_DESCRIPTION": "在你的回合开始时, NL 观看牌顶10张牌, NL 本回合立刻 NL 获得3点 计谋 , 固有 "
+    "DESCRIPTION": "在你的回合开始时, NL 观星 10。 NL 本回合立刻 NL 获得3点 计谋 ",
+    "UPGRADE_DESCRIPTION": "在你的回合开始时, NL 观星 10。 NL 本回合立刻 NL 获得3点 计谋 , 固有 "
   },
   "JueShengQianLi": {
     "NAME": "决胜千里",
-    "DESCRIPTION": "每当你用卡牌 NL 观看或放置牌堆顶时, NL 获得 !M! 点格挡"
+    "DESCRIPTION": "每当你 NL 观星 或放置牌堆顶时, NL 获得 !M! 点格挡"
   },
   "LaidoAttack": {
     "NAME": "居合斩-斩击",
@@ -339,5 +339,9 @@
     "NAME": "意外",
     "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 ",
     "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 "
+  },
+  "Strategy": {
+    "NAME": "奇策",
+    "DESCRIPTION": "当前所有手牌减少 [E] ，且抽 2 张牌, 获得 [E] "
   }
 }

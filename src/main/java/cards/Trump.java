@@ -4,6 +4,7 @@ import actions.CostReduction;
 import actions.QiceAction;
 import basemod.abstracts.CustomCard;
 import basemod.devcommands.energy.Energy;
+import cards.tempCards.Strategy;
 import cards.templates.SKCardRare;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -44,6 +45,7 @@ public class Trump extends CustomCard {
         this.magicNumber = 3;
         this.selfRetain = true;
         this.exhaust = true;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

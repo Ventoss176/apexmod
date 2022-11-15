@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.PCardRare;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -38,6 +39,7 @@ public class MindControl extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 2;
         this.magicNumber = 2;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

@@ -5,6 +5,7 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import cards.*;
 import cards.tempCards.Conspiracy;
+import cards.tempCards.Strategy;
 import cards.tempCards.Trickery;
 import characters.Apex;
 import com.badlogic.gdx.Gdx;
@@ -115,26 +116,31 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
     @Override
     public void receiveEditKeywords() {
         if (Settings.language == Settings.GameLanguage.ZHS) {
-            BaseMod.addKeyword(new String[] { "奇策" }, "奇策发动时，当前所有手牌减少 [E] ，且抽 #b2 张牌, 获得 [E] ");
-            BaseMod.addKeyword(new String[] { "计谋" }, "计谋 是顶尖猎杀者的专属状态，当计谋 #b8 层时将发动 #y奇策 ");
+            BaseMod.addKeyword(new String[] { "奇策" }, "发动时，当前所有手牌减少 [E] ，且抽 #b2 张牌, 获得 [E] ");
+            BaseMod.addKeyword(new String[] { "计谋" }, "当 #y计谋 #b8 层时将发动 #y奇策 ");
             BaseMod.addKeyword(new String[] { "收刀" }, "下一张攻击牌额外 #b1.35 倍层数伤害,最大为 #b5 层");
-            BaseMod.addKeyword(new String[] { "止水" }, "如果当拥有 收刀 状态但是打出攻击牌时不消耗 #y收刀 消耗一层 #y止水 ");
+            BaseMod.addKeyword(new String[] { "止水" }, "如果拥有 #y收刀 ,则打出攻击牌时不消耗 #y收刀 消耗一层 #y止水 ");
             BaseMod.addKeyword(new String[] { "弓箭" }, "抽 #b1 张牌，选择 #b1 张放置于牌堆顶，如果放置的是 #y弓箭 牌，则下次打出前耗能为 #b0 ");
             BaseMod.addKeyword(new String[] { "阴谋" }, " #y阴谋 是顶尖猎杀者一张牌:抽 #b1 张牌，若为攻击牌 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
             BaseMod.addKeyword(new String[] { "诡计" }, " #y诡计 是顶尖猎杀者一张牌:抽 #b1 张牌，若为技能牌 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
             BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 #y点穴 或者 #y略懂 时可以造成对应层数的伤害");
             BaseMod.addKeyword(new String[] { "略懂" }, "略懂是顶尖猎杀者的一张牌");
+            BaseMod.addKeyword(new String[] { "观星" }, "观看牌堆顶 #bX 张牌");
+            BaseMod.addKeyword(new String[] { "多层护甲" }, "在你的回合结束时获得 #bX 点 #y格挡 , 受到攻击伤害而失去生命时， #y多层护甲 的层数将会减少 #b1 。");
 
         }else {
 //            System.out.println("eng keyword start....");
-            BaseMod.addKeyword(new String[] { "Strategy", "strategy" }, "When you trigger #yStrategy, reduce all hand's cost by #b1 this turn, draw #b2 cards, gain [E] .");
             BaseMod.addKeyword(new String[] { "Plan", "plan" }, "When you obtain #b8 #yPlan ,trigger #yStrategy.");
+            BaseMod.addKeyword(new String[] { "Strategy","strategy" }, "When you trigger #yStrategy, reduce all hand's cost by #b1 this turn, draw #b2 cards, gain [E] .");
             BaseMod.addKeyword(new String[] { "Sheathe", "sheathe" }, "Your next Attack deal ( #b1.35 ^ #ySheathe )x damage. MAX #ySheathe is #b5.");
             BaseMod.addKeyword(new String[] { "Waterstop", "waterstop"}, "If you have Sheathe ,you next Attack will not lose #ySheathe but lose 1 #yWaterstop.");
             BaseMod.addKeyword(new String[] { "Arrow","arrow","Arrows","arrows" }, "Draw #b1 card.Put #b1 card from your hand onto the top of your draw pile.If you put a #yArrow card, it costs #b0 until played.");
             BaseMod.addKeyword(new String[] { "Conspiracy","conspiracy","Conspiracies","conspiracies" }, " #yConspiracy :Draw #b1 card.If you draw a Attack card, gain #b2 #yPlan , #yExhaust , #yRetain.");
             BaseMod.addKeyword(new String[] { "Trickery","trickery","Trickeries","trickeries" }, " #yTrickery :Draw #b1 card.If you draw a Skill card, gain #b2 #yPlan , NL  #yExhaust , #yRetain.");
             BaseMod.addKeyword(new String[] { "Markv","markv" }, "Whenever you play #yPressure #yPoints or #yKnow #yA #yLittle, the enemy loses #yMark plus #yMarkv HP.");
+            BaseMod.addKeyword(new String[] { "Bounce","bonuce" }, "Put a card from your NL hand onto the top of NL your pile.");
+            BaseMod.addKeyword(new String[] { "stargaze" }, "Look at the top #bX cards of your draw pile.");
+            BaseMod.addKeyword(new String[] { "Plated Armor","plated armor" }, "At the end of your turn, gain #bX #yBlock. Receiving unblocked attack damage reduces #yPlated #yArmor by #b1.");
 //            System.out.println("eng keyword end....");
         }
 
@@ -143,18 +149,19 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
     public void receiveEditStrings() {
         //读取遗物，卡牌，能力，药水，事件的JSON文本
 
-        String relic="", card="", power="", potion="", event="";
+        String relic="", card="", power="", potion="", keywords="";
         if (Settings.language == Settings.GameLanguage.ZHS) {
             card = "localization/VMod_Apex_cards-zh.json";
             relic = "localization/VMod_Apex_relics-zh.json";
             power = "localization/VMod_powers_zh.json";
             potion = "localization/VMod_potions_zh.json";
-            //event = "localization/ThMod_YM_events-zh.json";
+            keywords = "localization/VMod_keywords_zh.json";
         } else {
             card = "localization/VMod_Apex_cards-eng.json";
             relic = "localization/VMod_Apex_relics-eng.json";
             power = "localization/VMod_powers_eng.json";
             potion = "localization/VMod_potions_eng.json";
+            keywords = "localization/VMod_keywords_eng.json";
         }
 
         String relicStrings = Gdx.files.internal(relic).readString(String.valueOf(StandardCharsets.UTF_8));
@@ -166,8 +173,8 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
 
         String potionStrings = Gdx.files.internal(potion).readString(String.valueOf(StandardCharsets.UTF_8));
         BaseMod.loadCustomStrings(PotionStrings.class, potionStrings);
-//     String eventStrings = Gdx.files.internal(event).readString(String.valueOf(StandardCharsets.UTF_8));
-//     BaseMod.loadCustomStrings(EventStrings.class, eventStrings);
+        String keywordsStrings = Gdx.files.internal(keywords).readString(String.valueOf(StandardCharsets.UTF_8));
+        BaseMod.loadCustomStrings(KeywordStrings.class, keywordsStrings);
     }
 
     private void loadCardsToAdd() {
@@ -250,6 +257,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
         this.cardsToAdd.add(new BurnStrongholds());
         this.cardsToAdd.add(new DaoistMagic());
         this.cardsToAdd.add(new Accident());
+        this.cardsToAdd.add(new Strategy());
 
 
     }

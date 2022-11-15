@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.SkillCardTem;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -37,6 +38,7 @@ public class HiddenKnife extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         this.baseBlock = BLOCK_AMT;
+        this.cardsToPreview = new Strategy();
         // this.baseMagicNumber = 1;
         // this.magicNumber = 1;
     }

@@ -2,6 +2,7 @@ package cards;
 
 import actions.BurnStrongholdsAction;
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -35,6 +36,7 @@ public class BurnStrongholds extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 1;
         this.magicNumber = 1;
+        this.cardsToPreview = new Strategy();
         this.exhaust = true;
     }
 

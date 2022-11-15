@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.SkillCardUnCommon;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -36,6 +37,7 @@ public class Command extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 4;
         this.magicNumber = 4;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

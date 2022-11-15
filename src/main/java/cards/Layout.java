@@ -2,6 +2,7 @@ package cards;
 
 import basemod.abstracts.CustomCard;
 import basemod.helpers.BaseModCardTags;
+import cards.tempCards.Strategy;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -39,6 +40,7 @@ public class Layout extends CustomCard {
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 2;
+        this.cardsToPreview = new Strategy();
         this.magicNumber = 2;
     }
 

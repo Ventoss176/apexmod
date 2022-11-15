@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.SkillCardUnCommon;
 import com.brashmonkey.spriter.Player;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -40,6 +41,7 @@ public class LongPlanned extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 3;
         this.magicNumber = 3;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

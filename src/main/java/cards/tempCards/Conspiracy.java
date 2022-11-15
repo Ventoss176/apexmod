@@ -47,6 +47,7 @@ public class Conspiracy extends CustomCard {
         this.magicNumber = baseMagicNumber;
         this.selfRetain = true;
         this.exhaust = true;
+        this.cardsToPreview = new Strategy();
 
     }
 

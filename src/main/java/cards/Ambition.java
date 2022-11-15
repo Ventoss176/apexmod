@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -37,6 +38,7 @@ public class Ambition extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 4;
         this.magicNumber = 4;
+        this.cardsToPreview = new Strategy();
         // this.exhaust = true;
     }
 

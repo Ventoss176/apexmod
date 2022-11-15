@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -40,6 +41,7 @@ public class Yangmou extends CustomCard {
         this.baseDamage = 0;
         this.baseMagicNumber = MAGNIFICATION;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

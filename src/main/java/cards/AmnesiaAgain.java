@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.PowerCardTem;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -42,6 +43,7 @@ public class AmnesiaAgain extends CustomCard {
         // this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 4;
         this.magicNumber = 4;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override

@@ -14,8 +14,8 @@
   },
   "Formation": {
     "NAME": "Formation",
-    "DESCRIPTION": "Gain !B! Block. NL Look at the top !M! NL cards of your draw pile.",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Look at the top !M! NL cards of your draw pile."
+    "DESCRIPTION": "Gain !B! Block. NL Stargaze !M!.",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Stargaze !M!."
   },
   "Layout": {
     "NAME": "Layout",
@@ -29,7 +29,7 @@
   },
   "SkillSword": {
     "NAME": "Skillfull Slash",
-    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Put a card from your NL hand onto the top fo NL your pile.Next turn NL draw !M! additional cards."
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Put a card from your NL hand onto the top of NL your pile.Next turn NL draw !M! additional cards."
   },
   "StrengthSword": {
     "NAME": "Powerful Slash",
@@ -61,7 +61,7 @@
   },
   "RepairEquipment": {
     "NAME": "Repair Equipments",
-    "DESCRIPTION": "Gain !M! *Plated *Armor. NL Gain !B! Block. NL  Exhaust."
+    "DESCRIPTION": "Gain !M! Plated Armor. NL Gain !B! Block. NL  Exhaust."
   },
   "Conspiracy": {
     "NAME": "Conspiracy",
@@ -79,8 +79,8 @@
   },
   "InformationWork": {
     "NAME": "Information Work",
-    "DESCRIPTION": "Look at the top 10 NL cards of your draw pile. NL Draw 1 card. NL Next turn gain [E] .",
-    "UPGRADE_DESCRIPTION": "Look at the top 10 NL cards of your draw pile. NL Draw 1 card. NL Next turn gain [E] [E] ."
+    "DESCRIPTION": "Stargaze 10. NL Draw 1 card. NL Next turn gain [E] .",
+    "UPGRADE_DESCRIPTION": "Stargaze 10. NL Draw 1 card. NL Next turn gain [E] [E] ."
   },
   "BackupDefense": {
     "NAME": "Backup Defense",
@@ -97,7 +97,7 @@
   },
   "HiddenKnife": {
     "NAME": "Hidden Knife",
-    "DESCRIPTION": "Gain !B! Block. NL Put an Attack from your draw pile into your hand."
+    "DESCRIPTION": "Gain !B! Block. NL Gain 1 Plan. NL Put an Attack from your draw pile into your hand."
   },
   "ThrowingKnife": {
     "NAME": "Throw Knife",
@@ -106,7 +106,7 @@
   },
   "Bombard": {
     "NAME": "Bombard",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Look at the top 5 NL cards of your draw pile."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Stargaze 5."
   },
   "Coping": {
     "NAME": "Coping",
@@ -147,12 +147,12 @@
   },
   "DeviseStrategies": {
     "NAME": "Operation",
-    "DESCRIPTION": "Gain 3 Plan. At the start of your turn, Look at the top 10 cards of your draw pile.",
-    "UPGRADE_DESCRIPTION": "Innate. NL Gain 3 Plan. At the start of your turn, Look at the top 10 cards of your draw pile."
+    "DESCRIPTION": "Gain 3 Plan. At the start of your turn, Stargaze 10.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 3 Plan. At the start of your turn, Stargaze 10."
   },
   "JueShengQianLi": {
     "NAME": "Good Plan",
-    "DESCRIPTION": "Whenever you look at the top cards of your draw pile or put a card from your hand onto the top of your draw pile, NL gain !M! Block."
+    "DESCRIPTION": "Whenever you Bonuce or Stargaze, NL gain !M! Block."
   },
   "LaidoAttack": {
     "NAME": "lai Spirit Slash",
@@ -175,7 +175,7 @@
     "DESCRIPTION": "ALL enemies lose !M! Strength. NL Exhaust."
   },
   "Sinpe": {
-    "NAME": "Sinpe",
+    "NAME": "Snipe",
     "DESCRIPTION": "Deal !D! damage. NL Arrow."
   },
   "Archedback": {
@@ -305,12 +305,12 @@
   },
   "PowerArmor": {
     "NAME": "Power Armor",
-    "DESCRIPTION": "Gain !M! *Plated *Armor. NL Block is not removed at the start of your turn."
+    "DESCRIPTION": "Gain !M! Plated Armor. NL Block is not removed at the start of your turn."
   },
   "ExtremePill": {
     "NAME": "Ultimate pill",
-    "DESCRIPTION": "Retain. Gain !M! Dexterity. Gain !M! Strength. At the end of this turn NL lose !M! Dexterity, lose !M! Dexterity.Draw 2 cards. Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. Gain !M! Dexterity. Gain !M! Strength. At the end of this turn NL lose !M! Dexterity, lose !M! Dexterity.Draw 3 cards. Exhaust."
+    "DESCRIPTION": "Retain. Gain !M! Dexterity. Gain !M! Strength. At the end of this turn NL lose !M! Dexterity, lose !M! *Strength.Draw 2 cards. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. Gain !M! Dexterity. Gain !M! Strength. At the end of this turn NL lose !M! Dexterity, lose !M! *Strength.Draw 3 cards. Exhaust."
   },
   "IngeniousPlan": {
     "NAME": "Unexpected Plan",
@@ -339,5 +339,9 @@
     "NAME": "Accident",
     "DESCRIPTION": "Retain. Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E].",
     "UPGRADE_DESCRIPTION": "Retain. Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E]."
+  },
+  "Strategy": {
+    "NAME": "Strategy",
+    "DESCRIPTION": "Reduce all hand's cost by 1 this turn, draw 2 cards, gain [E] ."
   }
 }

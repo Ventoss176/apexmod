@@ -34,6 +34,7 @@ public class Trickery extends CustomCard {
         this.selfRetain = true;
         this.exhaust = true;
         this.magicNumber = this.baseMagicNumber;
+        this.cardsToPreview = new Strategy();
         // System.out.println("Trikery Const : " + this.magicNumber);
 
     }

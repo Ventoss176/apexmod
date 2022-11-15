@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.AttackCardUnCommon;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -37,6 +38,7 @@ public class AbsoluteForce extends CustomCard {
         this.baseMagicNumber = 1;
         //不能少，不然游戏默认初始值为-1！！！！！！
         this.magicNumber = baseMagicNumber;
+        this.cardsToPreview = new Strategy();
 
     }
 

@@ -2,6 +2,7 @@ package cards;
 
 import actions.BowArrowAction;
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.AttackCardUnCommon;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -40,6 +41,7 @@ public class PlotHit extends CustomCard {
         this.tags.add(ApexTags.ARROW);
         this.baseDamage = ATTACK_DMG;
         this.baseMagicNumber = 2;
+        this.cardsToPreview = new Strategy();
         //不能少，不然游戏默认初始值为-1！！！！！！
         this.magicNumber = baseMagicNumber;
 

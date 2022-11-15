@@ -1,6 +1,7 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Strategy;
 import cards.templates.PCardRare;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -40,6 +41,7 @@ public class InterlockingStratagems extends CustomCard {
         this.baseBlock = BLOCK_AMT;
         this.baseMagicNumber = 1;
         this.magicNumber = 1;
+        this.cardsToPreview = new Strategy();
     }
 
     @Override
