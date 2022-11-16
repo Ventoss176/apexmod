@@ -28,8 +28,8 @@
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Lose !M! Plan"
   },
   "SkillSword": {
-    "NAME": "Skillfull Slash",
-    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Put a card from your NL hand onto the top of NL your pile.Next turn NL draw !M! additional cards."
+    "NAME": "Skillful Slash",
+    "DESCRIPTION": "Deal !D! damage. NL Draw 1 card. NL Put a card from your NL hand onto the top of NL your draw pile.Next turn NL draw !M! additional cards."
   },
   "StrengthSword": {
     "NAME": "Powerful Slash",
