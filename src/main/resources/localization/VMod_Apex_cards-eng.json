@@ -61,7 +61,7 @@
   },
   "RepairEquipment": {
     "NAME": "Repair Equipments",
-    "DESCRIPTION": "Gain !M! Plated Armor. NL Gain !B! Block. NL  Exhaust."
+    "DESCRIPTION": "Gain !M! PlatedArmor. NL Gain !B! Block. NL  Exhaust."
   },
   "Conspiracy": {
     "NAME": "Conspiracy",
@@ -305,7 +305,7 @@
   },
   "PowerArmor": {
     "NAME": "Power Armor",
-    "DESCRIPTION": "Gain !M! Plated Armor. NL Block is not removed at the start of your turn."
+    "DESCRIPTION": "Gain !M! PlatedArmor. NL Block is not removed at the start of your turn."
   },
   "ExtremePill": {
     "NAME": "Ultimate pill",

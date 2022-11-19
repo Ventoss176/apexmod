@@ -1,5 +1,6 @@
 package characters;
 
+import apexmod.ApexMod;
 import basemod.abstracts.CustomPlayer;
 import cards.Provoke;
 import cards.Strike_Apex;
@@ -11,12 +12,14 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.utility.SFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Strike_Green;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.events.beyond.SpireHeart;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -30,6 +33,7 @@ import pathes.AbstractCardEnum;
 import pathes.ThmodClassEnum;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Date:2022/6/19
@@ -197,6 +201,7 @@ public class Apex extends CustomPlayer {
         return char_name;
     }
 
+
     @Override
     public AbstractPlayer newInstance() {
         return (AbstractPlayer)new Apex(this.name);
@@ -225,7 +230,16 @@ public class Apex extends CustomPlayer {
         return new AbstractGameAction.AttackEffect[] { AbstractGameAction.AttackEffect.SLASH_DIAGONAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, AbstractGameAction.AttackEffect.SLASH_DIAGONAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL, AbstractGameAction.AttackEffect.SLASH_VERTICAL };
     }
 
+    @Override
+    public List<CutscenePanel> getCutscenePanels() {
+        List<CutscenePanel> panels = new ArrayList<>();
 
+        panels.add(new CutscenePanel("img/ending_Apex/ending_1.png","ATTACK_HEAVY"));
+        panels.add(new CutscenePanel("img/ending_Apex/ending_2.png"));
+        panels.add(new CutscenePanel("img/ending_Apex/ending_3.png"));
+
+        return panels;
+    }
 
 
     @Override

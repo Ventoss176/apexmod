@@ -140,7 +140,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "Markv","markv" }, "Whenever you play #yPressure #yPoints or #yKnow #yA #yLittle, the enemy loses #yMark plus #yMarkv HP.");
             BaseMod.addKeyword(new String[] { "Bounce","bonuce" }, "Put a card from your NL hand onto the top of your draw pile.");
             BaseMod.addKeyword(new String[] { "stargaze" }, "Look at the top #bX cards of your draw pile.");
-            BaseMod.addKeyword(new String[] { "Plated Armor","plated armor" }, "At the end of your turn, gain #bX #yBlock. Receiving unblocked attack damage reduces #yPlated #yArmor by #b1.");
+            BaseMod.addKeyword(new String[] { "Platedarmor","platedarmor","PlatedArmor","platedArmor" }, "At the end of your turn, gain #bX #yBlock. Receiving unblocked attack damage reduces #yPlated #yArmor by #b1.");
 //            System.out.println("eng keyword end....");
         }
 

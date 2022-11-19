@@ -101,7 +101,7 @@
   },
   "ThrowingKnife": {
     "NAME": "飞刀",
-    "DESCRIPTION": "打出牌堆顶 NL !M! 张牌, 选择 1 张牌减少 [E] .",
+    "DESCRIPTION": "打出牌堆顶 !M! 张牌, NL 选择 1 张牌 NL 减少 [E] .",
     "UPGRADE_DESCRIPTION": "打出牌堆顶 NL !M! 张牌, 选择 1 张牌减少 [E] ."
   },
   "Bombard": {
@@ -164,11 +164,11 @@
   },
   "AbsoluteForce": {
     "NAME": "一力降十会",
-    "DESCRIPTION": "造成 !D! 点伤害, NL 失去 !M! 点计谋"
+    "DESCRIPTION": "造成 !D! 点伤害, NL 失去 !M! 点 计谋 "
   },
   "FieldDressing": {
     "NAME": "战地止血",
-    "DESCRIPTION": "恢复 !M! 点 生命值 , NL 在抽排堆中加 NL 入一张 伤口 , 消耗 "
+    "DESCRIPTION": "恢复 !M! 点 生命值 , NL 在抽牌堆中加 NL 入一张 伤口 , 消耗 "
   },
   "FlashBang": {
     "NAME": "闪光弹",
@@ -180,7 +180,7 @@
   },
   "Archedback": {
     "NAME": "弓背一击",
-    "DESCRIPTION": "造成 !D! 点 伤害 , 选择 !M! 张牌减少 [E] , 弓箭 "
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 选择 !M! 张牌 NL 减少 [E] , NL 弓箭 "
   },
   "GodGuide": {
     "NAME": "仙人指路",
@@ -189,7 +189,7 @@
   },
   "OffensiveAttack": {
     "NAME": "减负攻击",
-    "DESCRIPTION": "造成2次 !D! 点 伤害 ， 本回合每打出一张技能牌，该牌耗能-1 "
+    "DESCRIPTION": "造成2次 !D! 点 伤害 ， 本回合每打出一张技能牌，该牌耗能减少 [E] "
   },
   "LongPlanned": {
     "NAME": "蓄谋已久",
@@ -211,8 +211,8 @@
   },
   "Ambition": {
     "NAME": "野心",
-    "DESCRIPTION": "当你有计谋层数小于等于2时, NL 获得 !M! 点 计谋 ",
-    "UPGRADE_DESCRIPTION": "当你计谋层数小于等于4时, NL 获得 !M! 点 计谋 "
+    "DESCRIPTION": "当你有计谋层数 NL 小于等于2时, NL 获得 !M! 点 计谋 ",
+    "UPGRADE_DESCRIPTION": "当你计谋层数 NL 小于等于4时, NL 获得 !M! 点 计谋 "
   },
   "Torture": {
     "NAME": "严刑拷打",
@@ -241,7 +241,7 @@
   },
   "Purposeful": {
     "NAME": "成竹在胸",
-    "DESCRIPTION": "每回合开始，抽一张牌，将一张牌放置于牌堆顶 "
+    "DESCRIPTION": "每回合开始, NL 抽一张牌, 将一张 NL 牌放置于牌堆顶 "
   },
   "AmnesiaAgain": {
     "NAME": "再次失忆",
@@ -258,7 +258,7 @@
   },
   "Skillful": {
     "NAME": "穿杨射柳",
-    "DESCRIPTION": "随机 弓箭 相关的牌 !M! 张加入抽牌堆，本场战斗费用均为0, 消耗 "
+    "DESCRIPTION": "随机 弓箭 相关的牌 NL !M! 张加入抽牌堆, NL 本场战斗费用均为0, NL 消耗 "
   },
   "ShootingPractice": {
     "NAME": "打靶",

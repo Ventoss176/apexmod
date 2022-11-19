@@ -1,6 +1,6 @@
 {
-  "modid": "ApexMod",
-  "name": "ApexMod",
+  "modid": "ApexPredatorMod",
+  "name": "ApexPredatorMod",
   "author_list": [
     "Vent"
   ],
@@ -8,6 +8,6 @@
   "dependencies": [
     "basemod"
   ],
-  "version": "2.1.0",
-  "sts_version": "28-10-2022"
+  "version": "2.2.0",
+  "sts_version": "18-11-2022"
 }
