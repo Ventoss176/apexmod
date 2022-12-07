@@ -8,7 +8,7 @@
   "Brainstorm": {
     "NAME": "阴谋诡计",
     "DESCRIPTIONS": [
-      "回合开始时给予一张 #y诡计 和 #y阴谋 "
+      "回合开始时给予一张 #y诡计+ 和 #y阴谋+ "
     ]
   },
   "LoneWolf": {
@@ -20,105 +20,105 @@
   "LoneWolfA": {
     "NAME": "独狼之力",
     "DESCRIPTIONS": [
-      "每打出一张技能牌造成",
-      "伤害"
+      "每打出一张技能牌造成 #b",
+      " 伤害"
     ]
   },
   "DeviseStrategies": {
     "NAME": "运筹帷幄",
     "DESCRIPTIONS": [
-      "每回合开始观看派对顶","张牌"
+      "每回合开始观看派对顶 #b"," 张牌"
     ]
   },
   "JueShengQianLi": {
     "NAME": "决胜千里",
     "DESCRIPTIONS": [
-      "每次观看和放置牌堆顶都获得",
-      "点 #y格挡 "
+      "每次观看和放置牌堆顶都获得 #b",
+      " 点 #y格挡 "
     ]
   },
   "Sheath": {
     "NAME": "收刀",
     "DESCRIPTIONS": [
-      "下一次攻击额外造成基础伤害的 #b1.35 层数" , "次方倍伤害(最大5层)",
-      "下一次攻击额外造成基础伤害的 #b1.5 层数" , "次方倍伤害(最大5层)"
+      "下一次攻击额外造成基础伤害的 #b1.35 层数 #b" , " 次方倍伤害(最大5层)",
+      "下一次攻击额外造成基础伤害的 #b1.5 层数 #b" , " 次方倍伤害(最大5层)"
     ]
   },
   "Chameleon": {
     "NAME": "变色龙",
     "DESCRIPTIONS": [
-      "下一次受到伤害抽 ",
-      "张牌"
+      "下一次受到伤害抽 #b",
+      " 张牌"
 
     ]
   },
   "Torture": {
     "NAME": "严刑拷打",
     "DESCRIPTIONS": [
-      "本回合所有攻击牌都将给予所有敌人",
-      "层易伤"
+      "本回合所有攻击牌都将给予所有敌人 #b",
+      " 层易伤"
     ]
   },
   "Purposeful": {
     "NAME": "成竹在胸",
     "DESCRIPTIONS": [
-      "每回合开始抽",
-      "张牌，将",
-      "张牌放置于牌堆顶"
+      "每回合开始抽 #b",
+      " 张牌，将 #b",
+      " 张牌放置于牌堆顶"
     ]
   },
   "InterlockingStratagems": {
     "NAME": "连环计",
     "DESCRIPTIONS": [
-      "每回合开始，获得",
-      "点 计谋 "
+      "每回合开始，获得 #b",
+      " 点 计谋 "
     ]
   },
   "SwordMaster": {
     "NAME": "剑术大师",
     "DESCRIPTIONS": [
-      "每回合开获得","层 #y收刀 若没有 #y止水 则获得", "层 #y止水 "
+      "每回合开获得 #b"," 层 #y收刀 若没有 #y止水 则获得 #b", " 层 #y止水 "
     ]
   },
   "Trump": {
     "NAME": "减少能量",
     "DESCRIPTIONS": [
-      "下回合失去",
+      "下回合失去 #b",
       "点 [E] "
     ]
   },
   "MindControl": {
     "NAME": "攻心",
     "DESCRIPTIONS": [
-      "每次额外获得 #y计谋 ",
+      "每次额外获得 #y计谋 #b",
       "点"
     ]
   },
   "SchemeAIntrigue": {
     "NAME": "诡计多端",
     "DESCRIPTIONS": [
-      "每回合开始加入",
+      "每回合开始加入 #b",
       " 张 #y诡计 到手牌"
     ]
   },
   "BurnStrongholds": {
     "NAME": "异世界格斗术",
     "DESCRIPTIONS": [
-      "手牌中所有0耗能牌打出均可以抽",
+      "手牌中所有0耗能牌打出均可以抽 #b",
       " 张牌"
     ]
   },
   "ShootingPractice": {
     "NAME": "打靶",
     "DESCRIPTIONS": [
-      "所有 #y弓箭 牌伤害提高",
+      "所有 #y弓箭 牌伤害提高 #b",
       " 点"
     ]
   },
   "NewMarkPower": {
     "NAME": "标记",
     "DESCRIPTIONS": [
-      "每次使用 #y点穴 或者 #y略懂 造成点",
+      "每次使用 #y点穴 或者 #y略懂 造成点 #b",
       "伤害"
     ]
   },
@@ -131,15 +131,14 @@
   "WisdomForm": {
     "NAME": "智慧形态",
     "DESCRIPTIONS": [
-      "本内回合打出第 #y1 张牌将会触发 #y奇策 ,剩余",
-      "回合"
+      "本内回合打出第 #y1 张牌将会触发 #y奇策 ,剩余 #b",
+      " 回合"
     ]
   },
   "WisdomFormDebuff": {
-    "NAME": "知识代价",
+    "NAME": "操劳过度",
     "DESCRIPTIONS": [
-      "回合结束失去",
-      "点 #y力量 和 #y敏捷 "
+      "在你下回合开始时加入 #b1 张 #y操劳 到手牌。"
     ]
   },
   "HandSizePower": {

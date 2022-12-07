@@ -101,8 +101,8 @@
   },
   "ThrowingKnife": {
     "NAME": "Throw Knife",
-    "DESCRIPTION": "Play the top card of your draw pile. NL Reduce a card's NL cost by 1 this turn.",
-    "UPGRADE_DESCRIPTION": "Play the top 2 cards of your draw pile. NL Reduce a card's NL cost by 1 this turn."
+    "DESCRIPTION": "Play the top card of your draw pile. NL Reduce a card's NL cost by 1 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Play the top 2 cards of your draw pile. NL Reduce a card's NL cost by 1 this turn. NL Exhaust."
   },
   "Bombard": {
     "NAME": "Bombard",
@@ -287,12 +287,12 @@
   },
   "MindControl": {
     "NAME": "Psywar",
-    "DESCRIPTION": "Whenever you gain Plan, gain 1 additional Plan.  NL At the end of your turn lose !M! Strength, NL lose !M! Dexterity."
+    "DESCRIPTION": "Whenever you gain Plan, gain 1 additional Plan. At the end of this turn NL lose !M! Strength, NL lose !M! Dexterity."
   },
   "WisdomForm": {
     "NAME": "Wisdom Form",
-    "DESCRIPTION": "Next !M! turns, the first card you play will trigger Strategy. At the end of your turn, lose 1 Dexterity, lose 1 Strength.",
-    "UPGRADE_DESCRIPTION": "Trigger Strategy. Next !M! turns, the first card you play will trigger Strategy. At the end of your turn, lose 1 Dexterity, lose 1 Strength."
+    "DESCRIPTION": "Next !M! turns, the first card you play will trigger Strategy. Put a *Fatigued into your hand at the start of your next 2 turns.",
+    "UPGRADE_DESCRIPTION": "Trigger Strategy. Next !M! turns, the first card you play will trigger Strategy. Put a *Fatigued  into your hand at the start of your next 2 turns."
   },
   "GodSlay": {
     "NAME": "Spirit Release Slash",
@@ -342,6 +342,10 @@
   },
   "Strategy": {
     "NAME": "Strategy",
-    "DESCRIPTION": "Reduce all hand's cost by 1 this turn, draw 2 cards, gain [E] ."
+    "DESCRIPTION": "Reduce all hand's cost by 1 this turn, draw 2 cards, gain [E] . NL ( *This *is *not *a *card. )"
+  },
+  "Fatigued": {
+    "NAME": "Fatigued",
+    "DESCRIPTION": "Unplayable. NL At the end of your turn, gain 1 Frail, NL gain 1 Weak."
   }
 }

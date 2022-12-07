@@ -5,6 +5,7 @@ import basemod.BaseMod;
 import basemod.interfaces.*;
 import cards.*;
 import cards.tempCards.Conspiracy;
+import cards.tempCards.Fatigued;
 import cards.tempCards.Strategy;
 import cards.tempCards.Trickery;
 import characters.Apex;
@@ -120,7 +121,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "计谋" }, "当 #y计谋 #b8 层时将发动 #y奇策 ");
             BaseMod.addKeyword(new String[] { "收刀" }, "下一张攻击牌额外 #b1.35 倍层数伤害,最大为 #b5 层");
             BaseMod.addKeyword(new String[] { "止水" }, "如果拥有 #y收刀 ,则打出攻击牌时不消耗 #y收刀 消耗一层 #y止水 ");
-            BaseMod.addKeyword(new String[] { "弓箭" }, "抽 #b1 张牌，选择 #b1 张放置于牌堆顶，如果放置的是 #y弓箭 牌，则下次打出前耗能为 #b0 ");
+            BaseMod.addKeyword(new String[] { "弓箭" }, "抽 #b1 张牌，选择 #b1 张手牌放置于牌堆顶，如果放置的是 #y弓箭 牌，则下次打出前耗能为 #b0 ");
             BaseMod.addKeyword(new String[] { "阴谋" }, " #y阴谋 是顶尖猎杀者一张牌:抽 #b1 张牌，若为攻击牌 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
             BaseMod.addKeyword(new String[] { "诡计" }, " #y诡计 是顶尖猎杀者一张牌:抽 #b1 张牌，若为技能牌 ，获得 #b2 层 #y计谋 , NL  #y消耗 , #y保留 ");
             BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 #y点穴 或者 #y略懂 时可以造成对应层数的伤害");
@@ -258,6 +259,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
         this.cardsToAdd.add(new DaoistMagic());
         this.cardsToAdd.add(new Accident());
         this.cardsToAdd.add(new Strategy());
+        this.cardsToAdd.add(new Fatigued());
 
 
     }

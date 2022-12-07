@@ -46,10 +46,10 @@ public class Apex extends CustomPlayer {
 
     private static final int ENERGY_PER_TURN = 3;
     //以下图片依次作用为[篝火休息处的角色背影2，篝火休息处的角色背影1，角色死亡后倒下的图片，角色平常站立时的图片]
-    private static final String SELES_SHOULDER_2 = "img/char_Apex/shoulder2.png";
-    private static final String SELES_SHOULDER_1 = "img/char_Apex/shoulder1.png";
-    private static final String SELES_CORPSE = "img/char_Apex/fallen.png";
-    private static final String SELES_STAND = "img/char_Apex/Apex.png";
+    private static final String APEX_SHOULDER_2 = "img/char_Apex/shoulder2.png";
+    private static final String APEX_SHOULDER_1 = "img/char_Apex/shoulder1.png";
+    private static final String APEX_CORPSE = "img/char_Apex/fallen.png";
+    private static final String APEX_STAND = "img/char_Apex/Apex.png";
     //各种素材，不是很懂
     private static final String[] ORB_TEXTURES = new String[] { "img/UI_Apex/EPanel/layer5.png", "img/UI_Apex/EPanel/layer4.png", "img/UI_Apex/EPanel/layer3.png", "img/UI_Apex/EPanel/layer2.png", "img/UI_Apex/EPanel/layer1.png", "img/UI_Apex/EPanel/layer6.png", "img/UI_Apex/EPanel/layer5d.png", "img/UI_Apex/EPanel/layer4d.png", "img/UI_Apex/EPanel/layer3d.png", "img/UI_Apex/EPanel/layer2d.png", "img/UI_Apex/EPanel/layer1d.png" };
     private static final String ORB_VFX = "img/UI_Apex/vfx.png";
@@ -68,7 +68,7 @@ public class Apex extends CustomPlayer {
         super(name, ThmodClassEnum.Apex_CLASS, ORB_TEXTURES, ORB_VFX, LAYER_SPEED, (String)null, (String)null);
         this.dialogX = this.drawX + 0.0F * Settings.scale;
         this.dialogY = this.drawY + 220.0F * Settings.scale;
-        initializeClass(SELES_STAND, SELES_SHOULDER_2, SELES_SHOULDER_1, SELES_CORPSE,
+        initializeClass(APEX_STAND, APEX_SHOULDER_2, APEX_SHOULDER_1, APEX_CORPSE,
                 getLoadout(),
                 0.0F, 5.0F, 240.0F, 300.0F,
                 new EnergyManager(ENERGY_PER_TURN));

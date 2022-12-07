@@ -60,7 +60,7 @@ public class WisdomFormPower extends AbstractPower {
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (!card.purgeOnUse && this.amount > 0 && AbstractDungeon.actionManager.cardsPlayedThisTurn.size() == 1) {
             this.addToBot(new QiceAction());
-            }
+        }
 
     }
 

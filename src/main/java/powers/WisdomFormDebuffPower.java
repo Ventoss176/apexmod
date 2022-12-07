@@ -1,6 +1,12 @@
 package powers;
 
+import cards.tempCards.Fatigued;
+import cards.tempCards.Trickery;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
@@ -35,11 +41,27 @@ public class WisdomFormDebuffPower extends AbstractPower {
         this.type = PowerType.DEBUFF;
     }
 
-    public void atEndOfTurn(boolean isPlayer) {
+//    public void atEndOfTurn(boolean isPlayer) {
+//
+//        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, this.amount), this.amount));
+//        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, this.amount), this.amount));
+//    }
 
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DexterityPower(AbstractDungeon.player, this.amount), this.amount));
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, this.amount), this.amount));
+    @Override
+    public void onEnergyRecharge() {
+        this.flash();
+        AbstractCard card2 = new Fatigued();
+        this.addToBot(new MakeTempCardInHandAction(card2));
+
+        if (this.amount == 0) {
+            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "WisdomFormDebuff"));
+        } else {
+            this.addToBot(new ReducePowerAction(this.owner, this.owner, "WisdomFormDebuff", 1));
+        }
     }
+
+
+
 
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;
@@ -49,10 +71,10 @@ public class WisdomFormDebuffPower extends AbstractPower {
     public void updateDescription() {
         if (Settings.language == Settings.GameLanguage.ZHS) {
 
-            this.description = DESCRIPTIONS[0] + -this.amount + DESCRIPTIONS[1];
+            this.description = DESCRIPTIONS[0];
         } else {
 
-            this.description = DESCRIPTIONS[0] + -this.amount + DESCRIPTIONS[1] + -this.amount + DESCRIPTIONS[2];
+            this.description = DESCRIPTIONS[0];
 
         }
 

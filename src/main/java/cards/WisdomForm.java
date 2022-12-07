@@ -4,6 +4,7 @@ import actions.CostReduction;
 import actions.QiceAction;
 import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
+import cards.tempCards.Fatigued;
 import cards.tempCards.Strategy;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -11,12 +12,10 @@ import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawPower;
-import com.megacrit.cardcrawl.powers.LoseDexterityPower;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import com.megacrit.cardcrawl.powers.WraithFormPower;
+import com.megacrit.cardcrawl.powers.*;
 import pathes.AbstractCardEnum;
 import powers.MindControlPower;
 import powers.WisdomFormDebuffPower;
@@ -47,7 +46,7 @@ public class WisdomForm extends CustomCard {
         this.baseMagicNumber = 2;
         this.magicNumber = 2;
 //        this.isEthereal = true;
-        this.cardsToPreview = new Strategy();
+        this.cardsToPreview = new Fatigued();
     }
 
     @Override
@@ -56,12 +55,11 @@ public class WisdomForm extends CustomCard {
         if(this.upgraded){
 //            BaseMod.MAX_HAND_SIZE += 999;
             this.addToBot(new QiceAction());
-            this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 3), 3));
+            this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, this.magicNumber + 1), this.magicNumber + 1));
         }else {
-            this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, 3), 3));
+            this.addToBot(new ApplyPowerAction(p, p, new WisdomFormPower(p, this.magicNumber + 1), this.magicNumber + 1));
         }
-        this.addToBot(new ApplyPowerAction(p, p, new WisdomFormDebuffPower(p, -1), -1));
-
+        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new WisdomFormDebuffPower(AbstractDungeon.player, 2), 2));
     }
     @Override
     public AbstractCard makeCopy() {

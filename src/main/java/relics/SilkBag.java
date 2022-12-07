@@ -34,6 +34,7 @@ public class SilkBag extends CustomRelic {
         this.addToTop(new RelicAboveCreatureAction(AbstractDungeon.player, this));
     }
 
+
     public String getUpdatedDescription() {
         return this.DESCRIPTIONS[0];
     }

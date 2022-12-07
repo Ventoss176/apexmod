@@ -29,7 +29,7 @@
   },
   "SkillSword": {
     "NAME": "技巧出剑",
-    "DESCRIPTION": "造成 !D! 点 伤害 , NL 抽1张牌将1张牌 NL 放置于牌堆顶， NL 下回合抽 !M! 张牌"
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 抽1张牌将1张手牌 NL 放置于牌堆顶， NL 下回合抽 !M! 张牌"
   },
   "StrengthSword": {
     "NAME": "力量出剑",
@@ -88,7 +88,7 @@
   },
   "SickWork": {
     "NAME": "抱病坚持",
-    "DESCRIPTION": "获得1层 虚弱 ,抽 !M! 张 NL 牌 , 将1张牌 NL 放置于牌堆顶。"
+    "DESCRIPTION": "获得1层 虚弱 ,抽 !M! 张 NL 牌 , 将1张手牌 NL 放置于牌堆顶。"
   },
   "KnowLittle": {
     "NAME": "略懂",
@@ -101,8 +101,8 @@
   },
   "ThrowingKnife": {
     "NAME": "飞刀",
-    "DESCRIPTION": "打出牌堆顶 !M! 张牌, NL 选择 1 张牌 NL 减少 [E] .",
-    "UPGRADE_DESCRIPTION": "打出牌堆顶 NL !M! 张牌, 选择 1 张牌减少 [E] ."
+    "DESCRIPTION": "打出牌堆顶 !M! 张牌, NL 选择 1 张手牌 NL 本回合减少 [E] . NL 消耗 .",
+    "UPGRADE_DESCRIPTION": "打出牌堆顶 !M! 张牌, NL 选择 1 张手牌 NL 本回合减少 [E] . NL 消耗 ."
   },
   "Bombard": {
     "NAME": "当头炮",
@@ -184,8 +184,8 @@
   },
   "GodGuide": {
     "NAME": "仙人指路",
-    "DESCRIPTION": "抽 !M! 张牌, 随机将一张牌放置于牌堆顶 ",
-    "UPGRADE_DESCRIPTION": "抽 !M! 张牌, 将一张牌放置于牌堆顶  "
+    "DESCRIPTION": "抽 !M! 张牌, 随机将一张 NL 手牌放置于牌堆顶 ",
+    "UPGRADE_DESCRIPTION": "抽 !M! 张牌, 将一张 NL 手牌放置于牌堆顶  "
   },
   "OffensiveAttack": {
     "NAME": "减负攻击",
@@ -207,7 +207,7 @@
   },
   "Chameleon": {
     "NAME": "变色龙",
-    "DESCRIPTION": "获得一层 无实体 , NL 受到伤害抽 !M! 张牌, NL 回合结束失去 NL 1点 敏捷 , 消耗 "
+    "DESCRIPTION": "获得1层 无实体 , NL 下次受到伤害抽 !M! 张牌 NL ,回合结束失去 NL 1点 敏捷 , 消耗 "
   },
   "Ambition": {
     "NAME": "野心",
@@ -241,7 +241,7 @@
   },
   "Purposeful": {
     "NAME": "成竹在胸",
-    "DESCRIPTION": "每回合开始, NL 抽一张牌, 将一张 NL 牌放置于牌堆顶 "
+    "DESCRIPTION": "每回合开始, NL 抽一张牌, 将一张 NL 手牌放置于牌堆顶 "
   },
   "AmnesiaAgain": {
     "NAME": "再次失忆",
@@ -291,8 +291,8 @@
   },
   "WisdomForm": {
     "NAME": "智慧形态",
-    "DESCRIPTION": "下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 ",
-    "UPGRADE_DESCRIPTION": "立刻触发 奇策 ,且 NL 下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 , NL 回合结束失去 NL 1点 敏捷 和 力量 "
+    "DESCRIPTION": "下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 。 NL 在下2个回合开始，加入1张 *操劳 到手牌。 ",
+    "UPGRADE_DESCRIPTION": "立刻触发 奇策 。下 !M! 个回合, 打出第1张牌会触发 奇策 。在下2个回合开始，加入1张 *操劳 到手牌。 "
   },
   "GodSlay": {
     "NAME": "鬼神居合斩",
@@ -337,11 +337,15 @@
   },
   "Accident": {
     "NAME": "意外",
-    "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 ",
-    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得1点 计谋 , NL ,下回合获得 [E] [E] , 保留 "
+    "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得 !M! 点 计谋 , NL ,下回合获得 [E] [E] , 保留 ",
+    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得 !M! 点 计谋 , NL ,下回合获得 [E] [E] , 保留 "
   },
   "Strategy": {
     "NAME": "奇策",
-    "DESCRIPTION": "当前所有手牌减少 [E] ，且抽 2 张牌, 获得 [E] "
+    "DESCRIPTION": "当前所有手牌减少 [E] ，且抽 2 张牌, 获得 [E] NL ( *这不是一张牌, NL *不出现在牌组中 )"
+  },
+  "Fatigued": {
+    "NAME": "操劳",
+    "DESCRIPTION": "不能被打出 。 NL 在你的回合结束时, NL 获得1层 脆弱 , NL 获得1层 虚弱 。"
   }
 }
