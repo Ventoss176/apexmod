@@ -1,7 +1,6 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
-import cards.StrengthSword;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -14,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.DexterityPower;
 import com.megacrit.cardcrawl.powers.LoseDexterityPower;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 
 /**
  * Date:2022/6/21
@@ -34,7 +33,7 @@ public class AFlash extends CustomCard {
     public AFlash() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.SKILL, AbstractCardEnum.Apex_COLOR, CardRarity.COMMON, CardTarget.SELF);
         // this.tags.add(BaseModCardTags.BASIC_STRIKE);
-        this.baseMagicNumber = 5;
+        this.baseMagicNumber = 3;
         this.magicNumber = this.baseMagicNumber;
     }
 

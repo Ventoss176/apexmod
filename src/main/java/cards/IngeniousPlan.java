@@ -2,15 +2,13 @@ package cards;
 
 import actions.IngeniousPlanAction;
 import basemod.abstracts.CustomCard;
-import cards.templates.SKCardRare;
-import com.megacrit.cardcrawl.actions.unique.CalculatedGambleAction;
 import com.megacrit.cardcrawl.actions.watcher.OmniscienceAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 
 /**
  * Date:2022/6/22

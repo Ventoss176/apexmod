@@ -52,6 +52,7 @@ public class WisdomFormDebuffPower extends AbstractPower {
         this.flash();
         AbstractCard card2 = new Fatigued();
         this.addToBot(new MakeTempCardInHandAction(card2));
+        this.addToBot(new MakeTempCardInHandAction(card2));
 
         if (this.amount == 0) {
             this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, "WisdomFormDebuff"));

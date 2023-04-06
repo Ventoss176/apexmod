@@ -2,7 +2,6 @@ package cards;
 
 import basemod.abstracts.CustomCard;
 import cards.tempCards.Strategy;
-import cards.templates.SkillCardTem;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -14,9 +13,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.PoisonPower;
-import com.megacrit.cardcrawl.powers.watcher.MarkPower;
 import com.megacrit.cardcrawl.vfx.combat.PressurePointEffect;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 import powers.NewMarkPower;
 import powers.SchemePower;
 

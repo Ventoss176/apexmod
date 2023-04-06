@@ -28,6 +28,8 @@ public class SheathPower extends AbstractPower {
     // 能力的描述
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
+    private static int LIMITED = 5;
+
     public SheathPower(AbstractCreature owner, int amount) {
         this.name = powerStrings.NAME;
         this.ID = "Sheath";
@@ -37,8 +39,11 @@ public class SheathPower extends AbstractPower {
         this.loadRegion("vigor");
         this.type = PowerType.BUFF;
         this.isTurnBased = false;
-        if (this.amount >= 5) {
-            this.amount = 5;
+        if(AbstractDungeon.player.hasPower("SheathLimitPower")){
+            LIMITED = 5 + AbstractDungeon.player.getPower("SheathLimitPower").amount;
+        }
+        if (this.amount >= LIMITED) {
+            this.amount = LIMITED;
         }
 
     }
@@ -47,9 +52,12 @@ public class SheathPower extends AbstractPower {
         this.fontScale = 8.0F;
         this.amount += stackAmount;
 
+        if(AbstractDungeon.player.hasPower("SheathLimitPower")){
+            LIMITED = 5 + AbstractDungeon.player.getPower("SheathLimitPower").amount;
+        }
 
-        if (this.amount >= 5) {
-            this.amount = 5;
+        if (this.amount >= LIMITED) {
+            this.amount = LIMITED;
         }
 
 
@@ -57,10 +65,13 @@ public class SheathPower extends AbstractPower {
     }
 
     public void updateDescription() {
+        if(AbstractDungeon.player.hasPower("SheathLimitPower")){
+            LIMITED = 5 + AbstractDungeon.player.getPower("SheathLimitPower").amount;
+        }
         if(AbstractDungeon.player.hasRelic("Yamato")){
-            this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[3];
+            this.description = DESCRIPTIONS[2] + this.amount + DESCRIPTIONS[3] + LIMITED;
         }else {
-            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
+            this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1] + LIMITED;
         }
     }
 

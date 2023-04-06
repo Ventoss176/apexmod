@@ -1,15 +1,8 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
-import characters.Apex;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import com.megacrit.cardcrawl.relics.WristBlade;
-import pathes.ApexTags;
 
 /**
  * Date:2022/6/22

@@ -2,17 +2,13 @@ package cards;
 
 import basemod.abstracts.CustomCard;
 import cards.tempCards.Strategy;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.IntangiblePlayerPower;
-import com.megacrit.cardcrawl.powers.LoseDexterityPower;
-import pathes.AbstractCardEnum;
-import powers.ChameleonPower;
-import powers.SchemePower;
+import apexpathes.AbstractCardEnum;
 
 /**
  * Date:2022/6/22
@@ -36,8 +32,8 @@ public class Ambition extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.baseMagicNumber = 4;
-        this.magicNumber = 4;
+        this.baseMagicNumber = 2;
+        this.magicNumber = 2;
         this.cardsToPreview = new Strategy();
         // this.exhaust = true;
     }
@@ -46,19 +42,17 @@ public class Ambition extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if(p.hasPower("Scheme")){
             if(this.upgraded){
-                if(p.getPower("Scheme").amount <= 4){
-                    this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
+                if(p.getPower("Scheme").amount >= 3){
+//                    this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
+                    this.addToBot(new DrawCardAction(this.magicNumber));
 
                 }
             }else {
-                if(p.getPower("Scheme").amount <= 2){
-                    this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
-
+                if(p.getPower("Scheme").amount >= 3){
+//                    this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
+                    this.addToBot(new DrawCardAction(this.magicNumber));
                 }
             }
-        }else {
-
-            this.addToBot(new ApplyPowerAction(p, p, new SchemePower(p, this.magicNumber), this.magicNumber));
         }
 
     }
@@ -75,7 +69,7 @@ public class Ambition extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-//            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(1);
             this.rawDescription = UPGRADED_DESCRIPTION;
             this.initializeDescription();
             // this.upgradeBaseCost(2);

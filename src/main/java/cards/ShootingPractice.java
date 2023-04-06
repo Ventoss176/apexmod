@@ -1,16 +1,13 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
-import cards.templates.SkillCardUnCommon;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.AccuracyPower;
-import com.megacrit.cardcrawl.powers.BufferPower;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 import powers.ShootingPracticePower;
 
 /**

@@ -1,16 +1,12 @@
 package cards.templates;
 
 import basemod.abstracts.CustomCard;
-import cards.StepByStep;
-import cards.tempCards.Conspiracy;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 
 /**
  * Date:2022/6/21

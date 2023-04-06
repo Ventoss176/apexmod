@@ -2,7 +2,6 @@ package cards;
 
 import basemod.abstracts.CustomCard;
 import cards.tempCards.Strategy;
-import cards.templates.SKCardRare;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
 import com.megacrit.cardcrawl.powers.EquilibriumPower;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 import powers.SchemePower;
 
 /**
@@ -36,7 +35,7 @@ public class Accident extends CustomCard {
 
         // this.tags.add(BaseModCardTags.BASIC_DEFEND);
         // this.baseBlock = BLOCK_AMT;
-        this.selfRetain = true;
+//        this.selfRetain = true;
         this.baseMagicNumber = 1;
         this.magicNumber = 1;
         this.cardsToPreview = new Strategy();

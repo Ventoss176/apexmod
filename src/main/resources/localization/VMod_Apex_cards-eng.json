@@ -80,7 +80,7 @@
   "InformationWork": {
     "NAME": "Information Work",
     "DESCRIPTION": "Stargaze 10. NL Draw 1 card. NL Next turn gain [E] .",
-    "UPGRADE_DESCRIPTION": "Stargaze 10. NL Draw 1 card. NL Next turn gain [E] [E] ."
+    "UPGRADE_DESCRIPTION": "Stargaze 10. NL Draw 1 card. NL Next turn gain [E] ."
   },
   "BackupDefense": {
     "NAME": "Backup Defense",
@@ -194,7 +194,7 @@
   "LongPlanned": {
     "NAME": "Long planned",
     "DESCRIPTION": "If you have !M! or more Plan , NL gain [E] [E] .",
-    "UPGRADE_DESCRIPTION": "If you have !M! or more Plan , NL gain [E] [E] [E] ."
+    "UPGRADE_DESCRIPTION": "If you have !M! or more Plan , NL gain [E] [E] ."
   },
   "WeaknessEffect": {
     "NAME": "Weakness Exploit",
@@ -211,8 +211,8 @@
   },
   "Ambition": {
     "NAME": "Ambition",
-    "DESCRIPTION": "If you have 2 or less Plan, NL gain !M! Plan.",
-    "UPGRADE_DESCRIPTION": "If you have 4 or less Plan, NL gain !M! Plan."
+    "DESCRIPTION": "If you have 3 or more Plan, NL draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "If you have 3 or more Plan, NL draw !M! cards."
   },
   "Torture": {
     "NAME": "Torture",
@@ -220,8 +220,8 @@
     "UPGRADE_DESCRIPTION": "Apply 1 Vulnerable to ALL enemies for each Attack card played this turn."
   },
   "Almighty": {
-    "NAME": "Strength Dexterity",
-    "DESCRIPTION": "Gain !M! Dexterity. NL Gain !M! Strength."
+    "NAME": "Thunder Sheathe",
+    "DESCRIPTION": "Gain !M! Thunder. NL Gain !M! Sheathe."
   },
   "BattoWater": {
     "NAME": "Water Sheathe",
@@ -291,8 +291,8 @@
   },
   "WisdomForm": {
     "NAME": "Wisdom Form",
-    "DESCRIPTION": "Next !M! turns, the first card you play will trigger Strategy. Put a *Fatigued into your hand at the start of your next 2 turns.",
-    "UPGRADE_DESCRIPTION": "Trigger Strategy. Next !M! turns, the first card you play will trigger Strategy. Put a *Fatigued  into your hand at the start of your next 2 turns."
+    "DESCRIPTION": "Next !M! turns, the first card you play will trigger Strategy. Put 2 *Fatigued into your hand at the start of your next 2 turns.",
+    "UPGRADE_DESCRIPTION": "Trigger Strategy. Next !M! turns, the first card you play will trigger Strategy. Put 2 *Fatigued  into your hand at the start of your next 2 turns."
   },
   "GodSlay": {
     "NAME": "Spirit Release Slash",
@@ -337,8 +337,8 @@
   },
   "Accident": {
     "NAME": "Accident",
-    "DESCRIPTION": "Retain. Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Retain. Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E]."
+    "DESCRIPTION": "Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E].",
+    "UPGRADE_DESCRIPTION": "Retain your hand this turn. Gain !M! Plan. NL Next turn gain [E] [E]."
   },
   "Strategy": {
     "NAME": "Strategy",

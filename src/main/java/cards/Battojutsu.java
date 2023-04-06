@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import pathes.AbstractCardEnum;
-import pathes.ApexTags;
+import apexpathes.AbstractCardEnum;
+import apexpathes.ApexTags;
 import powers.SheathPower;
 
 /**

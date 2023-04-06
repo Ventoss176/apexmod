@@ -1,8 +1,6 @@
 package cards;
 
-import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -14,7 +12,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 // import jdk.jfr.Description;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 
 /**
  * Date:2022/6/19

@@ -2,7 +2,6 @@ package cards;
 
 import basemod.abstracts.CustomCard;
 import cards.tempCards.Strategy;
-import cards.templates.AttackCardUnCommon;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -13,7 +12,7 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 import powers.SchemePower;
 
 /**
@@ -71,7 +70,7 @@ public class AbsoluteForce extends CustomCard {
             //更改名字和提高2点伤害
             this.upgradeName();
             this.upgradeDamage(UPGRADE_PLUS_DMG);
-//            this.upgradeMagicNumber(1);
+            this.upgradeMagicNumber(1);
             this.initializeDescription();
         }
 

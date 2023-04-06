@@ -39,8 +39,8 @@
   "Sheath": {
     "NAME": "Sheathe",
     "DESCRIPTIONS": [
-      "Your next Attack deal ( #b1.35 ^ #y"," )x damage. MAX #ySheathe is #b5.",
-      "Your next Attack deal ( #b1.5 ^ #y"," )x damage. MAX #ySheathe is #b5."
+      "Your next Attack deal ( #b1.35 ^ #y"," )x damage. MAX #ySheathe is #b",
+      "Your next Attack deal ( #b1.5 ^ #y"," )x damage. MAX #ySheathe is #b"
     ]
   },
   "Chameleon": {
@@ -105,13 +105,6 @@
       " #yTrickeries into your hand."
     ]
   },
-  "BurnStrongholds": {
-    "NAME": "异世界格斗术",
-    "DESCRIPTIONS": [
-      "手牌中所有0耗能牌打出均可以抽",
-      " 张牌"
-    ]
-  },
   "ShootingPractice": {
     "NAME": "Shooting Practice",
     "DESCRIPTIONS": [
@@ -142,7 +135,7 @@
   "WisdomFormDebuff": {
     "NAME": "The Price of Wisdom",
     "DESCRIPTIONS": [
-      "At the start of your next turn, add #b1 #yFatigued into your hand."
+      "At the start of your next turn, add #b2 #yFatigued into your hand."
     ]
   },
   "HandSizePower": {
@@ -151,8 +144,12 @@
       "Increase Hand Size by #b",
       " this combat. "
     ]
+  },
+  "SheathLimitPower": {
+    "NAME": "Thunder",
+    "DESCRIPTIONS": [
+      "Increase MAX #ySheathe by #b",
+      " this combat. "
+    ]
   }
-
-
-
 }

@@ -2,13 +2,9 @@ package cards;
 
 import actions.StargazingAction;
 import basemod.abstracts.CustomCard;
-import basemod.helpers.BaseModCardTags;
-import cards.tempCards.Conspiracy;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -16,8 +12,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.EnergizedPower;
-import pathes.AbstractCardEnum;
-import pathes.ApexTags;
+import apexpathes.AbstractCardEnum;
+import apexpathes.ApexTags;
 
 /**
  * Date:2022/6/21
@@ -64,7 +60,7 @@ public class InformationWork extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+//            this.upgradeMagicNumber(1);
             this.upgradeBaseCost(0);
             this.rawDescription = UPGRADED_DESCRIPTION;
             initializeDescription();

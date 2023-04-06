@@ -1,23 +1,16 @@
 package cards;
 
-import actions.CostReduction;
 import actions.QiceAction;
-import basemod.BaseMod;
 import basemod.abstracts.CustomCard;
 import cards.tempCards.Fatigued;
-import cards.tempCards.Strategy;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
-import com.megacrit.cardcrawl.actions.common.GainEnergyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.*;
-import pathes.AbstractCardEnum;
-import powers.MindControlPower;
+import apexpathes.AbstractCardEnum;
 import powers.WisdomFormDebuffPower;
 import powers.WisdomFormPower;
 

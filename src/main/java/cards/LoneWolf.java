@@ -1,7 +1,6 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
-import cards.templates.PowerCardTem;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -9,8 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.EntanglePower;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 import powers.LoneWolfAPower;
 import powers.LoneWolfPower;
 
@@ -63,7 +61,7 @@ public class LoneWolf extends CustomCard {
             //更改名字和提高3点格挡
             this.upgradeName();
 //            this.upgradeBaseCost(3);
-            this.upgradeMagicNumber(5);
+            this.upgradeMagicNumber(2);
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);
         }

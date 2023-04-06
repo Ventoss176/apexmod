@@ -1,7 +1,6 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
-import cards.templates.SKCardRare;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
@@ -12,10 +11,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.monsters.MonsterGroup;
 import com.megacrit.cardcrawl.vfx.combat.GiantTextEffect;
 import com.megacrit.cardcrawl.vfx.combat.WeightyImpactEffect;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 
 import java.util.Iterator;
 
@@ -29,7 +27,7 @@ public class InsectKiller extends CustomCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADED_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 3;
+    private static final int COST = 2;
     // private static final int BLOCK_AMT = 6;
     private static final int UPGRADE_PLUS_BLOCK = 4;
     public static final String ID = "InsectKiller";
@@ -73,7 +71,7 @@ public class InsectKiller extends CustomCard {
         if (!this.upgraded) {
             //更改名字和提高3点格挡
             this.upgradeName();
-            this.upgradeBaseCost(2);
+//            this.upgradeBaseCost(2);
             this.upgradeMagicNumber(10);
             this.initializeDescription();
             // this.upgradeBlock(UPGRADE_PLUS_BLOCK);

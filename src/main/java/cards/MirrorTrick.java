@@ -2,7 +2,6 @@ package cards;
 
 import actions.BowArrowAction;
 import basemod.abstracts.CustomCard;
-import cards.templates.ATKCardRare;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -14,8 +13,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import pathes.AbstractCardEnum;
-import pathes.ApexTags;
+import apexpathes.AbstractCardEnum;
+import apexpathes.ApexTags;
 
 /**
  * Date:2022/6/22

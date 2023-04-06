@@ -1,7 +1,6 @@
 package cards;
 
 import basemod.abstracts.CustomCard;
-import cards.templates.PCardRare;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +10,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.BarricadePower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 
 import java.util.Iterator;
 

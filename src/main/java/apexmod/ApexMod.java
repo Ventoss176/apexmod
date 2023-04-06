@@ -1,6 +1,5 @@
 package apexmod;
 
-import actions.CostReduction;
 import basemod.BaseMod;
 import basemod.interfaces.*;
 import cards.*;
@@ -24,8 +23,8 @@ import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndAddToDrawPileEffect;
 import helpers.ApexImageMaster;
-import pathes.AbstractCardEnum;
-import pathes.ThmodClassEnum;
+import apexpathes.AbstractCardEnum;
+import apexpathes.ThmodClassEnum;
 import posions.ArrowPotion;
 import posions.QicePotion;
 // import posions.SchemePotion;
@@ -127,6 +126,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "标记" }, "标记是一种状态，每当打出 #y点穴 或者 #y略懂 时可以造成对应层数的伤害");
             BaseMod.addKeyword(new String[] { "略懂" }, "略懂是顶尖猎杀者的一张牌");
             BaseMod.addKeyword(new String[] { "观星" }, "观看牌堆顶 #bX 张牌");
+            BaseMod.addKeyword(new String[] { "雷霆" }, "每一层提升1点 #y收刀 上限");
             BaseMod.addKeyword(new String[] { "多层护甲" }, "在你的回合结束时获得 #bX 点 #y格挡 , 受到攻击伤害而失去生命时， #y多层护甲 的层数将会减少 #b1 。");
 
         }else {
@@ -141,6 +141,7 @@ public class ApexMod implements RelicGetSubscriber, PostPowerApplySubscriber, Po
             BaseMod.addKeyword(new String[] { "Markv","markv" }, "Whenever you play #yPressure #yPoints or #yKnow #yA #yLittle, the enemy loses #yMark plus #yMarkv HP.");
             BaseMod.addKeyword(new String[] { "Bounce","bonuce" }, "Put a card from your NL hand onto the top of your draw pile.");
             BaseMod.addKeyword(new String[] { "stargaze" }, "Look at the top #bX cards of your draw pile.");
+            BaseMod.addKeyword(new String[] { "Thunder","thunder" }, "Increase MAX #ySheathe .");
             BaseMod.addKeyword(new String[] { "Platedarmor","platedarmor","PlatedArmor","platedArmor" }, "At the end of your turn, gain #bX #yBlock. Receiving unblocked attack damage reduces #yPlated #yArmor by #b1.");
 //            System.out.println("eng keyword end....");
         }

@@ -80,7 +80,7 @@
   "InformationWork": {
     "NAME": "情报工作",
     "DESCRIPTION": "观星 10，抽一张牌，下回合获得 [E] ",
-    "UPGRADE_DESCRIPTION": "观星 10，抽一张牌，下回合获得 [E] [E] "
+    "UPGRADE_DESCRIPTION": "观星 10，抽一张牌，下回合获得 [E] "
   },
   "BackupDefense": {
     "NAME": "备用防御",
@@ -194,7 +194,7 @@
   "LongPlanned": {
     "NAME": "蓄谋已久",
     "DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] ",
-    "UPGRADE_DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] [E] "
+    "UPGRADE_DESCRIPTION": "当 计谋 层数大于 NL 等于 !M! , NL 时获得 [E] [E] "
   },
   "WeaknessEffect": {
     "NAME": "弱点特效",
@@ -211,8 +211,8 @@
   },
   "Ambition": {
     "NAME": "野心",
-    "DESCRIPTION": "当你有计谋层数 NL 小于等于2时, NL 获得 !M! 点 计谋 ",
-    "UPGRADE_DESCRIPTION": "当你计谋层数 NL 小于等于4时, NL 获得 !M! 点 计谋 "
+    "DESCRIPTION": "当你计谋层数 NL 大于等于3时, NL 抽 !M! 张牌 ",
+    "UPGRADE_DESCRIPTION": "当你计谋层数 NL 大于等于3时, NL 抽 !M! 张牌 "
   },
   "Torture": {
     "NAME": "严刑拷打",
@@ -220,8 +220,8 @@
     "UPGRADE_DESCRIPTION": "本回合，所有攻击牌 NL 都将给予 NL 所有敌人一层 易伤 "
   },
   "Almighty": {
-    "NAME": "首尾兼顾",
-    "DESCRIPTION": "获得 !M! 点 敏捷 和 力量 "
+    "NAME": "纳刀术-雷",
+    "DESCRIPTION": "获得 !M! 层 雷霆 和 收刀 "
   },
   "BattoWater": {
     "NAME": "纳刀术-水",
@@ -287,12 +287,12 @@
   },
   "MindControl": {
     "NAME": "攻心",
-    "DESCRIPTION": "每次获得 计谋 增加1, NL 回合结束失去 NL !M! 点 力量 , !M! 点 敏捷 "
+    "DESCRIPTION": "每次获得 计谋 增加1, NL 本回合结束失去 NL !M! 点 力量 , !M! 点 敏捷 "
   },
   "WisdomForm": {
     "NAME": "智慧形态",
-    "DESCRIPTION": "下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 。 NL 在下2个回合开始，加入1张 *操劳 到手牌。 ",
-    "UPGRADE_DESCRIPTION": "立刻触发 奇策 。下 !M! 个回合, 打出第1张牌会触发 奇策 。在下2个回合开始，加入1张 *操劳 到手牌。 "
+    "DESCRIPTION": "下 !M! 个回合, 打出 NL 第1张牌会触发 奇策 。 NL 在下2个回合开始，加入2张 *操劳 到手牌。 ",
+    "UPGRADE_DESCRIPTION": "立刻触发 奇策 。下 !M! 个回合, 打出第1张牌会触发 奇策 。在下2个回合开始，加入2张 *操劳 到手牌。 "
   },
   "GodSlay": {
     "NAME": "鬼神居合斩",
@@ -337,8 +337,8 @@
   },
   "Accident": {
     "NAME": "意外",
-    "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得 !M! 点 计谋 , NL ,下回合获得 [E] [E] , 保留 ",
-    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得 !M! 点 计谋 , NL ,下回合获得 [E] [E] , 保留 "
+    "DESCRIPTION": "保留所有手牌 NL 这个回合, NL 获得 !M! 点 计谋 , NL ,下回合获得 [E] [E] ",
+    "UPGRADE_DESCRIPTION": "保留所有手牌 NL 这个回合 , NL 获得 !M! 点 计谋 , NL ,下回合获得 [E] [E] "
   },
   "Strategy": {
     "NAME": "奇策",

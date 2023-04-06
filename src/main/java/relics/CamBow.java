@@ -1,10 +1,8 @@
 package relics;
 
 import basemod.abstracts.CustomRelic;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
-import pathes.ApexTags;
 
 /**
  * Date:2022/6/23

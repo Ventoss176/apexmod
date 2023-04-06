@@ -2,7 +2,6 @@ package cards;
 
 import actions.CostReduction;
 import basemod.abstracts.CustomCard;
-import cards.templates.SkillCardTem;
 import com.megacrit.cardcrawl.actions.common.PlayTopCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -10,7 +9,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 
 /**
  * Date:2022/6/21

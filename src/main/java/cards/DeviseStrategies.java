@@ -2,7 +2,6 @@ package cards;
 
 import basemod.abstracts.CustomCard;
 import cards.tempCards.Strategy;
-import cards.templates.PowerCardTem;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
@@ -13,10 +12,9 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.watcher.ForesightPower;
 import com.megacrit.cardcrawl.vfx.BorderFlashEffect;
 import com.megacrit.cardcrawl.vfx.combat.GiantEyeEffect;
-import pathes.AbstractCardEnum;
+import apexpathes.AbstractCardEnum;
 import powers.DeviseStrategiesPower;
 import powers.SchemePower;
 
