@@ -35,7 +35,10 @@ public class SheathLimitPower extends AbstractPower{
         this.type = PowerType.BUFF;
     }
 
+    @Override
+    public void onVictory() {
 
+    }
 
     public void stackPower(int stackAmount) {
         this.fontScale = 8.0F;

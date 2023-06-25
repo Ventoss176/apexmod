@@ -41,6 +41,8 @@ public class SheathPower extends AbstractPower {
         this.isTurnBased = false;
         if(AbstractDungeon.player.hasPower("SheathLimitPower")){
             LIMITED = 5 + AbstractDungeon.player.getPower("SheathLimitPower").amount;
+        }else{
+            LIMITED = 5;
         }
         if (this.amount >= LIMITED) {
             this.amount = LIMITED;
@@ -62,6 +64,11 @@ public class SheathPower extends AbstractPower {
 
 
 
+    }
+
+    @Override
+    public void onVictory() {
+        LIMITED = 5 ;
     }
 
     public void updateDescription() {

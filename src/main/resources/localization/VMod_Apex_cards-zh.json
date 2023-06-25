@@ -156,7 +156,7 @@
   },
   "LaidoAttack": {
     "NAME": "居合斩-斩击",
-    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! )， 如果未处于 收刀 状态则进入 收刀 状态"
+    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! )， 如果没有 收刀 ,则获得一层 收刀 "
   },
   "Battojutsu": {
     "NAME": "纳刀术-神威",
@@ -180,7 +180,7 @@
   },
   "Archedback": {
     "NAME": "弓背一击",
-    "DESCRIPTION": "造成 !D! 点 伤害 , NL 选择 !M! 张牌 NL 减少 [E] , NL 弓箭 "
+    "DESCRIPTION": "造成 !D! 点 伤害 , NL 选择 !M! 张牌 NL 本回合减少 [E] , NL 弓箭 "
   },
   "GodGuide": {
     "NAME": "仙人指路",
@@ -229,7 +229,7 @@
   },
   "LaidoWink": {
     "NAME": "居合斩-瞬",
-    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! )， 如果未处于 收刀 状态则进入 收刀 状态"
+    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! )， 如果没有 收刀 ,则获得一层 收刀 "
   },
   "TooFocus": {
     "NAME": "偏科",
@@ -296,8 +296,8 @@
   },
   "GodSlay": {
     "NAME": "鬼神居合斩",
-    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! ), 如果未处 NL 于 收刀 状态则 NL 进入 收刀 状态, 虚无 ",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! ), 如果未处 NL 于 收刀 状态则 NL 进入 收刀 状态 "
+    "DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! ), 如果没有 收刀 ,则获得一层 收刀 , 虚无 ",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害(收刀时伤害 + !D! ), 如果没有 收刀 ,则获得一层 收刀 "
   },
   "CraftyPlan": {
     "NAME": "神机妙算",

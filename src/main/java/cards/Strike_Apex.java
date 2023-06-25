@@ -31,6 +31,7 @@ public class Strike_Apex extends CustomCard {
     public Strike_Apex() {
         super(ID, NAME, IMG_PATH, COST, DESCRIPTION, CardType.ATTACK, AbstractCardEnum.Apex_COLOR, CardRarity.BASIC, CardTarget.ENEMY);
         this.tags.add(CardTags.STARTER_STRIKE);
+        this.tags.add(CardTags.STRIKE);
         this.baseDamage = ATTACK_DMG;
     }
 
